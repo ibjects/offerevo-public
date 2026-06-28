@@ -1,0 +1,229 @@
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-hype: var(--hype);
+  --color-hype-foreground: var(--hype-foreground);
+  --color-flame: var(--flame);
+  --color-flame-foreground: var(--flame-foreground);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+  --radius: 0.5rem;
+
+  --paper: oklch(0.99 0 0);
+  --ink: oklch(0.14 0 0);
+
+  --background: oklch(0.99 0 0);
+  --foreground: oklch(0.14 0 0);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.14 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.14 0 0);
+
+  --primary: oklch(0.14 0 0);
+  --primary-foreground: oklch(0.99 0 0);
+
+  --secondary: oklch(0.96 0 0);
+  --secondary-foreground: oklch(0.14 0 0);
+
+  --muted: oklch(0.96 0 0);
+  --muted-foreground: oklch(0.45 0 0);
+
+  --accent: oklch(0.94 0 0);
+  --accent-foreground: oklch(0.14 0 0);
+
+  --destructive: oklch(0.66 0.22 24);
+  --destructive-foreground: oklch(0.99 0 0);
+
+  --border: oklch(0.14 0 0);
+  --input: oklch(0.88 0 0);
+  --ring: oklch(0.14 0 0);
+
+  /* Brand */
+  --hype: oklch(0.85 0.17 88); /* #FFC531 yellow */
+  --hype-foreground: oklch(0.14 0 0);
+  --flame: oklch(0.66 0.22 24); /* #F55555 red */
+  --flame-foreground: oklch(0.99 0 0);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html,
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility tape {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-hype);
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.7rem;
+  border: 1.5px solid var(--color-ink);
+}
+
+@utility brutal-card {
+  background: var(--color-paper);
+  border: 1.5px solid var(--color-ink);
+  box-shadow: 6px 6px 0 0 var(--color-ink);
+}
+
+@utility brutal-card-flame {
+  background: var(--color-flame);
+  color: var(--color-flame-foreground);
+  border: 1.5px solid var(--color-ink);
+  box-shadow: 6px 6px 0 0 var(--color-ink);
+}
+
+@utility brutal-card-hype {
+  background: var(--color-hype);
+  color: var(--color-ink);
+  border: 1.5px solid var(--color-ink);
+  box-shadow: 6px 6px 0 0 var(--color-ink);
+}
+
+/* HubSpot Form Brutalist Overrides */
+
+/* Force every single HubSpot wrapper layer to expand full width */
+.plug-hubspot-form,
+.plug-hubspot-form form,
+.plug-hubspot-form .hs-form-row,
+.plug-hubspot-form .fieldset,
+.plug-hubspot-form .hs-form-field,
+.plug-hubspot-form .input {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Ensure the main form stacks elements cleanly */
+.plug-hubspot-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Hide HubSpot's default label text */
+/* HubSpot Form Brutalist Overrides */
+
+.plug-hubspot-form,
+.plug-hubspot-form form,
+.plug-hubspot-form .hs-form-row,
+.plug-hubspot-form .fieldset,
+.plug-hubspot-form .hs-form-field,
+.plug-hubspot-form .input {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Force elements to align nicely inside the container */
+.plug-hubspot-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.plug-hubspot-form label {
+  display: none !important;
+}
+
+/* Custom Brutalist Input Sizing */
+.plug-hubspot-form input[type="email"] {
+  width: 100% !important;
+  box-sizing: border-box;
+  background-color: var(--color-paper);
+  border: 1.5px solid var(--color-ink);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-ink);
+  outline: none;
+  box-shadow: 4px 4px 0 0 var(--color-ink);
+  transition: all 0.2s ease-in-out;
+}
+
+.plug-hubspot-form input[type="email"]:focus {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 0 var(--color-ink);
+}
+
+/* Custom Brutalist Button Sizing */
+.plug-hubspot-form .hs_submit,
+.plug-hubspot-form .actions,
+.plug-hubspot-form input[type="submit"] {
+  width: 100% !important;
+}
+
+.plug-hubspot-form input[type="submit"] {
+  background-color: var(--color-flame);
+  color: var(--color-paper);
+  border: 1.5px solid var(--color-ink);
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 6px 6px 0 0 var(--color-ink);
+  transition: transform 0.2s ease;
+  -webkit-appearance: none;
+}
+
+.plug-hubspot-form input[type="submit"]:hover {
+  transform: translateY(-2px);
+}
+
+.plug-hubspot-form .hs-error-msgs {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+  color: var(--color-flame);
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plug - Customer-powered marketing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme inline {
+      --radius-sm: calc(var(--radius) - 4px);
+      --radius-md: calc(var(--radius) - 2px);
+      --radius-lg: var(--radius);
+      --radius-xl: calc(var(--radius) + 4px);
+      --color-background: var(--background);
+      --color-foreground: var(--foreground);
+      --color-card: var(--card);
+      --color-card-foreground: var(--card-foreground);
+      --color-popover: var(--popover);
+      --color-popover-foreground: var(--popover-foreground);
+      --color-primary: var(--primary);
+      --color-primary-foreground: var(--primary-foreground);
+      --color-secondary: var(--secondary);
+      --color-secondary-foreground: var(--secondary-foreground);
+      --color-muted: var(--muted);
+      --color-muted-foreground: var(--muted-foreground);
+      --color-accent: var(--accent);
+      --color-accent-foreground: var(--accent-foreground);
+      --color-destructive: var(--destructive);
+      --color-destructive-foreground: var(--destructive-foreground);
+      --color-border: var(--border);
+      --color-input: var(--input);
+      --color-ring: var(--ring);
+      --color-hype: var(--hype);
+      --color-hype-foreground: var(--hype-foreground);
+      --color-flame: var(--flame);
+      --color-flame-foreground: var(--flame-foreground);
+      --color-ink: var(--ink);
+      --color-paper: var(--paper);
+      --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, monospace;
+    }
+
+    :root {
+      --radius: 0.5rem;
+      --paper: oklch(0.99 0 0);
+      --ink: oklch(0.14 0 0);
+      --background: oklch(0.99 0 0);
+      --foreground: oklch(0.14 0 0);
+      --card: oklch(1 0 0);
+      --card-foreground: oklch(0.14 0 0);
+      --popover: oklch(1 0 0);
+      --popover-foreground: oklch(0.14 0 0);
+      --primary: oklch(0.14 0 0);
+      --primary-foreground: oklch(0.99 0 0);
+      --secondary: oklch(0.96 0 0);
+      --secondary-foreground: oklch(0.14 0 0);
+      --muted: oklch(0.96 0 0);
+      --muted-foreground: oklch(0.45 0 0);
+      --accent: oklch(0.94 0 0);
+      --accent-foreground: oklch(0.14 0 0);
+      --destructive: oklch(0.66 0.22 24);
+      --destructive-foreground: oklch(0.99 0 0);
+      --border: oklch(0.14 0 0);
+      --input: oklch(0.88 0 0);
+      --ring: oklch(0.14 0 0);
+
+      /* The Colors for the Cards */
+      --hype: oklch(0.85 0.17 88);          /* Yellow */
+      --hype-foreground: oklch(0.14 0 0);
+      --flame: oklch(0.66 0.22 24);         /* Red */
+      --flame-foreground: oklch(0.99 0 0);
+    }
+
+    @layer base {
+      * {
+        border-color: var(--color-border);
+      }
+      html, body {
+        background-color: var(--color-paper);
+        color: var(--color-ink);
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+      }
+      h1, h2, h3, h4 {
+        font-family: var(--font-display);
+        letter-spacing: -0.02em;
+      }
+    }
+
+    @utility tape {
+      display: inline-flex;
+      align-items: center;
+      background: var(--color-hype);
+      color: var(--color-ink);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.7rem;
+      border: 1.5px solid var(--color-ink);
+    }
+
+    /* The Utility Classes applied to the cards */
+    @utility brutal-card {
+      background: var(--color-paper);
+      border: 1.5px solid var(--color-ink);
+      box-shadow: 6px 6px 0 0 var(--color-ink);
+    }
+
+    @utility brutal-card-flame {
+      background: var(--color-flame);
+      color: var(--color-flame-foreground);
+      border: 1.5px solid var(--color-ink);
+      box-shadow: 6px 6px 0 0 var(--color-ink);
+    }
+
+    @utility brutal-card-hype {
+      background: var(--color-hype);
+      color: var(--color-ink);
+      border: 1.5px solid var(--color-ink);
+      box-shadow: 6px 6px 0 0 var(--color-ink);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-paper text-ink overflow-x-hidden">
+
+    <header class="sticky top-0 z-50 border-b border-ink bg-paper">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+            <a href="/" class="flex items-center gap-2">
+                <img src="./images/offer-evo.svg" alt="Offer Evo" class="h-8 w-8 object-contain" />
+                <span class="font-display text-2xl font-black tracking-tight">OfferEvo</span>
+            </a>
+            <nav class="hidden items-center gap-8 text-sm font-medium md:flex">
+                <a href="#how" class="hover:text-flame">How it works</a>
+                <a href="#why" class="hover:text-flame">Why OfferEvo</a>
+                <a href="#join" class="hover:text-flame">For businesses</a>
+            </nav>
+            <a href="#join"
+                class="inline-flex items-center gap-2 border-[1.5px] border-ink bg-ink px-4 py-2 text-sm font-semibold text-paper transition-transform hover:-translate-y-0.5">
+                Get the app →
+            </a>
+        </div>
+    </header>
+
+    <section class="relative border-b border-ink">
+        <div class="pointer-events-none absolute right-0 top-0 hidden h-full w-1/3 bg-hype md:block"></div>
+        <div class="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-12 md:py-32">
+            <div class="md:col-span-7">
+                <span class="tape">Customer-powered marketing</span>
+                <h1 class="mt-6 font-display text-5xl font-black leading-[0.95] sm:text-7xl md:text-[5.5rem]">
+                    Customers post discounts,<br />
+                    on behalf of the <br />
+                    <span class="relative inline-block">
+                        <span class="relative z-10">businesses.</span>
+                        <span class="absolute inset-x-0 bottom-1 z-0 h-4 bg-flame md:bottom-3 md:h-5"></span>
+                    </span>
+                </h1>
+                <p class="mt-8 max-w-xl text-lg leading-relaxed text-ink/75">
+                    OfferEvo lets <strong>customers post discount offers</strong> on behalf of
+                    businesses they love.
+                </p>
+                <div class="mt-10 flex flex-wrap items-center gap-4">
+                    <a href="#join"
+                        class="inline-flex items-center gap-2 border-[1.5px] border-ink bg-flame px-6 py-3 font-semibold text-paper transition-transform hover:-translate-y-0.5"
+                        style="box-shadow: 6px 6px 0 0 var(--color-ink)">
+                        Post an offer →
+                    </a>
+                    <a href="#how"
+                        class="inline-flex items-center gap-2 border-[1.5px] border-ink bg-paper px-6 py-3 font-semibold text-ink transition-transform hover:-translate-y-0.5"
+                        style="box-shadow: 6px 6px 0 0 var(--color-ink)">
+                        See how it works
+                    </a>
+                </div>
+                <p class="mt-6 font-mono text-xs uppercase tracking-widest text-ink/60">
+                    Free for customers · Free for small businesses · Forever
+                </p>
+            </div>
+
+            <div class="relative md:col-span-5 md:pt-8">
+                <div class="relative mx-auto max-w-sm">
+                    <div class="absolute -left-6 -top-6 z-0 h-full w-full border-[1.5px] border-ink bg-flame"></div>
+                    <div class="relative z-10 brutal-card p-6">
+                        <div class="flex items-center justify-between">
+                            <span class="font-mono text-[11px] uppercase tracking-widest text-ink/60">
+                                Posted by @maya · 2h
+                            </span>
+                            <span
+                                class="bg-hype px-2 py-0.5 font-mono text-[11px] font-semibold uppercase tracking-wider">
+                                Drop
+                            </span>
+                        </div>
+                        <h3 class="mt-3 font-display text-2xl font-black leading-tight">
+                            Rosa's Corner Bakery
+                        </h3>
+                        <p class="text-sm text-ink/70">Frankford Ave · Philly</p>
+                        <div class="my-5 border-y border-dashed border-ink py-5 text-center">
+                            <p class="font-mono text-xs uppercase tracking-widest text-ink/60">
+                                Friends-of-Maya deal
+                            </p>
+                            <p class="mt-2 font-display text-5xl font-black text-flame">
+                                20% OFF
+                            </p>
+                            <p class="mt-1 text-sm">any pastry box, Saturday only</p>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex -space-x-2">
+                                <span class="h-7 w-7 rounded-full border-[1.5px] border-ink"
+                                    style="background: #F55555"></span>
+                                <span class="h-7 w-7 rounded-full border-[1.5px] border-ink"
+                                    style="background: #FFC531"></span>
+                                <span class="h-7 w-7 rounded-full border-[1.5px] border-ink"
+                                    style="background: #111111"></span>
+                                <span class="ml-3 self-center font-mono text-xs text-ink/60">
+                                    +47 shared
+                                </span>
+                            </div>
+                            <button
+                                class="border-[1.5px] border-ink bg-ink px-3 py-1.5 text-xs font-semibold text-paper">
+                                Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="overflow-hidden border-b border-ink bg-ink py-4 text-paper">
+        <div
+            class="flex animate-[scroll_30s_linear_infinite] gap-12 whitespace-nowrap font-mono text-sm tracking-widest">
+            <span class="flex items-center gap-12">INDEPENDENT CAFÉS<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">FAMILY RESTAURANTS<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">CORNER BOOKSTORES<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">NEIGHBORHOOD BARBERS<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">RECORD SHOPS<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">FLORISTS<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">TATTOO STUDIOS<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">BIKE SHOPS<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">INDEPENDENT CAFÉS<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">FAMILY RESTAURANTS<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">CORNER BOOKSTORES<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">NEIGHBORHOOD BARBERS<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">RECORD SHOPS<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">FLORISTS<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">TATTOO STUDIOS<span class="text-hype">★</span></span>
+            <span class="flex items-center gap-12">BIKE SHOPS<span class="text-hype">★</span></span>
+        </div>
+        <style>
+            @keyframes scroll {
+                from {
+                    transform: translateX(0)
+                }
+
+                to {
+                    transform: translateX(-50%)
+                }
+            }
+        </style>
+    </div>
+
+    <section id="why" class="border-b border-ink bg-ink text-paper">
+        <div class="mx-auto max-w-7xl px-6 py-24">
+            <div class="grid gap-12 md:grid-cols-12">
+                <div class="md:col-span-5">
+                    <span class="tape">Why OfferEvo exists</span>
+                    <h2 class="mt-5 font-display text-4xl font-black leading-tight sm:text-5xl">
+                        The chains have <span class="text-hype">billion-dollar</span> ad
+                        budgets.
+                    </h2>
+                    <h2 class="mt-2 font-display text-4xl font-black leading-tight sm:text-5xl">
+                        Small spots have <span class="text-flame">you.</span>
+                    </h2>
+                    <p class="mt-6 text-lg text-paper/70">
+                        OfferEvo turns regulars into a marketing team that actually moves the
+                        needle. Every drop is real, vouched-for, and shared by someone who
+                        already loves the place.
+                    </p>
+                </div>
+
+                <div class="md:col-span-7">
+                    <div class="grid gap-px bg-paper/20">
+                        <div class="flex items-baseline justify-between gap-6 bg-ink py-8">
+                            <span class="font-display text-6xl font-black text-hype sm:text-7xl">73%</span>
+                            <span class="max-w-xs text-right text-sm leading-snug text-paper/80">of small businesses
+                                can't afford paid ads</span>
+                        </div>
+                        <div class="flex items-baseline justify-between gap-6 bg-ink py-8">
+                            <span class="font-display text-6xl font-black text-hype sm:text-7xl">4.2×</span>
+                            <span class="max-w-xs text-right text-sm leading-snug text-paper/80">more likely to try a
+                                spot a friend recommends</span>
+                        </div>
+                        <div class="flex items-baseline justify-between gap-6 bg-ink py-8">
+                            <span class="font-display text-6xl font-black text-hype sm:text-7xl">$0</span>
+                            <span class="max-w-xs text-right text-sm leading-snug text-paper/80">what Plug costs the
+                                business — ever</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="border-b border-ink">
+        <div class="grid w-full gap-0 md:grid-cols-2">
+            <div class="grid md:min-h-[760px] md:grid-rows-2">
+                <div class="flex flex-col justify-between border-b border-ink bg-[#FFC531] p-12 md:p-16">
+                    <div>
+                        <span class="tape">Early Access</span>
+                        <h3 class="mt-5 font-display text-4xl font-black leading-tight text-ink">
+                            Join the waitlist.
+                        </h3>
+                        <p class="mt-4 max-w-md text-ink/70">
+                            We are rolling out Plug city by city. Drop your email below to get early access and save the
+                            spots you love.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-between bg-[#F55555] p-12 text-paper md:p-16">
+                    <div>
+                        <span class="tape border-paper bg-paper text-ink">For businesses</span>
+                        <h3 class="mt-5 font-display text-4xl font-black leading-tight">
+                            Let your regulars do the talking.
+                        </h3>
+                        <p class="mt-4 max-w-md text-paper/80">
+                            Claim your spot in 2 minutes. Approve drops with one tap. Watch new
+                            faces walk in because someone told them.
+                        </p>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="mailto:offerevo@outlook.com"
+                            class="inline-flex items-center gap-2 border-[1.5px] border-paper bg-paper px-6 py-3 font-semibold text-ink"
+                            style="box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.18);">
+                            Contact us to claim →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center bg-ink p-12 text-paper md:p-16">
+                <div class="mx-auto w-full max-w-md">
+                    <span class="tape border-paper/20 bg-paper text-ink">Join Plug</span>
+                    <h3 class="mt-5 font-display text-4xl font-black leading-tight">
+                        Get early access
+                    </h3>
+                    <p class="mt-4 text-paper/70">
+                        Fill the form below and we’ll reach out when Plug opens in your city.
+                    </p>
+
+                    <div id="hubspot-waitlist-container" class="mt-8 w-full"></div>
+                </div>
+
+                <style>
+                    .plug-hubspot-form,
+                    .plug-hubspot-form .hs-form,
+                    .plug-hubspot-form .hs-form-field,
+                    .plug-hubspot-form .legal-consent-container {
+                        color: #fff6e9;
+                    }
+
+                    .plug-hubspot-form label,
+                    .plug-hubspot-form .hs-richtext,
+                    .plug-hubspot-form .hs-form-field label span {
+                        color: #fff6e9 !important;
+                    }
+
+                    .plug-hubspot-form input,
+                    .plug-hubspot-form textarea,
+                    .plug-hubspot-form select {
+                        width: 100% !important;
+                        border: 1.5px solid rgba(255, 255, 255, 0.2) !important;
+                        background: #141414 !important;
+                        color: #ffffff !important;
+                        padding: 14px 16px !important;
+                        border-radius: 0 !important;
+                        box-shadow: none !important;
+                    }
+
+                    .plug-hubspot-form input::placeholder,
+                    .plug-hubspot-form textarea::placeholder {
+                        color: rgba(255, 255, 255, 0.45) !important;
+                    }
+
+                    .plug-hubspot-form .hs-button {
+                        border: 1.5px solid #000 !important;
+                        background: #FFC531 !important;
+                        color: #111 !important;
+                        font-weight: 700 !important;
+                        padding: 14px 22px !important;
+                        box-shadow: 6px 6px 0 0 #F55555 !important;
+                    }
+
+                    .plug-hubspot-form .hs-error-msg,
+                    .plug-hubspot-form .hs-error-msgs label {
+                        color: #ffb3b3 !important;
+                    }
+
+                    .plug-hubspot-form ul {
+                        padding-left: 0 !important;
+                        list-style: none !important;
+                    }
+                </style>
+
+                <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+                <script>
+                    hbspt.forms.create({
+                        region: "na2",
+                        portalId: "246619724",
+                        formId: "c38d6c11-f282-4186-b919-7fc07a1f6b67",
+                        target: "#hubspot-waitlist-container",
+                        css: "",
+                        cssClass: "plug-hubspot-form"
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-paper">
+        <div
+            class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-6 py-12 md:flex-row md:items-end">
+            <div>
+                <div class="flex items-center gap-2">
+                    <div class="grid h-8 w-8 place-items-center border-[1.5px] border-ink bg-hype">
+                        <span class="font-display text-base font-black leading-none">P</span>
+                    </div>
+                    <span class="font-display text-2xl font-black">PLUG</span>
+                </div>
+                <p class="mt-3 max-w-sm text-sm text-ink/60">
+                    Built by people who'd rather wait in line at the family-run spot than
+                    skip it for the chain.
+                </p>
+            </div>
+            <div class="flex flex-wrap gap-8 font-mono text-xs uppercase tracking-widest">
+                <a href="#how" class="hover:text-flame">How it works</a>
+                <a href="#why" class="hover:text-flame">Why</a>
+                <a href="#join" class="hover:text-flame">Get the app</a>
+                <a href="#" class="hover:text-flame">Privacy</a>
+            </div>
+        </div>
+        <div class="border-t border-ink py-4 text-center font-mono text-[11px] uppercase tracking-widest text-ink/60">
+            © 2026 OfferEVO · From Pakistan with love · Made in Malaysia · All rights reserved
+        </div>
+    </footer>
+
+</body>
+
+</html>
