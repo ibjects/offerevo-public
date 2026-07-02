@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OfferEvo - Create Offer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;700;900&family=Archivo+Condensed:wght@700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="min-h-screen bg-paper text-ink overflow-x-hidden flex flex-col">
+
+    <header class="sticky top-0 z-50 border-b border-ink bg-paper">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="./images/offer-evo.svg" alt="Offer Evo" class="h-8 w-8 object-contain" />
+                <span class="font-display text-2xl font-black tracking-tight">OfferEvo</span>
+            </a>
+            <nav class="hidden items-center gap-8 text-sm font-medium md:flex">
+                <a href="/#how" class="hover:text-flame">How it works</a>
+                <a href="/#why" class="hover:text-flame">Why OfferEvo</a>
+                <a href="/#join" class="hover:text-flame">For businesses</a>
+            </nav>
+            <a href="/#join"
+                class="inline-flex items-center gap-2 border-[1.5px] border-ink bg-ink px-4 py-2 text-sm font-semibold text-paper transition-transform hover:-translate-y-0.5">
+                Get the app →
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-1 grid md:grid-cols-12 border-b border-ink">
+
+        <div class="md:col-span-5 border-b md:border-b-0 md:border-r border-ink bg-paper p-8 md:p-12 lg:p-16">
+            <span class="tape mb-4">Playground</span>
+            <h2 class="font-display text-4xl font-black leading-tight mb-8">Design & Preview Offer</h2>
+
+            <div class="form-label">
+                <span>Select Business</span>
+            </div>
+            <select id="businessSelect" class="form-input bg-paper cursor-pointer appearance-none rounded-none">
+                <option value="bennys" selected>BENNY'S Coffee</option>
+                <option value="rosas">Rosa's Corner Bakery</option>
+                <option value="joes">Joe's Smashburgers</option>
+                <option value="inked">Inked Tattoo Studio</option>
+            </select>
+
+            <div class="form-label">
+                <span>Offer Title</span>
+                <span id="titleCount" class="font-mono text-xs text-ink/50">22/42</span>
+            </div>
+            <textarea id="offerTitle" class="form-input rounded-none resize-none" rows="2"
+                maxlength="42">Buy 2 get 1 drink free</textarea>
+
+            <div class="form-label">
+                <span>Small Description</span>
+                <span id="descCount" class="font-mono text-xs text-ink/50">38/40</span>
+            </div>
+            <input type="text" id="offerDesc" class="form-input rounded-none" maxlength="40"
+                value="FRIENDS-OF-MAYA DEAL • On All Weekdays">
+
+            <div class="mt-10 border-t-[1.5px] border-ink pt-6">
+                <h3 class="font-display font-black text-xl mb-4">Theme Color</h3>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex flex-col">
+                        <span class="font-mono text-sm font-semibold">Accent Color</span>
+                        <span class="font-mono text-[11px] text-ink/60">Applies to background, title, and icons</span>
+                    </div>
+                    <input type="color" id="themeColor" value="#E94C44">
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="md:col-span-7 relative flex items-center justify-center bg-[#f9f9f9] p-8 md:p-12 shadow-[inset_10px_0_20px_rgba(0,0,0,0.03)] min-h-[600px]">
+
+            <div id="offerPreview" class="offer-preview relative w-full max-w-[385px] mx-auto mt-6 ml-4">
+
+                <div class="preview-bg absolute -top-[23px] -left-[16px] w-full h-[105%] border-[1px] border-ink z-0"></div>
+
+                <div class="preview-card relative bg-paper border-[2px] border-ink p-5 z-10">
+
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="font-mono text-[#707070] text-[12px] uppercase tracking-wider">
+                            By <span class="preview-accent">@MAYA123</span> • 2H AGO
+                        </div>
+                        <div id="previewLabel"
+                            class="px-2 py-0.5 font-black uppercase text-paper bg-ink text-[12px] tracking-widest leading-none flex items-center h-[22px]">
+                            COFFEE
+                        </div>
+                    </div>
+
+                    <h3 id="previewBusinessName"
+                        class="font-condensed font-bold text-[24px] tracking-tight leading-none mb-1 text-ink">BENNY'S
+                        Coffee</h3>
+                    <p id="previewAddress" class="preview-accent font-mono text-[12px] underline mb-4">123
+                        Frankford Ave • PH, USA</p>
+
+                    <div class="border-t border-dashed border-ink my-4"></div>
+
+                    <div class="flex flex-col justify-center min-h-[90px]">
+                        <h1 id="previewTitle" class="preview-accent font-black text-[36px] leading-[1.1] mb-2 break-words">
+                            Buy 2 get 1 drink<br>free
+                        </h1>
+                        <p id="previewDesc" class="font-mono text-[14px] text-[#707070] uppercase">
+                            FRIENDS-OF-MAYA DEAL • On All Weekdays
+                        </p>
+                    </div>
+
+                    <div class="border-t border-dashed border-ink my-4"></div>
+
+                    <div
+                        class="flex items-center justify-between font-mono text-[10px] font-bold text-[#808080] uppercase">
+
+                        <div class="flex items-center gap-1.5">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="#000" stroke="#000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg>
+                            <span class="font-bold text-[10px]">4.9</span>
+                        </div>
+
+                        <div class="flex items-center gap-1.5">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span class="font-bold text-[10px]">24 Days</span>
+                        </div>
+
+                        <div class="flex items-center gap-2">
+                            <span class="text-[10px]">Availed</span>
+                            <div class="w-16 h-2.5 bg-[#E3E3E3] border border-[#E3E3E3] flex overflow-hidden">
+                                <div class="preview-progress w-[30%] h-full">
+                                </div>
+                            </div>
+                            <span class="text-ink text-[10px]">3/10</span>
+                        </div>
+
+                        <button class="hover:scale-110 transition-transform">
+                            <svg class="preview-share-icon" width="20" height="20" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-paper">
+        <div
+            class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-6 py-12 md:flex-row md:items-end">
+            <div>
+                <div class="flex items-center gap-2">
+                    <div class="grid h-8 w-8 place-items-center border-[1.5px] border-ink bg-hype">
+                        <span class="font-display text-base font-black leading-none">E</span>
+                    </div>
+                    <span class="font-display text-2xl font-black">OfferEvo</span>
+                </div>
+                <p class="mt-3 max-w-sm text-sm text-ink/60">
+                    Help businesses grow by posting and sharing offers for the spots you love. OfferEvo is free for
+                    customers and small businesses.
+                </p>
+            </div>
+            <div class="flex flex-wrap gap-8 font-mono text-xs uppercase tracking-widest">
+                <a href="/#how" class="hover:text-flame">How it works</a>
+                <a href="/#why" class="hover:text-flame">Why</a>
+                <a href="/#join" class="hover:text-flame">Get the app</a>
+                <a href="#" class="hover:text-flame">Privacy</a>
+            </div>
+        </div>
+        <div class="border-t border-ink py-4 text-center font-mono text-[11px] uppercase tracking-widest text-ink/60">
+            © 2026 OfferEVO · Made in Malaysia · All rights reserved
+        </div>
+    </footer>
+
+    <script>
+        // Business Database
+        const businesses = {
+            'bennys': { name: "BENNY'S Coffee", address: "123 Frankford Ave • PH, USA", category: "COFFEE" },
+            'rosas': { name: "Rosa's Corner Bakery", address: "456 Market St • NY, USA", category: "BAKERY" },
+            'joes': { name: "Joe's Smashburgers", address: "789 Main St • CA, USA", category: "BURGER" },
+            'inked': { name: "Inked Tattoo Studio", address: "101 Art Blvd • TX, USA", category: "LIFESTYLE" }
+        };
+
+        // Inputs
+        const selectBusiness = document.getElementById('businessSelect');
+        const inputTitle = document.getElementById('offerTitle');
+        const inputDesc = document.getElementById('offerDesc');
+        const themeColor = document.getElementById('themeColor');
+        const titleCount = document.getElementById('titleCount');
+        const descCount = document.getElementById('descCount');
+
+        // Preview Elements
+        const prevBusinessName = document.getElementById('previewBusinessName');
+        const prevAddress = document.getElementById('previewAddress');
+        const prevLabel = document.getElementById('previewLabel');
+        const prevTitle = document.getElementById('previewTitle');
+        const prevDesc = document.getElementById('previewDesc');
+        const offerPreview = document.getElementById('offerPreview');
+
+        // Function to determine if a hex color is too bright (Luminance check)
+        // This solves the edge case where a user selects White (#ffffff)
+        function getOptimalTextColor(hexCode) {
+            let hex = hexCode.replace('#', '');
+            let r = parseInt(hex.substr(0, 2), 16);
+            let g = parseInt(hex.substr(2, 2), 16);
+            let b = parseInt(hex.substr(4, 2), 16);
+            // Calculate YIQ ratio
+            let yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+            // If color is too bright, return black, otherwise return the original color
+            return (yiq >= 200) ? '#111111' : hexCode;
+        }
+
+        // Update Business Details
+        selectBusiness.addEventListener('change', (e) => {
+            const data = businesses[e.target.value];
+            prevBusinessName.textContent = data.name;
+            prevAddress.textContent = data.address;
+            prevLabel.textContent = data.category;
+        });
+
+        // Update Text & Character Counts
+        inputTitle.addEventListener('input', (e) => {
+            let val = e.target.value;
+            titleCount.textContent = `${val.length}/42`;
+            prevTitle.innerHTML = val.replace(/\n/g, '<br>');
+        });
+
+        inputDesc.addEventListener('input', (e) => {
+            let val = e.target.value;
+            descCount.textContent = `${val.length}/40`;
+            prevDesc.textContent = val;
+        });
+
+        // Update Theme Color with Brightness Fallback Protection
+        themeColor.addEventListener('input', (e) => {
+            const hex = e.target.value;
+            const safeTextColor = getOptimalTextColor(hex);
+
+            offerPreview.style.setProperty('--preview-accent', hex);
+            offerPreview.style.setProperty('--preview-safe-accent', safeTextColor);
+        });
+    </script>
+</body>
+
+</html>
