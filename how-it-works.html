@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OfferEvo - How It Works</title>
+    <link rel="icon" type="image/png" href="./images/offerevo-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;700;900&family=Archivo+Condensed:wght@700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./layout.js" defer></script>
+</head>
+
+<body class="page-shell bg-paper text-ink overflow-x-hidden">
+    <div data-site-header></div>
+
+    <main>
+        <section class="page-hero">
+            <div class="page-hero-inner">
+                <span class="tape">How OfferEvo works</span>
+                <h1 class="page-title">A customer posts the deal. A business gets the visit.</h1>
+                <p class="page-kicker">
+                    OfferEvo turns local recommendations into simple, shareable discount cards. The flow is designed for
+                    people who already love a place and want their friends to try it.
+                </p>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="page-section-inner">
+                <div class="page-grid three">
+                    <article class="page-card">
+                        <span class="number-badge">01</span>
+                        <h2 class="text-3xl">Pick a business</h2>
+                        <p class="mt-4">
+                            Choose a favorite cafe, barber, bookstore, restaurant, studio, or shop from your local area.
+                        </p>
+                    </article>
+                    <article class="page-card">
+                        <span class="number-badge">02</span>
+                        <h2 class="text-3xl">Create the offer</h2>
+                        <p class="mt-4">
+                            Write a clear title, add a short description, pick a color, and preview the card before it
+                            goes live.
+                        </p>
+                    </article>
+                    <article class="page-card">
+                        <span class="number-badge">03</span>
+                        <h2 class="text-3xl">Share with friends</h2>
+                        <p class="mt-4">
+                            The deal becomes a compact card people can share, save, and use when they visit the shop.
+                        </p>
+                    </article>
+                    <article class="page-card">
+                        <span class="number-badge">04</span>
+                        <h2 class="text-3xl">Business approves</h2>
+                        <p class="mt-4">
+                            Businesses can claim their profile, approve offers, and control limits before customers use
+                            them.
+                        </p>
+                    </article>
+                    <article class="page-card">
+                        <span class="number-badge">05</span>
+                        <h2 class="text-3xl">New customers walk in</h2>
+                        <p class="mt-4">
+                            The strongest channel is still a person saying, “You should try this place.”
+                        </p>
+                    </article>
+                    <article class="page-card">
+                        <span class="number-badge">06</span>
+                        <h2 class="text-3xl">Everyone learns</h2>
+                        <p class="mt-4">
+                            Shops see what gets shared, customers see what gets used, and better local offers follow.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section cta-band">
+            <div class="page-section-inner grid gap-10 md:grid-cols-12 md:items-center">
+                <div class="md:col-span-7">
+                    <span class="tape bg-hype text-ink">Try the flow</span>
+                    <h2 class="mt-5 font-display text-5xl font-black leading-none">Design a sample offer card.</h2>
+                    <p class="mt-4 text-paper/70">
+                        Use the playground to see how titles, descriptions, business labels, and colors look before a
+                        deal goes live.
+                    </p>
+                </div>
+                <div class="md:col-span-5">
+                    <a href="offerpreview.html"
+                        class="brutal-button inline-flex items-center gap-2 border-[1.5px] border-paper bg-flame px-6 py-3 font-semibold text-paper transition-transform hover:-translate-y-0.5">
+                        Open the offer builder →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div data-site-footer></div>
+</body>
+
+</html>

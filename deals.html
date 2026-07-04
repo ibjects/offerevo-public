@@ -15,26 +15,11 @@
 
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./layout.js" defer></script>
 </head>
 
 <body class="deals-page text-ink overflow-x-hidden">
-    <header class="sticky top-0 z-50 border-b border-ink bg-paper">
-        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-            <a href="index.html" class="flex items-center gap-2">
-                <img src="./images/offer-evo.png" alt="Offer Evo" class="w-34 object-contain" />
-                <!-- <span class="font-display text-2xl font-black tracking-tight">OfferEvo</span> -->
-            </a>
-            <nav class="hidden items-center gap-8 text-sm font-medium md:flex">
-                <a href="index.html#how" class="hover:text-flame">How it works</a>
-                <a href="offerpreview.html" class="hover:text-flame">Create offer</a>
-                <a href="index.html#join" class="hover:text-flame">For businesses</a>
-            </nav>
-            <a href="offerpreview.html"
-                class="inline-flex items-center gap-2 border-[1.5px] border-ink bg-ink px-4 py-2 text-sm font-semibold text-paper transition-transform hover:-translate-y-0.5">
-                Make one →
-            </a>
-        </div>
-    </header>
+    <div data-site-header></div>
 
     <main>
         <section class="border-b border-ink bg-paper px-6 py-10">
@@ -66,8 +51,23 @@
                         </div>
                         <div class="deal-rule"></div>
                         <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.9</span></div>
-                            <div class="deal-stat">◷ <span>24 Days</span></div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="#000" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>4.9</span>
+                            </div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>24 Days</span>
+                            </div>
                             <div class="deal-progress">
                                 <span>Availed</span>
                                 <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
@@ -103,8 +103,23 @@
                         </div>
                         <div class="deal-rule"></div>
                         <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.8</span></div>
-                            <div class="deal-stat">◷ <span>12 Days</span></div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="#000" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>4.8</span>
+                            </div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>12 Days</span>
+                            </div>
                             <div class="deal-progress">
                                 <span>Availed</span>
                                 <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
@@ -140,8 +155,23 @@
                         </div>
                         <div class="deal-rule"></div>
                         <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.7</span></div>
-                            <div class="deal-stat">◷ <span>8 Days</span></div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="#000" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>4.7</span>
+                            </div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>8 Days</span>
+                            </div>
                             <div class="deal-progress">
                                 <span>Availed</span>
                                 <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
@@ -177,8 +207,23 @@
                         </div>
                         <div class="deal-rule"></div>
                         <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.9</span></div>
-                            <div class="deal-stat">◷ <span>5 Days</span></div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="#000" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>4.9</span>
+                            </div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>5 Days</span>
+                            </div>
                             <div class="deal-progress">
                                 <span>Availed</span>
                                 <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
@@ -214,8 +259,23 @@
                         </div>
                         <div class="deal-rule"></div>
                         <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.8</span></div>
-                            <div class="deal-stat">◷ <span>14 Days</span></div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="#000" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>4.8</span>
+                            </div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>14 Days</span>
+                            </div>
                             <div class="deal-progress">
                                 <span>Availed</span>
                                 <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
@@ -251,8 +311,23 @@
                         </div>
                         <div class="deal-rule"></div>
                         <div class="deal-footer">
-                            <div class="deal-stat">★ <span>5.0</span></div>
-                            <div class="deal-stat">◷ <span>18 Days</span></div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="#000" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>5.0</span>
+                            </div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>18 Days</span>
+                            </div>
                             <div class="deal-progress">
                                 <span>Availed</span>
                                 <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
@@ -288,8 +363,23 @@
                         </div>
                         <div class="deal-rule"></div>
                         <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.6</span></div>
-                            <div class="deal-stat">◷ <span>3 Days</span></div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="#000" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>4.6</span>
+                            </div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>3 Days</span>
+                            </div>
                             <div class="deal-progress">
                                 <span>Availed</span>
                                 <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
@@ -325,8 +415,23 @@
                         </div>
                         <div class="deal-rule"></div>
                         <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.7</span></div>
-                            <div class="deal-stat">◷ <span>21 Days</span></div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="#000" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>4.7</span>
+                            </div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>21 Days</span>
+                            </div>
                             <div class="deal-progress">
                                 <span>Availed</span>
                                 <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
@@ -362,8 +467,23 @@
                         </div>
                         <div class="deal-rule"></div>
                         <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.9</span></div>
-                            <div class="deal-stat">◷ <span>6 Days</span></div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="#000" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>4.9</span>
+                            </div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>6 Days</span>
+                            </div>
                             <div class="deal-progress">
                                 <span>Availed</span>
                                 <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
@@ -399,8 +519,23 @@
                         </div>
                         <div class="deal-rule"></div>
                         <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.8</span></div>
-                            <div class="deal-stat">◷ <span>9 Days</span></div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="#000" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>4.8</span>
+                            </div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>9 Days</span>
+                            </div>
                             <div class="deal-progress">
                                 <span>Availed</span>
                                 <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
@@ -436,8 +571,23 @@
                         </div>
                         <div class="deal-rule"></div>
                         <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.9</span></div>
-                            <div class="deal-stat">◷ <span>11 Days</span></div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="#000" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>4.9</span>
+                            </div>
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>11 Days</span>
+                            </div>
                             <div class="deal-progress">
                                 <span>Availed</span>
                                 <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
@@ -473,451 +623,23 @@
                         </div>
                         <div class="deal-rule"></div>
                         <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.7</span></div>
-                            <div class="deal-stat">◷ <span>4 Days</span></div>
-                            <div class="deal-progress">
-                                <span>Availed</span>
-                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
-                                <span class="text-ink">15/25</span>
-                            </div>
-                            <a href="#" class="deal-share-link" aria-label="Share deal">
-                                <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="#000" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
                                 </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- All new deals -->
-
-            <article class="deal-tile offer-preview deal-color-3">
-                <div class="deal-frame">
-                    <div class="deal-accent"></div>
-                    <div class="deal-card">
-                        <a href="#" class="deal-card-hitarea" aria-label="Open deal"></a>
-                        <div class="deal-card-top">
-                            <div class="deal-meta">By <a href="#" class="preview-accent deal-user">@JAYFOOD</a> • 6H AGO
+                                <span>4.7</span>
                             </div>
-                            <div class="deal-label">BURGER</div>
-                        </div>
-                        <h2 class="deal-business">Joe's Smashburgers</h2>
-                        <a href="#" class="deal-address">789 Main St • CA, USA</a>
-                        <div class="deal-rule"></div>
-                        <div class="deal-copy">
-                            <h3 class="deal-title">Free fries with smashburger</h3>
-                            <p class="deal-description">Lunch special for hungry crews</p>
-                        </div>
-                        <div class="deal-rule"></div>
-                        <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.7</span></div>
-                            <div class="deal-stat">◷ <span>8 Days</span></div>
-                            <div class="deal-progress">
-                                <span>Availed</span>
-                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
-                                <span class="text-ink">9/15</span>
-                            </div>
-                            <a href="#" class="deal-share-link" aria-label="Share deal">
-                                <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            <div class="deal-stat">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
                                 </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="deal-tile offer-preview deal-color-7">
-                <div class="deal-frame">
-                    <div class="deal-accent"></div>
-                    <div class="deal-card">
-                        <a href="#" class="deal-card-hitarea" aria-label="Open deal"></a>
-                        <div class="deal-card-top">
-                            <div class="deal-meta">By <a href="#" class="preview-accent deal-user">@VINYLVAL</a> • 2D
-                                AGO</div>
-                            <div class="deal-label">MUSIC</div>
-                        </div>
-                        <h2 class="deal-business">Needle Drop Records</h2>
-                        <a href="#" class="deal-address">14 Cedar Way • WA, USA</a>
-                        <div class="deal-rule"></div>
-                        <div class="deal-copy">
-                            <h3 class="deal-title">Buy one record, get one half off</h3>
-                            <p class="deal-description">Crate-digger deal until Sunday</p>
-                        </div>
-                        <div class="deal-rule"></div>
-                        <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.6</span></div>
-                            <div class="deal-stat">◷ <span>3 Days</span></div>
-                            <div class="deal-progress">
-                                <span>Availed</span>
-                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
-                                <span class="text-ink">11/30</span>
+                                <span>4 Days</span>
                             </div>
-                            <a href="#" class="deal-share-link" aria-label="Share deal">
-                                <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="deal-tile offer-preview deal-color-2">
-                <div class="deal-frame">
-                    <div class="deal-accent"></div>
-                    <div class="deal-card">
-                        <a href="#" class="deal-card-hitarea" aria-label="Open deal"></a>
-                        <div class="deal-card-top">
-                            <div class="deal-meta">By <a href="#" class="preview-accent deal-user">@NORA88</a> • 4H AGO
-                            </div>
-                            <div class="deal-label">BAKERY</div>
-                        </div>
-                        <h2 class="deal-business">Rosa's Corner Bakery</h2>
-                        <a href="#" class="deal-address">456 Market St • NY, USA</a>
-                        <div class="deal-rule"></div>
-                        <div class="deal-copy">
-                            <h3 class="deal-title">Half off any pastry box</h3>
-                            <p class="deal-description">Fresh batches every Saturday morning</p>
-                        </div>
-                        <div class="deal-rule"></div>
-                        <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.8</span></div>
-                            <div class="deal-stat">◷ <span>12 Days</span></div>
-                            <div class="deal-progress">
-                                <span>Availed</span>
-                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
-                                <span class="text-ink">6/20</span>
-                            </div>
-                            <a href="#" class="deal-share-link" aria-label="Share deal">
-                                <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="deal-tile offer-preview deal-color-5">
-                <div class="deal-frame">
-                    <div class="deal-accent"></div>
-                    <div class="deal-card">
-                        <a href="#" class="deal-card-hitarea" aria-label="Open deal"></a>
-                        <div class="deal-card-top">
-                            <div class="deal-meta">By <a href="#" class="preview-accent deal-user">@OMARFADE</a> • 1D
-                                AGO</div>
-                            <div class="deal-label">BARBER</div>
-                        </div>
-                        <h2 class="deal-business">Northside Barber</h2>
-                        <a href="#" class="deal-address">88 Union Rd • IL, USA</a>
-                        <div class="deal-rule"></div>
-                        <div class="deal-copy">
-                            <h3 class="deal-title">Free trim with any full cut</h3>
-                            <p class="deal-description">Neighborhood barber weekday deal</p>
-                        </div>
-                        <div class="deal-rule"></div>
-                        <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.8</span></div>
-                            <div class="deal-stat">◷ <span>14 Days</span></div>
-                            <div class="deal-progress">
-                                <span>Availed</span>
-                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
-                                <span class="text-ink">7/25</span>
-                            </div>
-                            <a href="#" class="deal-share-link" aria-label="Share deal">
-                                <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="deal-tile offer-preview deal-color-11">
-                <div class="deal-frame">
-                    <div class="deal-accent"></div>
-                    <div class="deal-card">
-                        <a href="#" class="deal-card-hitarea" aria-label="Open deal"></a>
-                        <div class="deal-card-top">
-                            <div class="deal-meta">By <a href="#" class="preview-accent deal-user">@FLOWNIA</a> • 4D AGO
-                            </div>
-                            <div class="deal-label">YOGA</div>
-                        </div>
-                        <h2 class="deal-business">Sunroom Yoga</h2>
-                        <a href="#" class="deal-address">57 Lake Dr • MN, USA</a>
-                        <div class="deal-rule"></div>
-                        <div class="deal-copy">
-                            <h3 class="deal-title">30% off yoga drop-in class</h3>
-                            <p class="deal-description">New student flow all week long</p>
-                        </div>
-                        <div class="deal-rule"></div>
-                        <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.9</span></div>
-                            <div class="deal-stat">◷ <span>11 Days</span></div>
-                            <div class="deal-progress">
-                                <span>Availed</span>
-                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
-                                <span class="text-ink">12/40</span>
-                            </div>
-                            <a href="#" class="deal-share-link" aria-label="Share deal">
-                                <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="deal-tile offer-preview deal-color-12">
-                <div class="deal-frame">
-                    <div class="deal-accent"></div>
-                    <div class="deal-card">
-                        <a href="#" class="deal-card-hitarea" aria-label="Open deal"></a>
-                        <div class="deal-card-top">
-                            <div class="deal-meta">By <a href="#" class="preview-accent deal-user">@SCOOPKID</a> • 5D
-                                AGO</div>
-                            <div class="deal-label">SWEETS</div>
-                        </div>
-                        <h2 class="deal-business">Marble Cone Creamery</h2>
-                        <a href="#" class="deal-address">18 Pine Walk • MI, USA</a>
-                        <div class="deal-rule"></div>
-                        <div class="deal-copy">
-                            <h3 class="deal-title">Free scoop with waffle cone</h3>
-                            <p class="deal-description">After-school treats until Friday</p>
-                        </div>
-                        <div class="deal-rule"></div>
-                        <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.7</span></div>
-                            <div class="deal-stat">◷ <span>4 Days</span></div>
-                            <div class="deal-progress">
-                                <span>Availed</span>
-                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
-                                <span class="text-ink">15/25</span>
-                            </div>
-                            <a href="#" class="deal-share-link" aria-label="Share deal">
-                                <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="deal-tile offer-preview deal-color-11">
-                <div class="deal-frame">
-                    <div class="deal-accent"></div>
-                    <div class="deal-card">
-                        <a href="#" class="deal-card-hitarea" aria-label="Open deal"></a>
-                        <div class="deal-card-top">
-                            <div class="deal-meta">By <a href="#" class="preview-accent deal-user">@FLOWNIA</a> • 4D AGO
-                            </div>
-                            <div class="deal-label">YOGA</div>
-                        </div>
-                        <h2 class="deal-business">Sunroom Yoga</h2>
-                        <a href="#" class="deal-address">57 Lake Dr • MN, USA</a>
-                        <div class="deal-rule"></div>
-                        <div class="deal-copy">
-                            <h3 class="deal-title">30% off yoga drop-in class</h3>
-                            <p class="deal-description">New student flow all week long</p>
-                        </div>
-                        <div class="deal-rule"></div>
-                        <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.9</span></div>
-                            <div class="deal-stat">◷ <span>11 Days</span></div>
-                            <div class="deal-progress">
-                                <span>Availed</span>
-                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
-                                <span class="text-ink">12/40</span>
-                            </div>
-                            <a href="#" class="deal-share-link" aria-label="Share deal">
-                                <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="deal-tile offer-preview deal-color-12">
-                <div class="deal-frame">
-                    <div class="deal-accent"></div>
-                    <div class="deal-card">
-                        <a href="#" class="deal-card-hitarea" aria-label="Open deal"></a>
-                        <div class="deal-card-top">
-                            <div class="deal-meta">By <a href="#" class="preview-accent deal-user">@SCOOPKID</a> • 5D
-                                AGO</div>
-                            <div class="deal-label">SWEETS</div>
-                        </div>
-                        <h2 class="deal-business">Marble Cone Creamery</h2>
-                        <a href="#" class="deal-address">18 Pine Walk • MI, USA</a>
-                        <div class="deal-rule"></div>
-                        <div class="deal-copy">
-                            <h3 class="deal-title">Free scoop with waffle cone</h3>
-                            <p class="deal-description">After-school treats until Friday</p>
-                        </div>
-                        <div class="deal-rule"></div>
-                        <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.7</span></div>
-                            <div class="deal-stat">◷ <span>4 Days</span></div>
-                            <div class="deal-progress">
-                                <span>Availed</span>
-                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
-                                <span class="text-ink">15/25</span>
-                            </div>
-                            <a href="#" class="deal-share-link" aria-label="Share deal">
-                                <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <article class="deal-tile offer-preview deal-color-12">
-                <div class="deal-frame">
-                    <div class="deal-accent"></div>
-                    <div class="deal-card">
-                        <a href="#" class="deal-card-hitarea" aria-label="Open deal"></a>
-                        <div class="deal-card-top">
-                            <div class="deal-meta">By <a href="#" class="preview-accent deal-user">@SCOOPKID</a> • 5D
-                                AGO</div>
-                            <div class="deal-label">SWEETS</div>
-                        </div>
-                        <h2 class="deal-business">Marble Cone Creamery</h2>
-                        <a href="#" class="deal-address">18 Pine Walk • MI, USA</a>
-                        <div class="deal-rule"></div>
-                        <div class="deal-copy">
-                            <h3 class="deal-title">Free scoop with waffle cone</h3>
-                            <p class="deal-description">After-school treats until Friday</p>
-                        </div>
-                        <div class="deal-rule"></div>
-                        <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.7</span></div>
-                            <div class="deal-stat">◷ <span>4 Days</span></div>
-                            <div class="deal-progress">
-                                <span>Availed</span>
-                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
-                                <span class="text-ink">15/25</span>
-                            </div>
-                            <a href="#" class="deal-share-link" aria-label="Share deal">
-                                <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="deal-tile offer-preview deal-color-12">
-                <div class="deal-frame">
-                    <div class="deal-accent"></div>
-                    <div class="deal-card">
-                        <a href="#" class="deal-card-hitarea" aria-label="Open deal"></a>
-                        <div class="deal-card-top">
-                            <div class="deal-meta">By <a href="#" class="preview-accent deal-user">@SCOOPKID</a> • 5D
-                                AGO</div>
-                            <div class="deal-label">SWEETS</div>
-                        </div>
-                        <h2 class="deal-business">Marble Cone Creamery</h2>
-                        <a href="#" class="deal-address">18 Pine Walk • MI, USA</a>
-                        <div class="deal-rule"></div>
-                        <div class="deal-copy">
-                            <h3 class="deal-title">Free scoop with waffle cone</h3>
-                            <p class="deal-description">After-school treats until Friday</p>
-                        </div>
-                        <div class="deal-rule"></div>
-                        <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.7</span></div>
-                            <div class="deal-stat">◷ <span>4 Days</span></div>
-                            <div class="deal-progress">
-                                <span>Availed</span>
-                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
-                                <span class="text-ink">15/25</span>
-                            </div>
-                            <a href="#" class="deal-share-link" aria-label="Share deal">
-                                <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="deal-tile offer-preview deal-color-12">
-                <div class="deal-frame">
-                    <div class="deal-accent"></div>
-                    <div class="deal-card">
-                        <a href="#" class="deal-card-hitarea" aria-label="Open deal"></a>
-                        <div class="deal-card-top">
-                            <div class="deal-meta">By <a href="#" class="preview-accent deal-user">@SCOOPKID</a> • 5D
-                                AGO</div>
-                            <div class="deal-label">SWEETS</div>
-                        </div>
-                        <h2 class="deal-business">Marble Cone Creamery</h2>
-                        <a href="#" class="deal-address">18 Pine Walk • MI, USA</a>
-                        <div class="deal-rule"></div>
-                        <div class="deal-copy">
-                            <h3 class="deal-title">Free scoop with waffle cone</h3>
-                            <p class="deal-description">After-school treats until Friday</p>
-                        </div>
-                        <div class="deal-rule"></div>
-                        <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.7</span></div>
-                            <div class="deal-stat">◷ <span>4 Days</span></div>
-                            <div class="deal-progress">
-                                <span>Availed</span>
-                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
-                                <span class="text-ink">15/25</span>
-                            </div>
-                            <a href="#" class="deal-share-link" aria-label="Share deal">
-                                <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="deal-tile offer-preview deal-color-12">
-                <div class="deal-frame">
-                    <div class="deal-accent"></div>
-                    <div class="deal-card">
-                        <a href="#" class="deal-card-hitarea" aria-label="Open deal"></a>
-                        <div class="deal-card-top">
-                            <div class="deal-meta">By <a href="#" class="preview-accent deal-user">@SCOOPKID</a> • 5D
-                                AGO</div>
-                            <div class="deal-label">SWEETS</div>
-                        </div>
-                        <h2 class="deal-business">Marble Cone Creamery</h2>
-                        <a href="#" class="deal-address">18 Pine Walk • MI, USA</a>
-                        <div class="deal-rule"></div>
-                        <div class="deal-copy">
-                            <h3 class="deal-title">Free scoop with waffle cone</h3>
-                            <p class="deal-description">After-school treats until Friday</p>
-                        </div>
-                        <div class="deal-rule"></div>
-                        <div class="deal-footer">
-                            <div class="deal-stat">★ <span>4.7</span></div>
-                            <div class="deal-stat">◷ <span>4 Days</span></div>
                             <div class="deal-progress">
                                 <span>Availed</span>
                                 <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
@@ -935,6 +657,7 @@
             </article>
         </section>
     </main>
+    <div data-site-footer></div>
 </body>
 
 </html>
