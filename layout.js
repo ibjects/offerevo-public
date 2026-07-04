@@ -20,7 +20,7 @@ const siteFooter = `
     <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-6 py-12 md:flex-row md:items-end">
         <div>
             <div class="flex items-center gap-2">
-                <img src="./images/offer-evo.png" alt="Offer Evo" class="w-34 object-contain" />
+                <img src="./images/offerevo-black.png" alt="Offer Evo" class="w-34 object-contain" />
             </div>
             <p class="mt-3 max-w-sm text-sm text-ink/60">
                 Help businesses grow by posting and sharing offers for the spots you love. OfferEvo is free for
