@@ -4,7 +4,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plug - Customer-powered marketing</title>
+
+    <title>OfferEvo - Customer-Powered Marketing & Word-of-Mouth Software</title>
+    <meta name="title" content="OfferEvo - Customer-Powered Marketing & Word-of-Mouth Software">
+    <meta name="description"
+        content="OfferEvo is a free word-of-mouth marketing platform where loyal customers create and share local discounts. Grow your small business without paying for local ads.">
+    <meta name="keywords"
+        content="customer-powered marketing, word-of-mouth marketing platform, alternative to local ads, small business referral software, local business growth, user-generated promotions, restaurant loyalty software, zero cost marketing">
+    <meta name="author" content="OfferEvo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://offerevo.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://offerevo.com/">
+    <meta property="og:title" content="OfferEvo - The Alternative to Local Ads">
+    <meta property="og:description"
+        content="Turn your regulars into your best marketers. Customers post discounts on behalf of the local businesses they love, driving real foot traffic at zero upfront cost.">
+    <meta property="og:image" content="https://offerevo.com/images/offerevo-preview.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://offerevo.com/">
+    <meta property="twitter:title" content="OfferEvo - The Alternative to Local Ads">
+    <meta property="twitter:description"
+        content="Turn your regulars into your best marketers. Customers post discounts on behalf of the local businesses they love, driving real foot traffic at zero upfront cost.">
+    <meta property="twitter:image" content="https://offerevo.com/images/offerevo-preview.jpg">
+
     <link rel="icon" type="image/png" href="./images/offerevo-icon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +40,30 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles.css">
     <script src="./layout.js" defer></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "OfferEvo",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "url": "https://offerevo.com",
+      "description": "A customer-powered word-of-mouth marketing platform where regulars create and share promotional discounts for local businesses, serving as a zero-cost alternative to traditional local ads.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free for customers and small businesses."
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "OfferEvo",
+        "url": "https://offerevo.com"
+      },
+      "keywords": "word of mouth marketing, local business advertising alternative, referral program software"
+    }
+    </script>
 </head>
 
 <body class="min-h-screen bg-paper text-ink overflow-x-hidden">
@@ -40,11 +88,11 @@
                     businesses they love.
                 </p>
                 <div class="mt-10 flex flex-wrap items-center gap-4">
-                    <a href="#join"
+                    <a href="join-waitlist.html"
                         class="brutal-button inline-flex items-center gap-2 border-[1.5px] border-ink bg-flame px-6 py-3 font-semibold text-paper transition-transform hover:-translate-y-0.5">
                         Post an offer →
                     </a>
-                    <a href="#how"
+                    <a href="how-it-works.html"
                         class="brutal-button inline-flex items-center gap-2 border-[1.5px] border-ink bg-paper px-6 py-3 font-semibold text-ink transition-transform hover:-translate-y-0.5">
                         See how it works
                     </a>
@@ -122,16 +170,35 @@
         </div>
     </section>
 
+    <section class="border-b border-ink bg-hype">
+        <div class="mx-auto max-w-5xl px-6 py-24 text-center">
+            <span class="tape tape-paper">
+                The manifesto
+            </span>
+            <p class="mt-8 font-display text-3xl font-black leading-snug sm:text-5xl">
+                <span class="bg-ink px-2 text-paper">OfferEvo</span> is a community-powered marketing platform where
+                loyal regulars create and share custom
+                discounts for their
+                favorite local businesses. It replaces expensive digital ads with authentic, rewarding word-of-mouth
+                growth that drives
+                real foot traffic at zero upfront cost to the <span class="bg-ink px-2 text-paper">shop</span>.
+            </p>
+            <p class="mt-10 font-mono text-xs uppercase tracking-widest">
+                ★ Take back main street ★
+            </p>
+        </div>
+    </section>
+
     <section id="join" class="border-b border-ink">
         <div class="grid w-full gap-0 md:grid-cols-2">
             <div class="grid md:min-h-[760px] md:grid-rows-2">
-                <div class="split-panel flex flex-col justify-between border-b border-ink bg-hype py-12 md:py-16">
+                <div class="split-panel flex flex-col justify-between border-b border-hype bg-ink py-12 md:py-16">
                     <div>
-                        <span class="tape bg-black text-white">For Individuals</span>
-                        <h3 class="mt-5 font-display text-4xl font-black leading-tight text-ink">
+                        <span class="tape  border-paper bg-paper text-ink">For Individuals</span>
+                        <h3 class="mt-5 font-display text-4xl font-black leading-tight text-hype">
                             Hype your favorite spots.
                         </h3>
-                        <p class="mt-4 max-w-md text-ink/70">
+                        <p class="mt-4 max-w-md text-hype">
                             Turn your daily coffee run or weekly taco spot into perks. Drop custom discount offers for
                             the local businesses you
                             love, share them with friends, and get rewarded for your word-of-mouth.
@@ -139,7 +206,7 @@
                     </div>
 
                     <div class="mt-8">
-                        <a href="mailto:offerevo@outlook.com"
+                        <a href="join-waitlist.html"
                             class="soft-button inline-flex items-center gap-2 border-[1.5px] border-paper bg-paper px-6 py-3 font-semibold text-ink">
                             Join the waitlist →
                         </a>
@@ -160,7 +227,7 @@
                     </div>
 
                     <div class="mt-8">
-                        <a href="mailto:offerevo@outlook.com"
+                        <a href="for-business.html"
                             class="soft-button inline-flex items-center gap-2 border-[1.5px] border-paper bg-paper px-6 py-3 font-semibold text-ink">
                             Claim your business →
                         </a>
@@ -186,24 +253,6 @@
         </div>
     </section>
 
-    <section class="border-b border-ink bg-hype">
-        <div class="mx-auto max-w-5xl px-6 py-24 text-center">
-            <span class="tape tape-paper">
-                The manifesto
-            </span>
-            <p class="mt-8 font-display text-3xl font-black leading-snug sm:text-5xl">
-                <span class="bg-ink px-2 text-paper">OfferEvo</span> is a community-powered marketing platform where
-                loyal regulars create and share custom
-                discounts for their
-                favorite local businesses. It replaces expensive digital ads with authentic, rewarding word-of-mouth
-                growth that drives
-                real foot traffic at zero upfront cost to the <span class="bg-ink px-2 text-paper">shop</span>.
-            </p>
-            <p class="mt-10 font-mono text-xs uppercase tracking-widest">
-                ★ Take back main street ★
-            </p>
-        </div>
-    </section>
     <div data-site-footer></div>
 
 </body>

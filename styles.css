@@ -189,12 +189,20 @@ h4 {
 }
 
 .page-title {
-  max-width: 58rem;
+  /* 1. Remove the rigid max-width of 58rem, let the grid column control the width */
+  width: 100%;
   margin-top: 1.5rem;
   font-family: var(--font-display);
-  font-size: clamp(3rem, 8vw, 6.5rem);
+
+  /* 2. Tone down the 8vw scaling slightly so it fits in split layouts */
+  font-size: clamp(2.5rem, 5vw, 5.5rem);
+
   font-weight: 900;
   line-height: 0.95;
+
+  /* 3. The magic fix: force long words to break if they exceed the container */
+  overflow-wrap: break-word;
+  word-break: break-word; /* Fallback for older browsers */
 }
 
 .page-section {
@@ -211,8 +219,8 @@ h4 {
   display: grid;
   gap: 1.5px;
   background: var(--color-ink);
-  border-top: 1.5px solid var(--color-ink);
-  border-bottom: 1.5px solid var(--color-ink);
+  /* border-top: 1.5px solid var(--color-ink); */
+  /* border-bottom: 1.5px solid var(--color-ink); */
 }
 
 .page-card {
@@ -440,7 +448,10 @@ input[type="color"]::-webkit-color-swatch {
   background: var(--color-paper);
   box-shadow: 4px 6px 0 0 var(--color-ink);
   cursor: pointer;
-  transition: transform 0.16s ease, box-shadow 0.16s ease, background-color 0.16s ease;
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease,
+    background-color 0.16s ease;
   will-change: transform;
 }
 

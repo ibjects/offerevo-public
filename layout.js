@@ -6,7 +6,6 @@ const siteHeader = `
         </a>
         <nav class="hidden items-center gap-8 text-sm font-medium md:flex">
             <a href="how-it-works.html" class="hover:text-flame">How it works</a>
-            <a href="deals.html" class="hover:text-flame">Deals</a>
             <a href="for-business.html" class="hover:text-flame">For businesses</a>
         </nav>
         <a href="join-waitlist.html"
@@ -42,68 +41,70 @@ const siteFooter = `
 </footer>`;
 
 function mountSiteLayout() {
-    document.querySelectorAll("[data-site-header]").forEach((slot) => {
-        slot.outerHTML = siteHeader;
-    });
+  document.querySelectorAll("[data-site-header]").forEach((slot) => {
+    slot.outerHTML = siteHeader;
+  });
 
-    document.querySelectorAll("[data-site-footer]").forEach((slot) => {
-        slot.outerHTML = siteFooter;
-    });
+  document.querySelectorAll("[data-site-footer]").forEach((slot) => {
+    slot.outerHTML = siteFooter;
+  });
 }
 
 function loadHubSpotForms() {
-    const targets = [...document.querySelectorAll("[data-hubspot-form]")];
+  const targets = [...document.querySelectorAll("[data-hubspot-form]")];
 
-    if (!targets.length) {
-        return;
+  if (!targets.length) {
+    return;
+  }
+
+  const mountForms = () => {
+    if (!window.hbspt) {
+      return;
     }
 
-    const mountForms = () => {
-        if (!window.hbspt) {
-            return;
-        }
+    targets.forEach((target, index) => {
+      if (!target.id) {
+        target.id = `hubspot-waitlist-container-${index + 1}`;
+      }
 
-        targets.forEach((target, index) => {
-            if (!target.id) {
-                target.id = `hubspot-waitlist-container-${index + 1}`;
-            }
-
-            if (target.dataset.hubspotMounted === "true") {
-                return;
-            }
-
-            window.hbspt.forms.create({
-                region: "na2",
-                portalId: "246619724",
-                formId: "c38d6c11-f282-4186-b919-7fc07a1f6b67",
-                target: `#${target.id}`,
-            });
-
-            target.dataset.hubspotMounted = "true";
-        });
-    };
-
-    if (window.hbspt) {
-        mountForms();
+      if (target.dataset.hubspotMounted === "true") {
         return;
-    }
+      }
 
-    const existingScript = document.querySelector("script[src='https://js.hsforms.net/forms/embed/v2.js']");
+      window.hbspt.forms.create({
+        region: "na2",
+        portalId: "246619724",
+        formId: "c38d6c11-f282-4186-b919-7fc07a1f6b67",
+        target: `#${target.id}`,
+      });
 
-    if (existingScript) {
-        existingScript.addEventListener("load", mountForms, { once: true });
-        return;
-    }
+      target.dataset.hubspotMounted = "true";
+    });
+  };
 
-    const script = document.createElement("script");
-    script.src = "https://js.hsforms.net/forms/embed/v2.js";
-    script.charset = "utf-8";
-    script.type = "text/javascript";
-    script.addEventListener("load", mountForms);
-    document.head.appendChild(script);
+  if (window.hbspt) {
+    mountForms();
+    return;
+  }
+
+  const existingScript = document.querySelector(
+    "script[src='https://js.hsforms.net/forms/embed/v2.js']",
+  );
+
+  if (existingScript) {
+    existingScript.addEventListener("load", mountForms, { once: true });
+    return;
+  }
+
+  const script = document.createElement("script");
+  script.src = "https://js.hsforms.net/forms/embed/v2.js";
+  script.charset = "utf-8";
+  script.type = "text/javascript";
+  script.addEventListener("load", mountForms);
+  document.head.appendChild(script);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    mountSiteLayout();
-    loadHubSpotForms();
+  mountSiteLayout();
+  loadHubSpotForms();
 });
