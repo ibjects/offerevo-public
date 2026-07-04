@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OfferEvo - Deals Grid</title>
+    <link rel="icon" type="image/png" href="./images/offerevo-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;700;900&family=Archivo+Condensed:wght@700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="deals-page text-ink overflow-x-hidden">
+    <header class="sticky top-0 z-50 border-b border-ink bg-paper">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="./images/offer-evo.png" alt="Offer Evo" class="w-34 object-contain" />
+                <!-- <span class="font-display text-2xl font-black tracking-tight">OfferEvo</span> -->
+            </a>
+            <nav class="hidden items-center gap-8 text-sm font-medium md:flex">
+                <a href="index.html#how" class="hover:text-flame">How it works</a>
+                <a href="offerpreview.html" class="hover:text-flame">Create offer</a>
+                <a href="index.html#join" class="hover:text-flame">For businesses</a>
+            </nav>
+            <a href="offerpreview.html"
+                class="inline-flex items-center gap-2 border-[1.5px] border-ink bg-ink px-4 py-2 text-sm font-semibold text-paper transition-transform hover:-translate-y-0.5">
+                Make one →
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="border-b border-ink bg-paper px-6 py-10">
+            <div class="mx-auto max-w-7xl">
+                <span class="tape">Live deal board</span>
+                <h1 class="mt-5 font-display text-5xl font-black leading-none sm:text-6xl">
+                    Deals from local regulars.
+                </h1>
+            </div>
+        </section>
+
+        <section class="deals-grid">
+            <article class="deal-tile offer-preview deal-color-1">
+                <div class="deal-frame">
+                    <div class="deal-accent"></div>
+                    <div class="deal-card">
+                        <div class="deal-card-top">
+                            <div class="deal-meta">By <span class="preview-accent">@MAYA123</span> • 2H AGO</div>
+                            <div class="deal-label">COFFEE</div>
+                        </div>
+                        <h2 class="deal-business">Benny's Coffee</h2>
+                        <p class="deal-address">123 Frankford Ave • PH, USA</p>
+                        <div class="deal-rule"></div>
+                        <div class="deal-copy">
+                            <h3 class="deal-title">Buy 2 drinks, get one free</h3>
+                            <p class="deal-description">Weekday sips for loyal regulars</p>
+                        </div>
+                        <div class="deal-rule"></div>
+                        <div class="deal-footer">
+                            <div class="deal-stat">★ <span>4.9</span></div>
+                            <div class="deal-stat">◷ <span>24 Days</span></div>
+                            <div class="deal-progress">
+                                <span>Availed</span>
+                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
+                                <span class="text-ink">3/10</span>
+                            </div>
+                            <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="deal-tile offer-preview deal-color-2">
+                <div class="deal-frame">
+                    <div class="deal-accent"></div>
+                    <div class="deal-card">
+                        <div class="deal-card-top">
+                            <div class="deal-meta">By <span class="preview-accent">@NORA88</span> • 4H AGO</div>
+                            <div class="deal-label">BAKERY</div>
+                        </div>
+                        <h2 class="deal-business">Rosa's Corner Bakery</h2>
+                        <p class="deal-address">456 Market St • NY, USA</p>
+                        <div class="deal-rule"></div>
+                        <div class="deal-copy">
+                            <h3 class="deal-title">Half off any pastry box</h3>
+                            <p class="deal-description">Fresh batches every Saturday morning</p>
+                        </div>
+                        <div class="deal-rule"></div>
+                        <div class="deal-footer">
+                            <div class="deal-stat">★ <span>4.8</span></div>
+                            <div class="deal-stat">◷ <span>12 Days</span></div>
+                            <div class="deal-progress">
+                                <span>Availed</span>
+                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
+                                <span class="text-ink">6/20</span>
+                            </div>
+                            <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="deal-tile offer-preview deal-color-3">
+                <div class="deal-frame">
+                    <div class="deal-accent"></div>
+                    <div class="deal-card">
+                        <div class="deal-card-top">
+                            <div class="deal-meta">By <span class="preview-accent">@JAYFOOD</span> • 6H AGO</div>
+                            <div class="deal-label">BURGER</div>
+                        </div>
+                        <h2 class="deal-business">Joe's Smashburgers</h2>
+                        <p class="deal-address">789 Main St • CA, USA</p>
+                        <div class="deal-rule"></div>
+                        <div class="deal-copy">
+                            <h3 class="deal-title">Free fries with smashburger</h3>
+                            <p class="deal-description">Lunch special for hungry crews</p>
+                        </div>
+                        <div class="deal-rule"></div>
+                        <div class="deal-footer">
+                            <div class="deal-stat">★ <span>4.7</span></div>
+                            <div class="deal-stat">◷ <span>8 Days</span></div>
+                            <div class="deal-progress">
+                                <span>Availed</span>
+                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
+                                <span class="text-ink">9/15</span>
+                            </div>
+                            <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="deal-tile offer-preview deal-color-4">
+                <div class="deal-frame">
+                    <div class="deal-accent"></div>
+                    <div class="deal-card">
+                        <div class="deal-card-top">
+                            <div class="deal-meta">By <span class="preview-accent">@LINAFLORA</span> • 1D AGO</div>
+                            <div class="deal-label">FLORIST</div>
+                        </div>
+                        <h2 class="deal-business">Petal House</h2>
+                        <p class="deal-address">21 Grove Lane • OR, USA</p>
+                        <div class="deal-rule"></div>
+                        <div class="deal-copy">
+                            <h3 class="deal-title">20% off fresh flower bundles</h3>
+                            <p class="deal-description">Same-day blooms while stems last</p>
+                        </div>
+                        <div class="deal-rule"></div>
+                        <div class="deal-footer">
+                            <div class="deal-stat">★ <span>4.9</span></div>
+                            <div class="deal-stat">◷ <span>5 Days</span></div>
+                            <div class="deal-progress">
+                                <span>Availed</span>
+                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
+                                <span class="text-ink">4/12</span>
+                            </div>
+                            <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="deal-tile offer-preview deal-color-5">
+                <div class="deal-frame">
+                    <div class="deal-accent"></div>
+                    <div class="deal-card">
+                        <div class="deal-card-top">
+                            <div class="deal-meta">By <span class="preview-accent">@OMARFADE</span> • 1D AGO</div>
+                            <div class="deal-label">BARBER</div>
+                        </div>
+                        <h2 class="deal-business">Northside Barber</h2>
+                        <p class="deal-address">88 Union Rd • IL, USA</p>
+                        <div class="deal-rule"></div>
+                        <div class="deal-copy">
+                            <h3 class="deal-title">Free trim with any full cut</h3>
+                            <p class="deal-description">Neighborhood barber weekday deal</p>
+                        </div>
+                        <div class="deal-rule"></div>
+                        <div class="deal-footer">
+                            <div class="deal-stat">★ <span>4.8</span></div>
+                            <div class="deal-stat">◷ <span>14 Days</span></div>
+                            <div class="deal-progress">
+                                <span>Availed</span>
+                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
+                                <span class="text-ink">7/25</span>
+                            </div>
+                            <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="deal-tile offer-preview deal-color-6">
+                <div class="deal-frame">
+                    <div class="deal-accent"></div>
+                    <div class="deal-card">
+                        <div class="deal-card-top">
+                            <div class="deal-meta">By <span class="preview-accent">@INKEDKAI</span> • 2D AGO</div>
+                            <div class="deal-label">TATTOO</div>
+                        </div>
+                        <h2 class="deal-business">Inked Tattoo Studio</h2>
+                        <p class="deal-address">101 Art Blvd • TX, USA</p>
+                        <div class="deal-rule"></div>
+                        <div class="deal-copy">
+                            <h3 class="deal-title">$10 off your next tattoo</h3>
+                            <p class="deal-description">Flash art sessions all weekend</p>
+                        </div>
+                        <div class="deal-rule"></div>
+                        <div class="deal-footer">
+                            <div class="deal-stat">★ <span>5.0</span></div>
+                            <div class="deal-stat">◷ <span>18 Days</span></div>
+                            <div class="deal-progress">
+                                <span>Availed</span>
+                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
+                                <span class="text-ink">2/8</span>
+                            </div>
+                            <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="deal-tile offer-preview deal-color-7">
+                <div class="deal-frame">
+                    <div class="deal-accent"></div>
+                    <div class="deal-card">
+                        <div class="deal-card-top">
+                            <div class="deal-meta">By <span class="preview-accent">@VINYLVAL</span> • 2D AGO</div>
+                            <div class="deal-label">MUSIC</div>
+                        </div>
+                        <h2 class="deal-business">Needle Drop Records</h2>
+                        <p class="deal-address">14 Cedar Way • WA, USA</p>
+                        <div class="deal-rule"></div>
+                        <div class="deal-copy">
+                            <h3 class="deal-title">Buy one record, get one half off</h3>
+                            <p class="deal-description">Crate-digger deal until Sunday</p>
+                        </div>
+                        <div class="deal-rule"></div>
+                        <div class="deal-footer">
+                            <div class="deal-stat">★ <span>4.6</span></div>
+                            <div class="deal-stat">◷ <span>3 Days</span></div>
+                            <div class="deal-progress">
+                                <span>Availed</span>
+                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
+                                <span class="text-ink">11/30</span>
+                            </div>
+                            <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="deal-tile offer-preview deal-color-8">
+                <div class="deal-frame">
+                    <div class="deal-accent"></div>
+                    <div class="deal-card">
+                        <div class="deal-card-top">
+                            <div class="deal-meta">By <span class="preview-accent">@RIDELEE</span> • 3D AGO</div>
+                            <div class="deal-label">BIKES</div>
+                        </div>
+                        <h2 class="deal-business">Chainline Bikes</h2>
+                        <p class="deal-address">72 River St • CO, USA</p>
+                        <div class="deal-rule"></div>
+                        <div class="deal-copy">
+                            <h3 class="deal-title">Free tune-up with bike repair</h3>
+                            <p class="deal-description">Quick checks for daily commuters</p>
+                        </div>
+                        <div class="deal-rule"></div>
+                        <div class="deal-footer">
+                            <div class="deal-stat">★ <span>4.7</span></div>
+                            <div class="deal-stat">◷ <span>21 Days</span></div>
+                            <div class="deal-progress">
+                                <span>Availed</span>
+                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
+                                <span class="text-ink">5/18</span>
+                            </div>
+                            <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="deal-tile offer-preview deal-color-9">
+                <div class="deal-frame">
+                    <div class="deal-accent"></div>
+                    <div class="deal-card">
+                        <div class="deal-card-top">
+                            <div class="deal-meta">By <span class="preview-accent">@TACOTOM</span> • 3D AGO</div>
+                            <div class="deal-label">TACOS</div>
+                        </div>
+                        <h2 class="deal-business">El Patio Tacos</h2>
+                        <p class="deal-address">9 Sunset Ave • AZ, USA</p>
+                        <div class="deal-rule"></div>
+                        <div class="deal-copy">
+                            <h3 class="deal-title">Two tacos plus agua fresca</h3>
+                            <p class="deal-description">Tuesday counter special after 3PM</p>
+                        </div>
+                        <div class="deal-rule"></div>
+                        <div class="deal-footer">
+                            <div class="deal-stat">★ <span>4.9</span></div>
+                            <div class="deal-stat">◷ <span>6 Days</span></div>
+                            <div class="deal-progress">
+                                <span>Availed</span>
+                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
+                                <span class="text-ink">10/22</span>
+                            </div>
+                            <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="deal-tile offer-preview deal-color-10">
+                <div class="deal-frame">
+                    <div class="deal-accent"></div>
+                    <div class="deal-card">
+                        <div class="deal-card-top">
+                            <div class="deal-meta">By <span class="preview-accent">@PAGESAM</span> • 4D AGO</div>
+                            <div class="deal-label">BOOKS</div>
+                        </div>
+                        <h2 class="deal-business">Little Lantern Books</h2>
+                        <p class="deal-address">34 Maple Ct • MA, USA</p>
+                        <div class="deal-rule"></div>
+                        <div class="deal-copy">
+                            <h3 class="deal-title">Free tote with any book stack</h3>
+                            <p class="deal-description">Weekend reads from local shelves</p>
+                        </div>
+                        <div class="deal-rule"></div>
+                        <div class="deal-footer">
+                            <div class="deal-stat">★ <span>4.8</span></div>
+                            <div class="deal-stat">◷ <span>9 Days</span></div>
+                            <div class="deal-progress">
+                                <span>Availed</span>
+                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
+                                <span class="text-ink">8/16</span>
+                            </div>
+                            <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="deal-tile offer-preview deal-color-11">
+                <div class="deal-frame">
+                    <div class="deal-accent"></div>
+                    <div class="deal-card">
+                        <div class="deal-card-top">
+                            <div class="deal-meta">By <span class="preview-accent">@FLOWNIA</span> • 4D AGO</div>
+                            <div class="deal-label">YOGA</div>
+                        </div>
+                        <h2 class="deal-business">Sunroom Yoga</h2>
+                        <p class="deal-address">57 Lake Dr • MN, USA</p>
+                        <div class="deal-rule"></div>
+                        <div class="deal-copy">
+                            <h3 class="deal-title">30% off yoga drop-in class</h3>
+                            <p class="deal-description">New student flow all week long</p>
+                        </div>
+                        <div class="deal-rule"></div>
+                        <div class="deal-footer">
+                            <div class="deal-stat">★ <span>4.9</span></div>
+                            <div class="deal-stat">◷ <span>11 Days</span></div>
+                            <div class="deal-progress">
+                                <span>Availed</span>
+                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
+                                <span class="text-ink">12/40</span>
+                            </div>
+                            <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="deal-tile offer-preview deal-color-12">
+                <div class="deal-frame">
+                    <div class="deal-accent"></div>
+                    <div class="deal-card">
+                        <div class="deal-card-top">
+                            <div class="deal-meta">By <span class="preview-accent">@SCOOPKID</span> • 5D AGO</div>
+                            <div class="deal-label">SWEETS</div>
+                        </div>
+                        <h2 class="deal-business">Marble Cone Creamery</h2>
+                        <p class="deal-address">18 Pine Walk • MI, USA</p>
+                        <div class="deal-rule"></div>
+                        <div class="deal-copy">
+                            <h3 class="deal-title">Free scoop with waffle cone</h3>
+                            <p class="deal-description">After-school treats until Friday</p>
+                        </div>
+                        <div class="deal-rule"></div>
+                        <div class="deal-footer">
+                            <div class="deal-stat">★ <span>4.7</span></div>
+                            <div class="deal-stat">◷ <span>4 Days</span></div>
+                            <div class="deal-progress">
+                                <span>Availed</span>
+                                <span class="deal-progress-track"><span class="deal-progress-bar"></span></span>
+                                <span class="text-ink">15/25</span>
+                            </div>
+                            <svg class="deal-share-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5978 10.1439L12.598 17.1437C12.2172 17.5249 11.5665 17.351 11.4267 16.8306C11.4108 16.7712 11.4027 16.71 11.4028 16.6485V13.1687C6.40665 13.4522 2.98112 16.6922 2.01952 17.7186C1.46707 18.3086 0.483098 18.0792 0.248371 17.3058C0.206582 17.1681 0.193543 17.0233 0.210074 16.8803C0.534684 14.0577 2.08077 11.3426 4.56395 9.23566C6.62627 7.48571 9.13308 6.37537 11.4028 6.18112V2.64884C11.4023 2.11 11.9854 1.77276 12.4523 2.04182C12.5055 2.07251 12.5545 2.1101 12.598 2.15361L19.5978 9.15341C19.8715 9.42683 19.8715 9.87047 19.5978 10.1439Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
