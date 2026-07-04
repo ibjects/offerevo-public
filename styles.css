@@ -252,9 +252,15 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .deal-tile {
+  position: relative;
   min-width: 0;
   min-height: 320px;
   background: #f9f9f9;
+}
+
+.deal-tile:hover,
+.deal-tile:focus-within {
+  z-index: 10;
 }
 
 .deal-frame {
@@ -264,7 +270,7 @@ input[type="color"]::-webkit-color-swatch {
   width: 100%;
   min-height: 100%;
   padding: 23px 4px 6px 16px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .deal-accent {
@@ -290,6 +296,36 @@ input[type="color"]::-webkit-color-swatch {
   border: 2px solid var(--color-ink);
   background: var(--color-paper);
   box-shadow: 4px 6px 0 0 var(--color-ink);
+  cursor: pointer;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, background-color 0.16s ease;
+  will-change: transform;
+}
+
+.deal-card:hover,
+.deal-card:focus-within {
+  transform: translate(-4px, -4px);
+  background: #fff;
+  box-shadow: 8px 10px 0 0 var(--color-ink);
+}
+
+.deal-card-hitarea {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.deal-card > :not(.deal-card-hitarea) {
+  position: relative;
+  z-index: 2;
+}
+
+.deal-card-hitarea:focus-visible,
+.deal-user:focus-visible,
+.deal-address:focus-visible,
+.deal-share-link:focus-visible {
+  outline: 2px solid var(--preview-safe-accent);
+  outline-offset: 3px;
 }
 
 .deal-card-top,
@@ -342,6 +378,7 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .deal-address {
+  display: block;
   flex: 0 0 auto;
   overflow: hidden;
   margin-bottom: 0;
@@ -351,6 +388,24 @@ input[type="color"]::-webkit-color-swatch {
   text-overflow: ellipsis;
   text-decoration: underline;
   white-space: nowrap;
+}
+
+.deal-user,
+.deal-address,
+.deal-share-link {
+  position: relative;
+  z-index: 3;
+}
+
+.deal-user {
+  text-decoration: none;
+}
+
+.deal-user:hover,
+.deal-address:hover {
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 .deal-rule {
@@ -422,6 +477,17 @@ input[type="color"]::-webkit-color-swatch {
   width: 20px;
   height: 20px;
   fill: var(--preview-safe-accent);
+}
+
+.deal-share-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--preview-safe-accent);
+  transition: transform 0.16s ease;
+}
+
+.deal-share-link:hover {
+  transform: translate(2px, -2px) scale(1.08);
 }
 
 .deal-color-1 {
