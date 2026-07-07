@@ -217,6 +217,49 @@
             offerPreview.style.setProperty('--preview-accent', hex);
             offerPreview.style.setProperty('--preview-safe-accent', safeTextColor);
         });
+
+        // --- NEW: URL Parameter Extraction & Auto-Fill ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+
+            // Check if we have data passed from Slack
+            if (params.has('title')) {
+                const bName = params.get('bName') || "Your Business";
+                const bAddress = params.get('bAddress') || "Your Address";
+                const bCat = params.get('bCat') || "CATEGORY";
+
+                // 1. Add the custom business from Slack to the database
+                const customId = 'slack_custom_business';
+                businesses[customId] = {
+                    name: bName,
+                    address: bAddress,
+                    category: bCat
+                };
+
+                // 2. Add it to the dropdown and select it
+                const newOption = document.createElement('option');
+                newOption.value = customId;
+                newOption.text = bName;
+                selectBusiness.add(newOption);
+                selectBusiness.value = customId;
+
+                // 3. Inject the AI-generated text and color
+                inputTitle.value = params.get('title');
+                inputDesc.value = params.get('desc');
+
+                // Ensure color is a valid hex before applying
+                const aiColor = params.get('color');
+                if (/^#[0-9A-F]{6}$/i.test(aiColor)) {
+                    themeColor.value = aiColor;
+                }
+
+                // 4. Dispatch events to trigger your existing UI update functions naturally!
+                selectBusiness.dispatchEvent(new Event('change'));
+                inputTitle.dispatchEvent(new Event('input'));
+                inputDesc.dispatchEvent(new Event('input'));
+                themeColor.dispatchEvent(new Event('input'));
+            }
+        });
     </script>
 </body>
 
