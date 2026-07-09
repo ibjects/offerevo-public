@@ -61,6 +61,12 @@
                     </div>
                     <input type="color" id="themeColor" value="#E94C44">
                 </div>
+
+                <!-- NEW COMPANION COPIER BUTTON -->
+                <button id="copyTextCouponBtn"
+                    class="brutal-button mt-6 w-auto inline-flex items-center justify-center border-[1.5px] border-ink bg-hype px-4 py-2.5 font-mono text-xs font-bold text-ink transition-transform hover:-translate-y-0.5 cursor-pointer">
+                    Copy Text Version of Coupon
+                </button>
             </div>
         </div>
 
@@ -176,15 +182,12 @@
         const offerPreview = document.getElementById('offerPreview');
 
         // Function to determine if a hex color is too bright (Luminance check)
-        // This solves the edge case where a user selects White (#ffffff)
         function getOptimalTextColor(hexCode) {
             let hex = hexCode.replace('#', '');
             let r = parseInt(hex.substr(0, 2), 16);
             let g = parseInt(hex.substr(2, 2), 16);
             let b = parseInt(hex.substr(4, 2), 16);
-            // Calculate YIQ ratio
             let yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
-            // If color is too bright, return black, otherwise return the original color
             return (yiq >= 200) ? '#111111' : hexCode;
         }
 
@@ -218,17 +221,15 @@
             offerPreview.style.setProperty('--preview-safe-accent', safeTextColor);
         });
 
-        // --- NEW: URL Parameter Extraction & Auto-Fill ---
+        // URL Parameter Extraction & Auto-Fill
         document.addEventListener('DOMContentLoaded', () => {
             const params = new URLSearchParams(window.location.search);
 
-            // Check if we have data passed from Slack
             if (params.has('title')) {
                 const bName = params.get('bName') || "Your Business";
                 const bAddress = params.get('bAddress') || "Your Address";
                 const bCat = params.get('bCat') || "CATEGORY";
 
-                // 1. Add the custom business from Slack to the database
                 const customId = 'slack_custom_business';
                 businesses[customId] = {
                     name: bName,
@@ -236,28 +237,101 @@
                     category: bCat
                 };
 
-                // 2. Add it to the dropdown and select it
                 const newOption = document.createElement('option');
                 newOption.value = customId;
                 newOption.text = bName;
                 selectBusiness.add(newOption);
                 selectBusiness.value = customId;
 
-                // 3. Inject the AI-generated text and color
                 inputTitle.value = params.get('title');
                 inputDesc.value = params.get('desc');
 
-                // Ensure color is a valid hex before applying
                 const aiColor = params.get('color');
                 if (/^#[0-9A-F]{6}$/i.test(aiColor)) {
                     themeColor.value = aiColor;
                 }
 
-                // 4. Dispatch events to trigger your existing UI update functions naturally!
                 selectBusiness.dispatchEvent(new Event('change'));
                 inputTitle.dispatchEvent(new Event('input'));
                 inputDesc.dispatchEvent(new Event('input'));
                 themeColor.dispatchEvent(new Event('input'));
+            }
+        });
+
+        // --- CLEAN FLUID TEXT COUPON GENERATOR ---
+        function generateTextCoupon() {
+            // 1. Grab current values and aggressively strip out HTML line breaks/tabs
+            const bizName = prevBusinessName.textContent.replace(/\s+/g, ' ').trim().toUpperCase();
+            const category = prevLabel.textContent.replace(/\s+/g, ' ').trim().toUpperCase();
+            const address = prevAddress.textContent.replace(/\s+/g, ' ').trim().replace(' • ', ', ');
+            const title = prevTitle.innerText.replace(/\s+/g, ' ').trim().toUpperCase();
+            const desc = prevDesc.textContent.replace(/\s+/g, ' ').trim();
+            const mockCode = "EVO-" + Math.floor(1000 + Math.random() * 9000);
+
+            // 2. Build the message-bubble safe structure using clean text
+            let coupon = `🎫 OFFEREVO LOCAL PASS 🎫\n`;
+            coupon += `-----------------------------\n`;
+            coupon += `🏪 ${bizName} [${category}]\n`;
+            coupon += `📍 ${address}\n`;
+            coupon += `👤 By @MAYA\n\n`;
+
+            coupon += `🔥 THE DEAL:\n`;
+            coupon += `👉 ${title} 👈\n`;
+            coupon += `🏷️ ${desc}\n\n`;
+
+            coupon += `-----------------------------\n`;
+            coupon += `⭐ 4.9  •  ⏳ 24 Days Left\n`;
+            coupon += `🔑 USE CODE: ${mockCode}`;
+
+            return {
+                text: coupon,
+                summary: `🎉 Check out this deal from ${bizName} on OfferEvo!`
+            };
+        }
+
+        // Attach layout actions cleanly at root level
+        document.addEventListener('DOMContentLoaded', () => {
+            const shareBtn = document.querySelector('.preview-share-icon').closest('button');
+            const copyTextBtn = document.getElementById('copyTextCouponBtn');
+
+            // Handler: Native share trigger mechanics
+            if (shareBtn) {
+                shareBtn.addEventListener('click', async (e) => {
+                    e.preventDefault();
+                    const couponData = generateTextCoupon();
+
+                    if (navigator.share) {
+                        try {
+                            await navigator.share({
+                                title: 'OfferEvo Coupon Pass',
+                                text: `${couponData.summary}\n\n${couponData.text}`,
+                                url: window.location.href
+                            });
+                        } catch (err) {
+                            console.log('Native share actions dismissed.');
+                        }
+                    } else {
+                        try {
+                            await navigator.clipboard.writeText(couponData.text);
+                        } catch (err) {
+                            console.error('Clipboard copy pipeline error details:', err);
+                        }
+                    }
+                });
+            }
+
+            // Handler: Direct clipboard copy button (No Alerts)
+            if (copyTextBtn) {
+                copyTextBtn.addEventListener('click', async (e) => {
+                    e.preventDefault();
+                    const couponData = generateTextCoupon();
+                    try {
+                        await navigator.clipboard.writeText(couponData.text);
+                        // Copied silently without interrupting the user workflow
+                    } catch (err) {
+                        console.error('Failed copying context layout metrics:', err);
+                    }
+                });
             }
         });
     </script>
