@@ -1,0 +1,43 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFC531"/>
+      <stop offset="1" stop-color="#F55555"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#33231B" flood-opacity=".12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="#F7F3EE"/>
+  <rect width="1200" height="88" fill="#171515"/>
+  <circle cx="50" cy="44" r="22" fill="url(#brand)"/>
+  <text x="84" y="54" fill="white" font-family="Arial, sans-serif" font-size="25" font-weight="800">OfferEvo Business</text>
+  <rect x="978" y="24" width="170" height="42" rx="21" fill="#302B29"/>
+  <text x="1018" y="51" fill="white" font-family="Arial, sans-serif" font-size="15" font-weight="700">MY BUSINESS</text>
+
+  <text x="60" y="157" fill="#171515" font-family="Arial, sans-serif" font-size="34" font-weight="800">Verify a redemption</text>
+  <text x="60" y="194" fill="#716862" font-family="Arial, sans-serif" font-size="18">Scan the customer’s QR code or enter their eight-character code.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="236" width="670" height="490" rx="28" fill="white"/>
+    <rect x="100" y="276" width="590" height="278" rx="22" fill="#171515"/>
+    <path d="M372 330H418V376H372V330ZM458 330H504V376H458V330ZM544 330H590V376H544V330ZM372 416H418V462H372V416ZM501 416H547V462H501V416Z" fill="white"/>
+    <path d="M202 330H298V426H202V330ZM219 347H281V409H219V347ZM202 452H298V548H202V452ZM219 469H281V531H219V469ZM570 452H650V532H570V452Z" fill="white" fill-rule="evenodd"/>
+    <text x="100" y="606" fill="#716862" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="2">OR ENTER THE CODE</text>
+    <rect x="100" y="628" width="590" height="62" rx="14" fill="#F7F3EE"/>
+    <text x="278" y="670" fill="#171515" font-family="monospace" font-size="30" font-weight="800" letter-spacing="8">EV08K2Q</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="770" y="236" width="370" height="490" rx="28" fill="white"/>
+    <circle cx="955" cy="350" r="62" fill="#E4F7EF"/>
+    <circle cx="955" cy="350" r="39" fill="#1C9B68"/>
+    <path d="M937 351L949 363L975 335" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="840" y="451" fill="#171515" font-family="Arial, sans-serif" font-size="27" font-weight="800">Ready to verify</text>
+    <text x="824" y="491" fill="#716862" font-family="Arial, sans-serif" font-size="17">Confirm the offer while the</text>
+    <text x="836" y="517" fill="#716862" font-family="Arial, sans-serif" font-size="17">customer is at your counter.</text>
+    <rect x="820" y="570" width="270" height="64" rx="32" fill="url(#brand)"/>
+    <text x="889" y="610" fill="#171515" font-family="Arial, sans-serif" font-size="18" font-weight="800">VERIFY OFFER</text>
+  </g>
+</svg>

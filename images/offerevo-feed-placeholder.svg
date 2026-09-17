@@ -1,0 +1,74 @@
+<svg width="780" height="1688" viewBox="0 0 780 1688" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFC531"/>
+      <stop offset="1" stop-color="#F55555"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#33231B" flood-opacity=".10"/>
+    </filter>
+  </defs>
+
+  <rect width="780" height="1688" fill="#F7F3EE"/>
+  <circle cx="716" cy="88" r="42" fill="url(#brand)"/>
+  <text x="56" y="105" fill="#171515" font-family="Arial, sans-serif" font-size="38" font-weight="800">Offers near you</text>
+  <text x="56" y="148" fill="#716862" font-family="Arial, sans-serif" font-size="19">Deals shared by people nearby</text>
+
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="700">
+    <rect x="48" y="190" width="110" height="50" rx="25" fill="#171515"/>
+    <text x="78" y="222" fill="white">For you</text>
+    <rect x="170" y="190" width="112" height="50" rx="25" fill="white" stroke="#D8CEC5"/>
+    <text x="195" y="222" fill="#716862">Nearby</text>
+    <rect x="294" y="190" width="90" height="50" rx="25" fill="white" stroke="#D8CEC5"/>
+    <text x="319" y="222" fill="#716862">Food</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="48" y="276" width="684" height="470" rx="36" fill="white"/>
+    <path d="M48 312C48 292.118 64.118 276 84 276H696C715.882 276 732 292.118 732 312V332H48V312Z" fill="url(#brand)"/>
+    <text x="84" y="388" fill="#716862" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="2">POSTED BY MAYA · 2H</text>
+    <rect x="590" y="361" width="104" height="38" rx="19" fill="#FFF3DB"/>
+    <text x="615" y="386" fill="#A66B00" font-family="Arial, sans-serif" font-size="15" font-weight="700">COFFEE</text>
+    <text x="84" y="451" fill="#171515" font-family="Arial, sans-serif" font-size="24" font-weight="800">Benny’s Coffee</text>
+    <text x="84" y="518" fill="#171515" font-family="Arial, sans-serif" font-size="43" font-weight="800">Buy two drinks,</text>
+    <text x="84" y="568" fill="#171515" font-family="Arial, sans-serif" font-size="43" font-weight="800">get one free</text>
+    <text x="84" y="622" fill="#716862" font-family="Arial, sans-serif" font-size="20">Weekday sips for regulars and their friends.</text>
+    <line x1="84" y1="663" x2="696" y2="663" stroke="#D8CEC5" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="84" y="709" fill="#171515" font-family="Arial, sans-serif" font-size="18" font-weight="700">♡  SAVE</text>
+    <text x="310" y="709" fill="#171515" font-family="Arial, sans-serif" font-size="18" font-weight="700">↗  SHARE</text>
+    <text x="589" y="709" fill="#F55555" font-family="Arial, sans-serif" font-size="18" font-weight="700">VIEW  →</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="48" y="782" width="684" height="402" rx="36" fill="white"/>
+    <path d="M48 818C48 798.118 64.118 782 84 782H696C715.882 782 732 798.118 732 818V838H48V818Z" fill="url(#brand)"/>
+    <text x="84" y="894" fill="#716862" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="2">POSTED BY NORA · 4H</text>
+    <text x="84" y="957" fill="#171515" font-family="Arial, sans-serif" font-size="24" font-weight="800">Rosa’s Corner Bakery</text>
+    <text x="84" y="1024" fill="#171515" font-family="Arial, sans-serif" font-size="41" font-weight="800">Half off any pastry box</text>
+    <text x="84" y="1076" fill="#716862" font-family="Arial, sans-serif" font-size="20">Fresh Saturday batches while they last.</text>
+    <line x1="84" y1="1117" x2="696" y2="1117" stroke="#D8CEC5" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="84" y="1157" fill="#171515" font-family="Arial, sans-serif" font-size="18" font-weight="700">♡  SAVE</text>
+    <text x="589" y="1157" fill="#F55555" font-family="Arial, sans-serif" font-size="18" font-weight="700">VIEW  →</text>
+  </g>
+
+  <g opacity=".72">
+    <rect x="48" y="1220" width="684" height="245" rx="36" fill="white" stroke="#D8CEC5"/>
+    <rect x="80" y="1260" width="88" height="88" rx="24" fill="#FFE2B2"/>
+    <circle cx="124" cy="1304" r="22" fill="url(#brand)"/>
+    <text x="198" y="1284" fill="#716862" font-family="Arial, sans-serif" font-size="16" font-weight="700">LOCAL LUNCH</text>
+    <text x="198" y="1334" fill="#171515" font-family="Arial, sans-serif" font-size="29" font-weight="800">Free fries with a burger</text>
+    <text x="198" y="1375" fill="#716862" font-family="Arial, sans-serif" font-size="19">Joe’s Smashburgers · 0.8 mi</text>
+  </g>
+
+  <g>
+    <rect x="0" y="1510" width="780" height="178" fill="white"/>
+    <line x1="0" y1="1510" x2="780" y2="1510" stroke="#DED5CD"/>
+    <circle cx="116" cy="1575" r="25" fill="url(#brand)"/>
+    <circle cx="390" cy="1575" r="24" stroke="#716862" stroke-width="5"/>
+    <path d="M373 1592L354 1611" stroke="#716862" stroke-width="5" stroke-linecap="round"/>
+    <path d="M640 1553L677 1590L640 1627L603 1590L640 1553Z" stroke="#716862" stroke-width="5"/>
+    <text x="88" y="1642" fill="#171515" font-family="Arial, sans-serif" font-size="17" font-weight="700">FEED</text>
+    <text x="359" y="1642" fill="#716862" font-family="Arial, sans-serif" font-size="17" font-weight="700">SEARCH</text>
+    <text x="614" y="1642" fill="#716862" font-family="Arial, sans-serif" font-size="17" font-weight="700">SAVED</text>
+  </g>
+</svg>

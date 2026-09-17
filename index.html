@@ -1,0 +1,1603 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OfferEvo | Customer Referral Marketing &amp; Local Deals for Small Businesses</title>
+  <meta name="description"
+    content="Turn loyal customers into local promoters. OfferEvo helps small businesses grow with customer-created deals, advocate rewards, and verified in-person redemptions.">
+  <meta name="keywords"
+    content="customer referral marketing for small business, local deals platform, digital coupons for local business, customer advocacy software, small business customer engagement">
+  <meta name="author" content="OfferEvo">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://offerevo.com/">
+  <link rel="icon" type="image/svg+xml" href="./images/offerevo-icon.svg">
+  <link rel="alternate icon" type="image/png" href="./images/offerevo-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://offerevo.com/">
+  <meta property="og:title" content="Your regulars share deals. New customers find you. | OfferEvo">
+  <meta property="og:description"
+    content="Customers create and share local deals. Businesses stay in control, reward advocates, and verify every redemption in person.">
+  <meta property="og:image" content="https://offerevo.com/images/OfferEvo-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap"
+    rel="stylesheet">
+  <script
+    type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"OfferEvo","applicationCategory":"BusinessApplication","applicationSubCategory":"Customer referral marketing and local deals","operatingSystem":"Web","url":"https://app.offerevo.com/","description":"A local deals platform where customers create, discover, save and redeem offers for local businesses, while businesses manage promotions and verify in-person redemptions.","creator":{"@type":"Organization","name":"OfferEvo","url":"https://offerevo.com/"}}</script>
+  <style>
+    :root {
+      --ink: #171515;
+      --ink2: #2a2523;
+      --paper: #fffaf3;
+      --paper2: #f3eadf;
+      --muted: #716862;
+      --line: rgba(23, 21, 21, .16);
+      --primary: #f55555;
+      --orange: var(--primary);
+      --coral: #f55555;
+      --amber: #ffc531;
+      --yellow: #ffc531;
+      --green: #1c9b68;
+      --gradient: linear-gradient(180deg, var(--amber) 0%, var(--coral) 100%);
+      --shadow: 0 24px 70px rgba(51, 35, 27, .14);
+      --display: "Archivo", system-ui, sans-serif;
+      --body: "Inter", system-ui, sans-serif;
+      --mono: "JetBrains Mono", ui-monospace, monospace
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: var(--body);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden
+    }
+
+    body:before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .25;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E")
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    button {
+      font: inherit
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--display);
+      letter-spacing: -.05em
+    }
+
+    .shell {
+      width: min(1240px, calc(100% - 48px));
+      margin-inline: auto
+    }
+
+    .sr {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0)
+    }
+
+    .skip {
+      position: fixed;
+      z-index: 100;
+      left: 20px;
+      top: -70px;
+      padding: 12px 18px;
+      color: #fff;
+      background: var(--ink);
+      border-radius: 99px;
+      transition: top .2s ease
+    }
+
+    .skip:focus-visible {
+      top: 20px
+    }
+
+    #main:focus {
+      outline: none
+    }
+
+    .header {
+      width: min(1320px, calc(100% - 48px));
+      height: 86px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 30px;
+      position: relative;
+      z-index: 30;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .logo {
+      width: 154px;
+      height: 52px;
+      object-fit: contain;
+      object-position: left center
+    }
+
+    .nav {
+      display: flex;
+      gap: 30px;
+      font-size: 14px;
+      font-weight: 650
+    }
+
+    .nav a:hover {
+      color: var(--orange)
+    }
+
+    .header-actions {
+      justify-self: end;
+      display: flex;
+      align-items: center;
+      gap: 12px
+    }
+
+    .login {
+      font-size: 13px;
+      font-weight: 700
+    }
+
+    .menu {
+      display: none;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: transparent
+    }
+
+    .btn {
+      min-height: 52px;
+      padding: 0 23px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border: 1px solid var(--ink);
+      border-radius: 99px;
+      font-weight: 750;
+      transition: transform .2s ease, box-shadow .2s ease
+    }
+
+    .btn:hover {
+      transform: translateY(-2px)
+    }
+
+    .btn-primary {
+      color: #fff;
+      border-color: transparent;
+      background: var(--primary);
+      box-shadow: 0 12px 28px rgba(245, 85, 85, .22)
+    }
+
+    .btn-dark {
+      color: #fff;
+      background: var(--ink)
+    }
+
+    .btn-light {
+      color: var(--ink);
+      background: #fff;
+      border-color: rgba(255, 255, 255, .35)
+    }
+
+    .btn-small {
+      min-height: 44px;
+      padding: 0 18px;
+      font-size: 13px
+    }
+
+    .text-link {
+      display: inline-flex;
+      gap: 9px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid;
+      font-size: 14px;
+      font-weight: 750
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 24px;
+      color: var(--muted);
+      font: 600 10px var(--mono);
+      letter-spacing: .13em;
+      text-transform: uppercase
+    }
+
+    .eyebrow:before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--orange);
+      box-shadow: 12px 0 var(--amber), 24px 0 var(--coral);
+      margin-right: 22px
+    }
+
+    .label {
+      margin-bottom: 22px;
+      color: var(--orange);
+      font: 600 10px var(--mono);
+      letter-spacing: .13em;
+      text-transform: uppercase
+    }
+
+    .hero {
+      min-height: 700px;
+      padding: 64px 0 68px;
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 32px;
+      align-items: center
+    }
+
+    .hero h1 {
+      max-width: 700px;
+      font-size: clamp(56px, 5vw, 78px);
+      line-height: .95;
+      font-weight: 900;
+      text-wrap: balance
+    }
+
+    .hero h1 em {
+      display: block;
+      color: var(--orange);
+      font-family: Georgia, serif;
+      font-weight: 400
+    }
+
+    .hero-copy>p:not(.eyebrow) {
+      max-width: 590px;
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.65
+    }
+
+    .hero-actions {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap
+    }
+
+    .micro {
+      margin-top: 30px;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font: 500 9px var(--mono);
+      letter-spacing: .07em;
+      text-transform: uppercase
+    }
+
+    .micro span {
+      display: flex;
+      align-items: center;
+      gap: 7px
+    }
+
+    .micro span:before {
+      content: "✓";
+      width: 18px;
+      height: 18px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--green);
+      font-size: 10px
+    }
+
+    .hero-visual {
+      min-height: 620px;
+      position: relative;
+      display: grid;
+      place-items: center
+    }
+
+    .hero-visual:before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: url("./images/offerevo-icon.svg") center / contain no-repeat;
+      opacity: .16
+    }
+
+    .hero-visual:after {
+      content: "";
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      border: 1px dashed rgba(23, 21, 21, .25);
+      border-radius: 50%;
+      animation: spin 38s linear infinite
+    }
+
+    .phone {
+      width: 292px;
+      z-index: 3;
+      position: relative;
+      overflow: hidden;
+      border: 8px solid var(--ink);
+      border-radius: 34px;
+      background: var(--ink);
+      box-shadow: 0 36px 80px rgba(37, 24, 20, .25);
+      transform: rotate(-4deg)
+    }
+
+    .phone-shot {
+      width: 100%;
+      height: auto;
+      border-radius: 25px;
+      background: #f7f3ee
+    }
+
+    .float-card {
+      z-index: 4;
+      position: absolute;
+      padding: 15px 17px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: var(--shadow);
+      animation: float 5s ease-in-out infinite
+    }
+
+    .float-card small {
+      color: var(--muted);
+      font: 600 7px var(--mono);
+      text-transform: uppercase
+    }
+
+    .float-card strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 11px
+    }
+
+    .creator {
+      left: 0;
+      top: 93px
+    }
+
+    .verified {
+      right: -12px;
+      bottom: 53px;
+      display: flex;
+      align-items: center;
+      gap: 11px
+    }
+
+    .check {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--green);
+      font-weight: 900
+    }
+
+    .marquee {
+      padding: 17px 0;
+      overflow: hidden;
+      color: #fff;
+      background: var(--ink);
+      transform: rotate(-.7deg) scale(1.01)
+    }
+
+    .marquee-track {
+      width: max-content;
+      display: flex;
+      gap: 28px;
+      font: 600 11px var(--mono);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      animation: ticker 32s linear infinite
+    }
+
+    .marquee i {
+      color: var(--amber);
+      font-style: normal
+    }
+
+    .section {
+      padding: 140px 0 120px
+    }
+
+    .head-grid {
+      display: grid;
+      grid-template-columns: 1fr .56fr;
+      gap: 90px;
+      align-items: end
+    }
+
+    .head-grid h2,
+    .section-head h2,
+    .beta h2 {
+      font-size: clamp(44px, 5vw, 72px);
+      line-height: .99
+    }
+
+    .head-grid h2 em {
+      color: var(--orange);
+      font-family: Georgia, serif;
+      font-weight: 400
+    }
+
+    .head-grid p,
+    .section-head>p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.75
+    }
+
+    .outcomes {
+      margin-top: 65px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      overflow: hidden
+    }
+
+    .outcome {
+      min-height: 270px;
+      padding: 28px;
+      border-right: 1px solid var(--line);
+      background: rgba(255, 255, 255, .42)
+    }
+
+    .outcome:last-child {
+      border: 0
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 72px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff
+    }
+
+    .icon svg {
+      width: 23px;
+      height: 23px;
+      stroke: var(--orange);
+      fill: none;
+      stroke-width: 1.8
+    }
+
+    .outcome h3 {
+      font-size: 22px;
+      line-height: 1.1
+    }
+
+    .outcome p {
+      margin-top: 11px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6
+    }
+
+    .loop {
+      padding: 120px 0;
+      color: #fff;
+      background: var(--ink)
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 1fr .56fr;
+      gap: 80px;
+      align-items: end
+    }
+
+    .loop .label {
+      color: var(--amber)
+    }
+
+    .loop .section-head>p {
+      color: rgba(255, 255, 255, .58)
+    }
+
+    .steps {
+      margin-top: 66px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px
+    }
+
+    .step {
+      min-height: 345px;
+      padding: 26px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 20px;
+      background: #242120
+    }
+
+    .step:nth-child(2) {
+      background: #312724
+    }
+
+    .step:nth-child(3) {
+      color: var(--ink);
+      background: var(--amber)
+    }
+
+    .step:nth-child(4) {
+      color: var(--ink);
+      background: var(--orange)
+    }
+
+    .step-num {
+      font: 600 10px var(--mono);
+      letter-spacing: .12em
+    }
+
+    .step-art {
+      width: 110px;
+      height: 110px;
+      margin: 48px auto 40px;
+      display: grid;
+      place-items: center;
+      border: 1px solid;
+      border-radius: 50%
+    }
+
+    .step-art svg {
+      width: 48px;
+      height: 48px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.5
+    }
+
+    .step h3 {
+      font-size: 23px
+    }
+
+    .step p {
+      margin-top: 10px;
+      opacity: .68;
+      font-size: 13px;
+      line-height: 1.6
+    }
+
+    .experience {
+      padding: 145px 0
+    }
+
+    .experience-grid {
+      margin-top: 64px;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 16px
+    }
+
+    .panel {
+      min-height: 540px;
+      padding: 38px;
+      border: 1px solid var(--line);
+      border-radius: 24px
+    }
+
+    .customer {
+      background: #f0e6ff
+    }
+
+    .business {
+      color: #fff;
+      background: var(--ink)
+    }
+
+    .tag {
+      display: inline-flex;
+      padding: 7px 10px;
+      border: 1px solid;
+      border-radius: 99px;
+      font: 600 8px var(--mono);
+      letter-spacing: .1em;
+      text-transform: uppercase
+    }
+
+    .panel h3 {
+      max-width: 520px;
+      margin-top: 22px;
+      font-size: 38px;
+      line-height: 1.02
+    }
+
+    .panel>p {
+      max-width: 500px;
+      margin-top: 16px;
+      color: var(--muted);
+      line-height: 1.7
+    }
+
+    .business>p {
+      color: rgba(255, 255, 255, .62)
+    }
+
+    .features {
+      margin: 34px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 12px;
+      list-style: none
+    }
+
+    .features li {
+      display: flex;
+      gap: 12px;
+      font-size: 13px;
+      line-height: 1.5
+    }
+
+    .features li:before {
+      content: "✓";
+      flex: 0 0 auto;
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--orange);
+      font-size: 10px
+    }
+
+    .note {
+      margin-top: 34px;
+      padding: 18px;
+      border: 1px solid rgba(23, 21, 21, .14);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, .5);
+      font-size: 12px;
+      line-height: 1.6
+    }
+
+    .business .note {
+      border-color: rgba(255, 255, 255, .15);
+      background: rgba(255, 255, 255, .06)
+    }
+
+    .redemption {
+      padding: 0 0 145px
+    }
+
+    .redeem-card {
+      display: grid;
+      grid-template-columns: .78fr 1.22fr;
+      overflow: hidden;
+      border-radius: 30px;
+      background: var(--orange)
+    }
+
+    .redeem-copy {
+      padding: 70px
+    }
+
+    .redeem-copy h2 {
+      font-size: clamp(44px, 5vw, 70px);
+      line-height: .97
+    }
+
+    .redeem-copy p {
+      margin-top: 20px;
+      line-height: 1.7
+    }
+
+    .pills {
+      margin-top: 32px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap
+    }
+
+    .pills span {
+      padding: 10px 13px;
+      border: 1px solid rgba(23, 21, 21, .25);
+      border-radius: 99px;
+      font: 600 9px var(--mono);
+      text-transform: uppercase
+    }
+
+    .redeem-visual {
+      min-height: 560px;
+      padding: 55px;
+      display: grid;
+      place-items: center;
+      position: relative;
+      background: var(--paper2)
+    }
+
+    .product-shot-frame {
+      width: min(520px, 100%);
+      aspect-ratio: 3 / 2;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: var(--shadow)
+    }
+
+    .product-shot {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      object-fit: cover;
+      object-position: var(--image-position, center top)
+    }
+
+    .scan {
+      position: absolute;
+      right: 35px;
+      bottom: 38px;
+      padding: 15px 18px;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: var(--shadow);
+      font-size: 11px;
+      font-weight: 750
+    }
+
+    .scan b {
+      width: 27px;
+      height: 27px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--green)
+    }
+
+    .manifesto {
+      padding: 130px 0;
+      text-align: center
+    }
+
+    .manifesto h2 {
+      max-width: 1000px;
+      margin: auto;
+      font-size: clamp(40px, 5.2vw, 76px);
+      line-height: 1.05
+    }
+
+    .manifesto h2 span {
+      padding: 0 .12em;
+      color: #fff;
+      background: var(--ink)
+    }
+
+    .manifesto p {
+      max-width: 690px;
+      margin: 28px auto 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.75
+    }
+
+    .tools {
+      padding: 0 0 140px
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px
+    }
+
+    .tool {
+      min-height: 400px;
+      padding: 42px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: #fff
+    }
+
+    .tool:first-child {
+      background: var(--yellow)
+    }
+
+    .tool h3 {
+      margin-top: 70px;
+      font-size: 35px;
+      line-height: 1.04
+    }
+
+    .tool p {
+      margin-top: 15px;
+      color: var(--muted);
+      line-height: 1.7
+    }
+
+    .tool .text-link {
+      margin-top: 26px
+    }
+
+    .slack {
+      margin-top: 30px;
+      padding: 18px;
+      border: 1px solid rgba(23, 21, 21, .18);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, .55);
+      font-size: 12px;
+      line-height: 1.6
+    }
+
+    .beta {
+      width: min(1240px, calc(100% - 48px));
+      margin: 0 auto 80px;
+      padding: 76px;
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      border-radius: 32px;
+      background: var(--ink)
+    }
+
+    .beta:before {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      right: -160px;
+      top: -210px;
+      border-radius: 50%;
+      background: var(--gradient);
+      opacity: .85
+    }
+
+    .beta-inner {
+      max-width: 740px;
+      position: relative;
+      z-index: 2
+    }
+
+    .live {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 12px;
+      border: 1px solid rgba(255, 255, 255, .25);
+      border-radius: 99px;
+      font: 600 9px var(--mono);
+      letter-spacing: .1em;
+      text-transform: uppercase
+    }
+
+    .live i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #50dc8b;
+      box-shadow: 0 0 0 5px rgba(80, 220, 139, .13)
+    }
+
+    .beta h2 {
+      margin-top: 26px
+    }
+
+    .beta p {
+      max-width: 650px;
+      margin-top: 20px;
+      color: rgba(255, 255, 255, .66);
+      font-size: 16px;
+      line-height: 1.7
+    }
+
+    .beta-actions {
+      margin-top: 32px;
+      display: flex;
+      gap: 13px;
+      flex-wrap: wrap
+    }
+
+    .beta-note {
+      margin-top: 21px;
+      font: 500 9px var(--mono);
+      color: rgba(255, 255, 255, .47);
+      letter-spacing: .07em;
+      text-transform: uppercase
+    }
+
+    .faq {
+      padding: 80px 0 130px
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      gap: 90px
+    }
+
+    .faq h2 {
+      font-size: clamp(40px, 4.5vw, 64px);
+      line-height: 1
+    }
+
+    .faq-list {
+      border-top: 1px solid var(--line)
+    }
+
+    details {
+      border-bottom: 1px solid var(--line)
+    }
+
+    summary {
+      padding: 23px 4px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      cursor: pointer;
+      font-weight: 750;
+      list-style: none
+    }
+
+    summary:after {
+      content: "+";
+      font-size: 20px;
+      font-weight: 400
+    }
+
+    details[open] summary:after {
+      content: "−"
+    }
+
+    details p {
+      padding: 0 45px 23px 4px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7
+    }
+
+    footer {
+      min-height: 130px;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 30px;
+      border-top: 1px solid var(--line)
+    }
+
+    footer .logo {
+      width: 130px
+    }
+
+    footer>p {
+      color: var(--muted);
+      font-size: 11px
+    }
+
+    .footer-links {
+      justify-self: end;
+      display: flex;
+      gap: 24px;
+      color: var(--muted);
+      font-size: 11px
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: none
+    }
+
+    .reveal-ready .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: .7s
+    }
+
+    .reveal-ready .reveal.visible {
+      opacity: 1;
+      transform: none
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes float {
+      50% {
+        transform: translateY(-9px)
+      }
+    }
+
+    @keyframes ticker {
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    @media(max-width:1050px) {
+      .hero {
+        grid-template-columns: 1fr
+      }
+
+      .hero-visual {
+        min-height: 650px
+      }
+
+      .outcomes,
+      .steps {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .head-grid,
+      .section-head {
+        grid-template-columns: 1fr;
+        gap: 25px
+      }
+
+      .redeem-card {
+        grid-template-columns: 1fr
+      }
+    }
+
+    @media(max-width:760px) {
+
+      .shell,
+      .header,
+      .beta {
+        width: calc(100% - 28px)
+      }
+
+      .header {
+        height: 74px;
+        grid-template-columns: 1fr auto
+      }
+
+      .logo {
+        width: 126px
+      }
+
+      .header-actions {
+        display: none
+      }
+
+      .menu {
+        display: grid
+      }
+
+      .nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 66px;
+        padding: 20px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: var(--shadow)
+      }
+
+      .nav.open {
+        display: flex
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 62px 0 48px;
+        gap: 28px
+      }
+
+      .hero h1 {
+        font-size: clamp(45px, 13vw, 60px)
+      }
+
+      .hero-copy>p:not(.eyebrow) {
+        font-size: 16px
+      }
+
+      .hero-actions {
+        align-items: flex-start;
+        flex-direction: column
+      }
+
+      .hero-visual {
+        min-height: 590px;
+        transform: scale(.88);
+        margin: -35px -40px
+      }
+
+      .creator {
+        left: 28px
+      }
+
+      .verified {
+        right: 24px
+      }
+
+      .section,
+      .experience,
+      .manifesto {
+        padding: 95px 0
+      }
+
+      .head-grid h2,
+      .section-head h2,
+      .beta h2 {
+        font-size: 43px
+      }
+
+      .outcomes,
+      .steps,
+      .experience-grid,
+      .tools-grid {
+        grid-template-columns: 1fr
+      }
+
+      .outcome {
+        min-height: 230px;
+        border-right: 0;
+        border-bottom: 1px solid var(--line)
+      }
+
+      .icon {
+        margin-bottom: 45px
+      }
+
+      .loop {
+        padding: 95px 0
+      }
+
+      .panel {
+        min-height: auto;
+        padding: 28px
+      }
+
+      .panel h3 {
+        font-size: 32px
+      }
+
+      .redemption {
+        padding-bottom: 95px
+      }
+
+      .redeem-copy {
+        padding: 55px 25px
+      }
+
+      .redeem-visual {
+        min-height: 500px;
+        padding: 35px 20px
+      }
+
+      .scan {
+        right: 16px
+      }
+
+      .tools {
+        padding-bottom: 95px
+      }
+
+      .tool {
+        min-height: 360px;
+        padding: 28px
+      }
+
+      .beta {
+        padding: 58px 24px
+      }
+
+      .beta:before {
+        opacity: .34
+      }
+
+      .faq {
+        padding: 65px 0 95px
+      }
+
+      .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 45px
+      }
+
+      footer {
+        padding: 34px 0;
+        grid-template-columns: 1fr;
+        gap: 18px
+      }
+
+      .footer-links {
+        justify-self: start;
+        flex-direction: column;
+        gap: 11px
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+
+      *,
+      *:before,
+      *:after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header class="header"><a href="#top" aria-label="OfferEvo home"><img class="logo" src="./images/offer-evo.png"
+        alt="OfferEvo"></a><button class="menu" type="button" aria-expanded="false" aria-controls="nav"
+      aria-label="Open navigation">☰</button>
+    <nav id="nav" class="nav"><a href="#benefits">Business impact</a><a href="#how">How it works</a><a
+        href="#product">Product</a><a href="#faq">FAQ</a></nav>
+    <div class="header-actions"><a class="login" href="https://app.offerevo.com/">Sign in</a><a
+        class="btn btn-primary btn-small" href="https://app.offerevo.com/">Try the beta ↗</a></div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section id="top" class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Local deals and customer referrals for small businesses</p>
+        <h1>Your regulars share deals. <em>New customers find you.</em></h1>
+        <p>With OfferEvo, customers create and share discounts for your business. You can reward the people who
+          promote you and verify every redemption in person with a QR code or eight-character code.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="https://app.offerevo.com/">Try OfferEvo for your business ↗</a><a
+            class="text-link" href="#how">See how OfferEvo works ↓</a></div>
+        <div class="micro"><span>Customer-created offers</span><span>In-person redemption</span><span>No app-store
+            download</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="float-card creator"><small>Posted by a customer</small><strong>“You need to try this place.”</strong>
+        </div>
+        <div class="phone">
+          <!-- HERO IMAGE: replace only the src below. The image keeps its natural aspect ratio without cropping. -->
+          <img class="phone-shot" src="./images/homepage-screen.png"
+            alt="OfferEvo mobile feed showing customer-created local deal cards" width="780" height="1688" fetchpriority="high"
+            decoding="async">
+        </div>
+        <div class="float-card verified"><span class="check">✓</span>
+          <div><small>In-store redemption</small><strong>Offer verified successfully</strong></div>
+        </div>
+      </div>
+    </section>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Cafés</span><i>✦</i><span>Restaurants</span><i>✦</i><span>Salons</span><i>✦</i><span>Barbers</span><i>✦</i><span>Gyms</span><i>✦</i><span>Independent
+          retail</span><i>✦</i><span>Local
+          services</span><i>✦</i><span>Cafés</span><i>✦</i><span>Restaurants</span><i>✦</i><span>Salons</span><i>✦</i><span>Barbers</span><i>✦</i><span>Gyms</span><i>✦</i><span>Independent
+          retail</span><i>✦</i><span>Local services</span><i>✦</i>
+      </div>
+    </div>
+    <section id="benefits" class="section shell reveal">
+      <div class="label">What the business gets</div>
+      <div class="head-grid">
+        <h2>The chains have ad budgets.<br><em>Local businesses have people.</em></h2>
+        <p>OfferEvo turns the goodwill you have already earned into a practical customer-acquisition and engagement
+          channel—without making your team run another complicated campaign tool.</p>
+      </div>
+      <div class="outcomes">
+        <article class="outcome">
+          <div class="icon"><svg viewBox="0 0 24 24">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M19 8v6M22 11h-6" />
+            </svg></div>
+          <h3>Reach new local customers</h3>
+          <p>Let regulars introduce your business to friends who already trust their recommendation.</p>
+        </article>
+        <article class="outcome">
+          <div class="icon"><svg viewBox="0 0 24 24">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg></div>
+          <h3>Use discounts with purpose</h3>
+          <p>Shape offers around first visits, slower periods, seasonal moments, or products you want discovered.</p>
+        </article>
+        <article class="outcome">
+          <div class="icon"><svg viewBox="0 0 24 24">
+              <path
+                d="m12 21-1.45-1.32C5.4 15 2 11.9 2 8.1 2 5 4.4 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.6 3 22 5 22 8.1c0 3.8-3.4 6.9-8.55 11.58L12 21Z" />
+            </svg></div>
+          <h3>Reward your best advocates</h3>
+          <p>Recognize the customers whose offers and recommendations create real value for your business.</p>
+        </article>
+        <article class="outcome">
+          <div class="icon"><svg viewBox="0 0 24 24">
+              <path d="M3 3v18h18M7 16l4-5 4 3 5-7" />
+            </svg></div>
+          <h3>Connect sharing to visits</h3>
+          <p>Verify redemptions at the counter so an online deal ends in a measurable in-person action.</p>
+        </article>
+      </div>
+    </section>
+    <section id="how" class="loop">
+      <div class="shell reveal">
+        <div class="section-head">
+          <div>
+            <div class="label">The OfferEvo loop</div>
+            <h2>From “you should try this place”<br>to a verified visit.</h2>
+          </div>
+          <p>The customer does the advocating. The business keeps control. OfferEvo connects discovery, sharing and
+            redemption in one simple flow.</p>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-num">01 · DISCOVER</span>
+            <div class="step-art"><svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-4-4" />
+              </svg></div>
+            <h3>Customers find local offers</h3>
+            <p>People browse an infinite feed of coupon-style deal cards, then save the ones they want to use.</p>
+          </article>
+          <article class="step"><span class="step-num">02 · CREATE</span>
+            <div class="step-art"><svg viewBox="0 0 24 24">
+                <path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4Z" />
+              </svg></div>
+            <h3>Regulars post for places they love</h3>
+            <p>A customer creates an offer worth sharing. The business can engage with them and reward effective
+              promoters.</p>
+          </article>
+          <article class="step"><span class="step-num">03 · SHARE</span>
+            <div class="step-art"><svg viewBox="0 0 24 24">
+                <circle cx="18" cy="5" r="3" />
+                <circle cx="6" cy="12" r="3" />
+                <circle cx="18" cy="19" r="3" />
+                <path d="m8.6 10.5 6.8-4M8.6 13.5l6.8 4" />
+              </svg></div>
+            <h3>The recommendation travels</h3>
+            <p>Saved and shared cards help nearby people discover a deal through someone they already know.</p>
+          </article>
+          <article class="step"><span class="step-num">04 · REDEEM</span>
+            <div class="step-art"><svg viewBox="0 0 24 24">
+                <path
+                  d="M3 5a2 2 0 0 1 2-2h4v6H3ZM15 3h4a2 2 0 0 1 2 2v4h-6ZM3 15h6v6H5a2 2 0 0 1-2-2ZM15 15h2v2h-2zM19 15h2v6h-6v-2" />
+              </svg></div>
+            <h3>The business verifies the visit</h3>
+            <p>The customer shows a QR or eight-character code; staff verify it from the business dashboard.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="product" class="experience shell reveal">
+      <div class="section-head">
+        <div>
+          <div class="label">One platform, two experiences</div>
+          <h2>Easy for customers.<br>Useful for owners.</h2>
+        </div>
+        <p>OfferEvo starts simple for everyone and unlocks business tools when a user adds their business—no separate
+          account maze.</p>
+      </div>
+      <div class="experience-grid">
+        <article class="panel customer"><span class="tag">For customers</span>
+          <h3>Discover savings and support the places you want to see thrive.</h3>
+          <p>Every account begins with the customer experience.</p>
+          <ul class="features">
+            <li>Browse an always-fresh feed of local coupon cards</li>
+            <li>Create offers for businesses you genuinely recommend</li>
+            <li>Save deals for later and share them with friends</li>
+            <li>Redeem in person with a QR or eight-character code</li>
+          </ul>
+          <div class="note"><strong>No business required.</strong> Sign up and start discovering, saving and redeeming
+            right away.</div>
+        </article>
+        <article class="panel business"><span class="tag">For business owners</span>
+          <h3>Add your business and turn on the tools behind every offer.</h3>
+          <p>When you add a business, OfferEvo automatically expands the same profile with business capabilities.</p>
+          <ul class="features">
+            <li>Manage your business presence and community-created offers</li>
+            <li>Control the deals associated with your business</li>
+            <li>Scan customer QR codes or enter redemption codes</li>
+            <li>Recognize and reward customers who promote you</li>
+          </ul>
+          <div class="note"><strong>One account, upgraded automatically.</strong> Create your profile, add the business,
+            and use the business dashboard.</div>
+        </article>
+      </div>
+    </section>
+    <section class="redemption shell reveal">
+      <div class="redeem-card">
+        <div class="redeem-copy">
+          <div class="label">Built for the counter</div>
+          <h2>A digital deal with a real-world finish.</h2>
+          <p>No vague attribution. When a customer is ready to use an offer, they present a secure QR code or an
+            eight-character code in person. The owner or staff member verifies it from the <strong>/business</strong>
+            experience.</p>
+          <div class="pills"><span>QR scan</span><span>8-character backup</span><span>In-person validation</span></div>
+        </div>
+        <div class="redeem-visual">
+          <div class="product-shot-frame">
+            <!-- REDEMPTION IMAGE: replace only the src below. Best size: 1200 x 800 px (3:2 landscape). -->
+            <img class="product-shot" src="./images/offerevo-redemption-placeholder.svg"
+              alt="OfferEvo business dashboard redemption screen" width="1200" height="800"
+              loading="lazy" decoding="async">
+          </div>
+          <div class="scan"><b>✓</b> Redemption verified</div>
+        </div>
+      </div>
+    </section>
+    <section class="manifesto shell reveal">
+      <div class="label">Why OfferEvo exists</div>
+      <h2>Small businesses do not need more impressions. They need <span>trusted introductions</span> that become
+        visits.</h2>
+      <p>OfferEvo gives loyal customers a useful way to advocate, gives new customers a reason to discover somewhere
+        local, and gives the business a clear moment to verify and reward that activity.</p>
+    </section>
+    <section class="tools shell reveal">
+      <div class="tools-grid">
+        <article class="tool"><span class="tag">Live product</span>
+          <h3>See real local deals in the beta.</h3>
+          <p>Explore the customer experience today: create an account, browse the feed, save an offer, or add your
+            business to unlock the owner experience.</p><a class="text-link" href="https://app.offerevo.com/">Open
+            app.offerevo.com ↗</a>
+        </article>
+        <article class="tool"><span class="tag">Free companion tool</span>
+          <h3>Brainstorm promotions inside Slack.</h3>
+          <p>OfferEvo Hub helps a team draft, polish and preview local promotion ideas without leaving the conversation.
+          </p>
+          <div class="slack"><strong>OfferEvo Hub</strong><br>“Create a Tuesday offer for first-time café
+            visitors.”<br><br>✦ Drafting an offer card…</div><a class="text-link"
+            href="https://offerevo-hub.onrender.com/slack/install">Add OfferEvo Hub to Slack ↗</a>
+        </article>
+      </div>
+    </section>
+    <section class="beta reveal">
+      <div class="beta-inner"><span class="live"><i></i> Beta is live now</span>
+        <h2>Don’t just read about it.<br>Try the real product.</h2>
+        <p>OfferEvo is available at app.offerevo.com. Start as a customer and explore local deals, or add your business
+          to unlock the business experience and see how in-person redemption works.</p>
+        <div class="beta-actions"><a class="btn btn-primary" href="https://app.offerevo.com/">Launch the live beta
+            ↗</a><a class="btn btn-light" href="#how">Review the flow first</a></div>
+        <div class="beta-note">Web-based · Works on mobile and desktop · Installable as a PWA</div>
+      </div>
+    </section>
+    <section id="faq" class="faq shell reveal">
+      <div class="faq-grid">
+        <div>
+          <div class="label">Questions, answered</div>
+          <h2>Before you try OfferEvo.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Is OfferEvo a loyalty program or a referral platform?</summary>
+            <p>It overlaps with both, but its central idea is different: customers can create and share local deals for
+              businesses they already support. Businesses can use those offers to engage regulars, reach new local
+              customers and reward effective advocates.</p>
+          </details>
+          <details>
+            <summary>Who can create an OfferEvo account?</summary>
+            <p>Anyone can create a normal customer account to browse, create, save and redeem offers. If that user adds
+              a business, the account automatically gains the business tools as well.</p>
+          </details>
+          <details>
+            <summary>How does a customer redeem an offer?</summary>
+            <p>Redemption happens at the business. The customer presents a QR code or an eight-character code, and the
+              business owner or staff member verifies it from the business experience.</p>
+          </details>
+          <details>
+            <summary>Do customers need an app-store download?</summary>
+            <p>OfferEvo is a progressive web app. It runs in the browser on mobile and desktop and can be installed to a
+              supported device for a more app-like experience.</p>
+          </details>
+          <details>
+            <summary>Can a business reward customers who promote it?</summary>
+            <p>Yes. OfferEvo is designed to help businesses identify and reward customers whose offers and
+              recommendations support the business.</p>
+          </details>
+          <details>
+            <summary>Where can I try it?</summary>
+            <p>The beta is available now at <a class="text-link" href="https://app.offerevo.com/">app.offerevo.com</a>.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="shell"><a href="#top"><img class="logo" src="./images/offer-evo.png" alt="OfferEvo"></a>
+    <p>Customer advocacy and local deals for independent businesses.</p>
+    <div class="footer-links"><a href="https://app.offerevo.com/">Launch beta</a><a
+        href="https://offerevo.com/for-business.html">For businesses</a><a
+        href="https://offerevo.com/privacy.html">Privacy</a><span>© <span id="year"></span> OfferEvo</span></div>
+  </footer>
+  <script>
+    const menu = document.querySelector('.menu');
+    const nav = document.querySelector('.nav');
+    const closeMenu = () => {
+      nav?.classList.remove('open');
+      menu?.setAttribute('aria-expanded', 'false');
+      menu?.setAttribute('aria-label', 'Open navigation');
+    };
+
+    menu?.addEventListener('click', () => {
+      const willOpen = menu.getAttribute('aria-expanded') !== 'true';
+      menu.setAttribute('aria-expanded', String(willOpen));
+      menu.setAttribute('aria-label', willOpen ? 'Close navigation' : 'Open navigation');
+      nav?.classList.toggle('open', willOpen);
+    });
+    nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menu?.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        menu.focus();
+      }
+    });
+
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('reveal-ready');
+      const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      }), { threshold: .1 });
+      document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+    }
+
+    const year = document.querySelector('#year');
+    if (year) year.textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
