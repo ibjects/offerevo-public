@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./help.css">
+  <link rel="stylesheet" href="../footer.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I find offers near me?","acceptedAnswer":{"@type":"Answer","text":"The feed shows live offers for your city. Open OfferEvo and they are the first thing you see."}},{"@type":"Question","name":"How does OfferEvo know where I am?","acceptedAnswer":{"@type":"Answer","text":"It uses your location if you have already allowed it, otherwise the city on your profile, otherwise an approximate city from your internet connection."}},{"@type":"Question","name":"Will OfferEvo ask for my location?","acceptedAnswer":{"@type":"Answer","text":"Not on its own. The feed never triggers a location prompt unless you tap the location button yourself."}},{"@type":"Question","name":"The feed shows the wrong city. How do I fix it?","acceptedAnswer":{"@type":"Answer","text":"Tap the location chip at the top of the feed to use your device location, or set your city on your profile."}},{"@type":"Question","name":"Can I see offers in another city?","acceptedAnswer":{"@type":"Answer","text":"Yes. Clear the location filter to see offers from everywhere."}},{"@type":"Question","name":"How do I search?","acceptedAnswer":{"@type":"Answer","text":"Use the search button on the feed. Search matches the offer text, the business name and the category."}},{"@type":"Question","name":"Why does the feed show different offers each time?","acceptedAnswer":{"@type":"Answer","text":"The first page is shuffled so the same offers are not always on top."}},{"@type":"Question","name":"How do I filter by category?","acceptedAnswer":{"@type":"Answer","text":"Use the category chips above the feed. Your choice is remembered for next time."}},{"@type":"Question","name":"What does the number on an offer card mean?","acceptedAnswer":{"@type":"Answer","text":"It shows how many redemptions are left and how many days the offer still runs."}},{"@type":"Question","name":"How do I save an offer?","acceptedAnswer":{"@type":"Answer","text":"Tap the bookmark on the card. Saved offers are under Saved."}},{"@type":"Question","name":"Do I need an account to save an offer?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tapping the bookmark while signed out takes you to sign in."}},{"@type":"Question","name":"Why has a saved offer disappeared?","acceptedAnswer":{"@type":"Answer","text":"It was archived by the person who created it, or the business archived itself. Saved shows a note counting offers that are no longer available."}},{"@type":"Question","name":"Do expired offers stay in Saved?","acceptedAnswer":{"@type":"Answer","text":"Yes, in a separate Expired section, so you can still see what you had saved."}},{"@type":"Question","name":"What does sold out mean on a card?","acceptedAnswer":{"@type":"Answer","text":"The offer has been redeemed the maximum number of times it allowed."}},{"@type":"Question","name":"Can I see all offers from one business?","acceptedAnswer":{"@type":"Answer","text":"Yes. Open the business's public page to see its active offers."}},{"@type":"Question","name":"Can I see all offers from one person?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tap their handle on any card to open their public profile."}}]}</script>
 </head>
 
@@ -137,16 +138,32 @@
     </section>
   </main>
 
-  <footer class="shell">
-    <a href="../index.html"><img class="logo" src="../images/offer-evo.png" alt="OfferEvo"></a>
-    <p>Local deals that help small businesses grow.</p>
-    <div class="footer-links">
-      <a href="./index.html">Help centre</a>
-      <a href="./index.html#contact">Contact support</a>
-      <a href="../privacy.html">Privacy</a>
-      <a href="../terms.html">Terms</a>
-      <a href="../sitemap.html">Sitemap</a>
-      <span>&copy; <span id="year"></span> OfferEvo</span>
+  <footer class="oe-footer">
+    <div class="oe-footer__top">
+      <div class="oe-footer__brand">
+        <a class="oe-footer__home" href="../index.html" aria-label="OfferEvo home">
+          <img class="oe-footer__logo" src="../images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+        </a>
+        <p class="oe-footer__tagline">Local deals that help small businesses grow.</p>
+      </div>
+      <nav class="oe-footer__nav" aria-label="Footer">
+        <a href="https://app.offerevo.com/">Get started</a>
+        <a href="../help/index.html">Help centre</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../terms.html">Terms</a>
+        <a href="../sitemap.html">Sitemap</a>
+      </nav>
+    </div>
+    <div class="oe-footer__bottom">
+      <p class="oe-footer__copyright">© <span id="year">2026</span> OfferEvo</p>
+      <a class="oe-footer__social" href="https://www.instagram.com/offer.evo/" target="_blank" rel="noopener noreferrer"
+        aria-label="OfferEvo on Instagram (opens in a new tab)" title="OfferEvo on Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
     </div>
   </footer>
 

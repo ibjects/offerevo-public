@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./help.css">
+  <link rel="stylesheet" href="../footer.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is My Deals?","acceptedAnswer":{"@type":"Answer","text":"The page listing offers you created and offers you redeemed, in two tabs."}},{"@type":"Question","name":"What do the tabs under Created mean?","acceptedAnswer":{"@type":"Answer","text":"Pending is waiting for the business, Approved is live, Expired has ended, Rejected was declined, Archived you withdrew, and Unavailable means the business archived itself."}},{"@type":"Question","name":"What does Unavailable mean?","acceptedAnswer":{"@type":"Answer","text":"The business archived itself, so your offer is paused. It comes back unchanged, with the same expiry, if they restore the business."}},{"@type":"Question","name":"What is the difference between Archived and Unavailable?","acceptedAnswer":{"@type":"Answer","text":"Archived is something you did and cannot be undone. Unavailable is something the business did and can be reversed by them."}},{"@type":"Question","name":"How do I archive an offer?","acceptedAnswer":{"@type":"Answer","text":"Open My Deals, find the offer, and use Archive. You are asked to confirm because it cannot be undone."}},{"@type":"Question","name":"What happens when I archive an offer?","acceptedAnswer":{"@type":"Answer","text":"It disappears from the feed, from search, from the business's page and from your public profile. People who saved it see that it is no longer available."}},{"@type":"Question","name":"Can I unarchive an offer?","acceptedAnswer":{"@type":"Answer","text":"No. Archiving an offer is permanent."}},{"@type":"Question","name":"Can I archive an expired offer?","acceptedAnswer":{"@type":"Answer","text":"There is nothing to withdraw once it has ended, so the option is not offered."}},{"@type":"Question","name":"Does the Redeemed tab show offers I created?","acceptedAnswer":{"@type":"Answer","text":"Only if you also redeemed them. The two tabs are independent."}},{"@type":"Question","name":"Why does a redeemed offer show a dash instead of a business name?","acceptedAnswer":{"@type":"Answer","text":"That business has archived itself and is no longer listed. Your redemption stays in your history."}},{"@type":"Question","name":"Are redemptions listed newest first?","acceptedAnswer":{"@type":"Answer","text":"Yes."}}]}</script>
 </head>
 
@@ -112,16 +113,32 @@
     </section>
   </main>
 
-  <footer class="shell">
-    <a href="../index.html"><img class="logo" src="../images/offer-evo.png" alt="OfferEvo"></a>
-    <p>Local deals that help small businesses grow.</p>
-    <div class="footer-links">
-      <a href="./index.html">Help centre</a>
-      <a href="./index.html#contact">Contact support</a>
-      <a href="../privacy.html">Privacy</a>
-      <a href="../terms.html">Terms</a>
-      <a href="../sitemap.html">Sitemap</a>
-      <span>&copy; <span id="year"></span> OfferEvo</span>
+  <footer class="oe-footer">
+    <div class="oe-footer__top">
+      <div class="oe-footer__brand">
+        <a class="oe-footer__home" href="../index.html" aria-label="OfferEvo home">
+          <img class="oe-footer__logo" src="../images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+        </a>
+        <p class="oe-footer__tagline">Local deals that help small businesses grow.</p>
+      </div>
+      <nav class="oe-footer__nav" aria-label="Footer">
+        <a href="https://app.offerevo.com/">Get started</a>
+        <a href="../help/index.html">Help centre</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../terms.html">Terms</a>
+        <a href="../sitemap.html">Sitemap</a>
+      </nav>
+    </div>
+    <div class="oe-footer__bottom">
+      <p class="oe-footer__copyright">© <span id="year">2026</span> OfferEvo</p>
+      <a class="oe-footer__social" href="https://www.instagram.com/offer.evo/" target="_blank" rel="noopener noreferrer"
+        aria-label="OfferEvo on Instagram (opens in a new tab)" title="OfferEvo on Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
     </div>
   </footer>
 

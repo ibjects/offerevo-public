@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./help.css">
+  <link rel="stylesheet" href="../footer.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I share an offer?","acceptedAnswer":{"@type":"Answer","text":"Tap the share button on any offer card or on the offer page. You can share a link or an image."}},{"@type":"Question","name":"What does the shared image look like?","acceptedAnswer":{"@type":"Answer","text":"It is a card with the offer, the business, and a short link, in the offer's colour."}},{"@type":"Question","name":"What sizes can I share?","acceptedAnswer":{"@type":"Answer","text":"Square for feed posts, Story for full-screen stories, and Wide for link previews and desktop chat. Square is the default."}},{"@type":"Question","name":"Can I post an offer straight to my Instagram story?","acceptedAnswer":{"@type":"Answer","text":"Yes, on a phone. Choose Story, tap Share, and pick Instagram from your phone's share sheet."}},{"@type":"Question","name":"Which apps can I share to?","acceptedAnswer":{"@type":"Answer","text":"Whatever is installed on your phone. OfferEvo hands the image to your phone's own share sheet, so the list is yours, not ours."}},{"@type":"Question","name":"Why can I not share directly to Instagram on my computer?","acceptedAnswer":{"@type":"Answer","text":"Desktop browsers do not support sharing files to other apps. The image downloads and the caption is copied instead."}},{"@type":"Question","name":"Does the shared image include my save and share buttons?","acceptedAnswer":{"@type":"Answer","text":"No. The image is a clean card with no buttons on it."}},{"@type":"Question","name":"What is in the caption?","acceptedAnswer":{"@type":"Answer","text":"The offer, the business name, and the link to the offer, with the link at the end so it stays tappable."}},{"@type":"Question","name":"Where does a shared link go?","acceptedAnswer":{"@type":"Answer","text":"To the offer's own page, which anyone can open without an account."}},{"@type":"Question","name":"Does a shared link open the app if I have it installed?","acceptedAnswer":{"@type":"Answer","text":"On Android, yes. On iPhone a link opens in Safari, which is a limitation of the platform."}},{"@type":"Question","name":"Can I share an expired offer?","acceptedAnswer":{"@type":"Answer","text":"The link still opens, and the page shows that the offer has ended."}},{"@type":"Question","name":"Do I get credit when someone uses an offer I shared?","acceptedAnswer":{"@type":"Answer","text":"Offers you created list you as their creator. Sharing an offer someone else created is not tracked."}}]}</script>
 </head>
 
@@ -117,16 +118,32 @@
     </section>
   </main>
 
-  <footer class="shell">
-    <a href="../index.html"><img class="logo" src="../images/offer-evo.png" alt="OfferEvo"></a>
-    <p>Local deals that help small businesses grow.</p>
-    <div class="footer-links">
-      <a href="./index.html">Help centre</a>
-      <a href="./index.html#contact">Contact support</a>
-      <a href="../privacy.html">Privacy</a>
-      <a href="../terms.html">Terms</a>
-      <a href="../sitemap.html">Sitemap</a>
-      <span>&copy; <span id="year"></span> OfferEvo</span>
+  <footer class="oe-footer">
+    <div class="oe-footer__top">
+      <div class="oe-footer__brand">
+        <a class="oe-footer__home" href="../index.html" aria-label="OfferEvo home">
+          <img class="oe-footer__logo" src="../images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+        </a>
+        <p class="oe-footer__tagline">Local deals that help small businesses grow.</p>
+      </div>
+      <nav class="oe-footer__nav" aria-label="Footer">
+        <a href="https://app.offerevo.com/">Get started</a>
+        <a href="../help/index.html">Help centre</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../terms.html">Terms</a>
+        <a href="../sitemap.html">Sitemap</a>
+      </nav>
+    </div>
+    <div class="oe-footer__bottom">
+      <p class="oe-footer__copyright">© <span id="year">2026</span> OfferEvo</p>
+      <a class="oe-footer__social" href="https://www.instagram.com/offer.evo/" target="_blank" rel="noopener noreferrer"
+        aria-label="OfferEvo on Instagram (opens in a new tab)" title="OfferEvo on Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
     </div>
   </footer>
 

@@ -4,6 +4,6 @@
   "private": true,
   "scripts": {
     "build:help": "node help/build.mjs",
-    "build": "npm run build:help && mkdir -p dist/help && cp index.html privacy.html terms.html sitemap.html sitemap.xml robots.txt llms.txt styles.css script.js mark.svg CNAME BingSiteAuth.xml dist/ && cp -R images dist/ && cp help/*.html help/help.css help/faqs.json dist/help/"
+    "build": "npm run build:help && mkdir -p dist/help && cp index.html privacy.html terms.html sitemap.html sitemap.xml robots.txt llms.txt footer.css styles.css script.js mark.svg CNAME BingSiteAuth.xml dist/ && cp -R images dist/ && cp help/*.html help/help.css help/faqs.json dist/help/"
   }
 }

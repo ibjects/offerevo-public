@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./help.css">
+  <link rel="stylesheet" href="../footer.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is my handle?","acceptedAnswer":{"@type":"Answer","text":"The @name on your public profile and on every offer card you create."}},{"@type":"Question","name":"Can I change my handle?","acceptedAnswer":{"@type":"Answer","text":"Yes, from your profile, as long as the one you want is not taken."}},{"@type":"Question","name":"Where did my handle come from?","acceptedAnswer":{"@type":"Answer","text":"It was generated from your name when your account was created."}},{"@type":"Question","name":"What is on my public profile?","acceptedAnswer":{"@type":"Answer","text":"Your name, photo, handle, when you joined, and the offers you created that are live or have ended."}},{"@type":"Question","name":"Who can see my public profile?","acceptedAnswer":{"@type":"Answer","text":"Anyone with the link, signed in or not."}},{"@type":"Question","name":"Are my pending offers on my public profile?","acceptedAnswer":{"@type":"Answer","text":"No. Only approved offers appear there."}},{"@type":"Question","name":"Is my email address public?","acceptedAnswer":{"@type":"Answer","text":"No. Your profile shows your name, handle and photo only."}},{"@type":"Question","name":"Where does my photo come from?","acceptedAnswer":{"@type":"Answer","text":"Your Google account."}},{"@type":"Question","name":"Why does OfferEvo ask for my city?","acceptedAnswer":{"@type":"Answer","text":"To show you offers near you. It is also used as a fallback when location access is off."}},{"@type":"Question","name":"Do I have to set my city?","acceptedAnswer":{"@type":"Answer","text":"No. Without it, OfferEvo estimates a city from your connection."}},{"@type":"Question","name":"How do I switch between light and dark mode?","acceptedAnswer":{"@type":"Answer","text":"OfferEvo follows your device setting by default and can be changed in the app."}},{"@type":"Question","name":"I am a business owner but I see My Offers instead of Business on my phone.","acceptedAnswer":{"@type":"Answer","text":"The Business tab appears once your account owns at least one business. Add one and reload."}},{"@type":"Question","name":"How do I contact support?","acceptedAnswer":{"@type":"Answer","text":"Use the contact form in the help centre. You do not need an account with any other service to open a ticket."}}]}</script>
 </head>
 
@@ -122,16 +123,32 @@
     </section>
   </main>
 
-  <footer class="shell">
-    <a href="../index.html"><img class="logo" src="../images/offer-evo.png" alt="OfferEvo"></a>
-    <p>Local deals that help small businesses grow.</p>
-    <div class="footer-links">
-      <a href="./index.html">Help centre</a>
-      <a href="./index.html#contact">Contact support</a>
-      <a href="../privacy.html">Privacy</a>
-      <a href="../terms.html">Terms</a>
-      <a href="../sitemap.html">Sitemap</a>
-      <span>&copy; <span id="year"></span> OfferEvo</span>
+  <footer class="oe-footer">
+    <div class="oe-footer__top">
+      <div class="oe-footer__brand">
+        <a class="oe-footer__home" href="../index.html" aria-label="OfferEvo home">
+          <img class="oe-footer__logo" src="../images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+        </a>
+        <p class="oe-footer__tagline">Local deals that help small businesses grow.</p>
+      </div>
+      <nav class="oe-footer__nav" aria-label="Footer">
+        <a href="https://app.offerevo.com/">Get started</a>
+        <a href="../help/index.html">Help centre</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../terms.html">Terms</a>
+        <a href="../sitemap.html">Sitemap</a>
+      </nav>
+    </div>
+    <div class="oe-footer__bottom">
+      <p class="oe-footer__copyright">© <span id="year">2026</span> OfferEvo</p>
+      <a class="oe-footer__social" href="https://www.instagram.com/offer.evo/" target="_blank" rel="noopener noreferrer"
+        aria-label="OfferEvo on Instagram (opens in a new tab)" title="OfferEvo on Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
     </div>
   </footer>
 

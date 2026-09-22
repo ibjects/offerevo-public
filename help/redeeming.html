@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./help.css">
+  <link rel="stylesheet" href="../footer.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I redeem an offer?","acceptedAnswer":{"@type":"Answer","text":"Open the offer, tap Redeem, and show the QR code or the eight-character code to staff at the business."}},{"@type":"Question","name":"What is the eight-character code?","acceptedAnswer":{"@type":"Answer","text":"It is four characters identifying the offer plus four identifying you, shown with a dash between them for readability."}},{"@type":"Question","name":"Do I need an account to redeem?","acceptedAnswer":{"@type":"Answer","text":"Yes. The code includes a part that identifies you, so you have to be signed in."}},{"@type":"Question","name":"Does the code work if I have no signal in the shop?","acceptedAnswer":{"@type":"Answer","text":"The business needs a connection to confirm the code, so redeeming requires one of you to be online."}},{"@type":"Question","name":"How does the business confirm my code?","acceptedAnswer":{"@type":"Answer","text":"They scan your QR code with their camera, or type the eight characters in. Your screen turns green the moment it goes through."}},{"@type":"Question","name":"Can I redeem the same offer twice?","acceptedAnswer":{"@type":"Answer","text":"No. Each person can redeem a given offer once."}},{"@type":"Question","name":"Can I redeem several different offers at the same business?","acceptedAnswer":{"@type":"Answer","text":"Yes, as long as each one is a different offer."}},{"@type":"Question","name":"What does already redeemed mean?","acceptedAnswer":{"@type":"Answer","text":"That offer has already been used on your account and cannot be used again."}},{"@type":"Question","name":"What does sold out mean when redeeming?","acceptedAnswer":{"@type":"Answer","text":"The offer reached its maximum number of redemptions before you got there."}},{"@type":"Question","name":"What does that offer has ended mean?","acceptedAnswer":{"@type":"Answer","text":"The offer passed its expiry date and can no longer be redeemed."}},{"@type":"Question","name":"What does that offer belongs to another business mean?","acceptedAnswer":{"@type":"Answer","text":"The code was entered at a business that does not own this offer. Codes only work at the business the offer is for."}},{"@type":"Question","name":"The code did not match any offer. Why?","acceptedAnswer":{"@type":"Answer","text":"The code was typed incorrectly, or the offer no longer exists. Check the characters and try again."}},{"@type":"Question","name":"Does my code change?","acceptedAnswer":{"@type":"Answer","text":"No. Your half of the code is permanent, and each offer's half is fixed too."}},{"@type":"Question","name":"Is it safe if someone sees my code?","acceptedAnswer":{"@type":"Answer","text":"Only the business the offer belongs to can accept it, and only once. It is not a payment method."}},{"@type":"Question","name":"Can I redeem on behalf of a friend?","acceptedAnswer":{"@type":"Answer","text":"No. The code identifies your account, so each person redeems with their own."}},{"@type":"Question","name":"Do I have to buy something to redeem?","acceptedAnswer":{"@type":"Answer","text":"That depends on the offer's conditions. Read them on the offer page before you go."}},{"@type":"Question","name":"Where do I see what I have redeemed?","acceptedAnswer":{"@type":"Answer","text":"My Deals has a Redeemed tab listing every offer you have used and when."}},{"@type":"Question","name":"Can the business refuse my code?","acceptedAnswer":{"@type":"Answer","text":"The conditions on the offer are what it is subject to. If something is unclear, ask the business before you order."}}]}</script>
 </head>
 
@@ -147,16 +148,32 @@
     </section>
   </main>
 
-  <footer class="shell">
-    <a href="../index.html"><img class="logo" src="../images/offer-evo.png" alt="OfferEvo"></a>
-    <p>Local deals that help small businesses grow.</p>
-    <div class="footer-links">
-      <a href="./index.html">Help centre</a>
-      <a href="./index.html#contact">Contact support</a>
-      <a href="../privacy.html">Privacy</a>
-      <a href="../terms.html">Terms</a>
-      <a href="../sitemap.html">Sitemap</a>
-      <span>&copy; <span id="year"></span> OfferEvo</span>
+  <footer class="oe-footer">
+    <div class="oe-footer__top">
+      <div class="oe-footer__brand">
+        <a class="oe-footer__home" href="../index.html" aria-label="OfferEvo home">
+          <img class="oe-footer__logo" src="../images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+        </a>
+        <p class="oe-footer__tagline">Local deals that help small businesses grow.</p>
+      </div>
+      <nav class="oe-footer__nav" aria-label="Footer">
+        <a href="https://app.offerevo.com/">Get started</a>
+        <a href="../help/index.html">Help centre</a>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../terms.html">Terms</a>
+        <a href="../sitemap.html">Sitemap</a>
+      </nav>
+    </div>
+    <div class="oe-footer__bottom">
+      <p class="oe-footer__copyright">© <span id="year">2026</span> OfferEvo</p>
+      <a class="oe-footer__social" href="https://www.instagram.com/offer.evo/" target="_blank" rel="noopener noreferrer"
+        aria-label="OfferEvo on Instagram (opens in a new tab)" title="OfferEvo on Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
     </div>
   </footer>
 

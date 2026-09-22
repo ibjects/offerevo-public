@@ -1070,31 +1070,9 @@
       line-height: 1.7
     }
 
-    footer {
-      min-height: 130px;
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      align-items: center;
-      gap: 30px;
-      border-top: 1px solid var(--line)
-    }
 
-    footer .logo {
-      width: 130px
-    }
 
-    footer>p {
-      color: var(--muted);
-      font-size: 11px
-    }
 
-    .footer-links {
-      justify-self: end;
-      display: flex;
-      gap: 24px;
-      color: var(--muted);
-      font-size: 11px
-    }
 
     .reveal {
       opacity: 1;
@@ -1317,17 +1295,7 @@
         gap: 45px
       }
 
-      footer {
-        padding: 34px 0;
-        grid-template-columns: 1fr;
-        gap: 18px
-      }
 
-      .footer-links {
-        justify-self: start;
-        flex-direction: column;
-        gap: 11px
-      }
     }
 
     @media(prefers-reduced-motion:reduce) {
@@ -1345,7 +1313,9 @@
         transform: none
       }
     }
+
   </style>
+  <link rel="stylesheet" href="./footer.css">
 </head>
 
 <body>
@@ -1673,13 +1643,33 @@
 
 
   </main>
-  <footer class="shell"><a href="#top"><img class="logo" src="./images/offer-evo.png" alt="OfferEvo"></a>
-    <p>Local deals that help small businesses grow.</p>
-    <div class="footer-links"><a href="https://app.offerevo.com/">Get started</a><a href="#benefits">For
-        businesses</a><a href="/help/">Help centre</a><a href="/help/#contact">Contact support</a><a
-        href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a href="./sitemap.html">Sitemap</a><span>©
-        <span id="year"></span> OfferEvo</span></div>
-
+  <footer class="oe-footer">
+    <div class="oe-footer__top">
+      <div class="oe-footer__brand">
+        <a class="oe-footer__home" href="./index.html" aria-label="OfferEvo home">
+          <img class="oe-footer__logo" src="./images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+        </a>
+        <p class="oe-footer__tagline">Local deals that help small businesses grow.</p>
+      </div>
+      <nav class="oe-footer__nav" aria-label="Footer">
+        <a href="https://app.offerevo.com/">Get started</a>
+        <a href="./help/index.html">Help centre</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./sitemap.html">Sitemap</a>
+      </nav>
+    </div>
+    <div class="oe-footer__bottom">
+      <p class="oe-footer__copyright">© <span id="year">2026</span> OfferEvo</p>
+      <a class="oe-footer__social" href="https://www.instagram.com/offer.evo/" target="_blank" rel="noopener noreferrer"
+        aria-label="OfferEvo on Instagram (opens in a new tab)" title="OfferEvo on Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+    </div>
   </footer>
   <script>
     const menu = document.querySelector('.menu');
