@@ -12,6 +12,8 @@
   <meta name="author" content="OfferEvo">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://offerevo.com/">
+  <link rel="sitemap" type="application/xml" href="./sitemap.xml">
+  <link rel="describedby" type="text/plain" href="./llms.txt">
   <link rel="icon" type="image/svg+xml" href="./images/offerevo-icon.svg">
   <link rel="alternate icon" type="image/png" href="./images/offerevo-icon.png">
   <meta property="og:type" content="website">
@@ -1538,7 +1540,7 @@
       </div>
     </section>
     <!-- Use your offer -->
-    <section class="redemption shell reveal">
+    <section id="redemption" class="redemption shell reveal">
       <div class="redeem-card">
         <div class="redeem-copy">
           <div class="label-light">Use your offer</div>
@@ -1559,7 +1561,7 @@
       </div>
     </section>
     <!-- Why OfferEvo exists -->
-    <section class="manifesto shell reveal">
+    <section id="why" class="manifesto shell reveal">
       <div class="label">Why OfferEvo exists</div>
       <h2>Help more people discover the <span>local places you love</span>.</h2>
       <p>Your favourite café, barber or neighbourhood shop matters. We built OfferEvo to help people support these
@@ -1640,7 +1642,7 @@
     </section> -->
 
     <!-- Public Beta -->
-    <section class="beta reveal">
+    <section id="get-started" class="beta reveal">
       <div class="beta-inner"><span class="live"><i></i>Public Beta</span>
         <h2>Find a deal you love.<br>Help a business grow.</h2>
         <p>Join OfferEvo to discover local deals or create an offer for a business you love. Own a business? Add it and
@@ -1657,8 +1659,9 @@
   <footer class="shell"><a href="#top"><img class="logo" src="./images/offer-evo.png" alt="OfferEvo"></a>
     <p>Local deals that help small businesses grow.</p>
     <div class="footer-links"><a href="https://app.offerevo.com/">Get started</a><a
-        href="https://offerevo.com/for-business.html">For businesses</a><a
-        href="https://offerevo.com/privacy.html">Privacy</a><span>© <span id="year"></span> OfferEvo</span></div>
+        href="#benefits">For businesses</a><a
+        href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a
+        href="./sitemap.html">Sitemap</a><span>© <span id="year"></span> OfferEvo</span></div>
   </footer>
   <script>
     const menu = document.querySelector('.menu');

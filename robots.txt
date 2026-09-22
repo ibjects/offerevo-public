@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /backup/
+Allow: /
+
+Sitemap: https://offerevo.com/sitemap.xml

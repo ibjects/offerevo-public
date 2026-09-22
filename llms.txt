@@ -1,0 +1,40 @@
+# OfferEvo
+
+> OfferEvo is a web platform for local deals that help small businesses grow. Customers create offers for businesses they love; businesses approve offers before they go live for people to discover, share and use.
+
+The public website is https://offerevo.com/. The web app is https://app.offerevo.com/ and works on phones and computers without an app download. OfferEvo is currently in public beta.
+
+The following product details come from the public homepage:
+
+- OfferEvo is free for customers and business owners.
+- Customers can create offers for a business, but each offer must be approved by the business before it goes live.
+- Customers can discover, save and share offers. They can use offers without creating one themselves or knowing the creator, following the offer’s terms.
+- To use an offer, check its terms, visit the business and show its QR code or eight-character code. The owner or a staff member checks the code to confirm the offer.
+- One account is all you need. Business owners add their business to the same account to manage their business profile and offers, review customer ideas, approve offers and check offer codes.
+- OfferEvo serves local businesses such as cafés, restaurants, salons, barbers, gyms, local shops and local services.
+
+## Website
+
+- [Home](https://offerevo.com/): Product overview and introduction to OfferEvo.
+- [How it works](https://offerevo.com/#how): How customers create offers and businesses approve them.
+- [For businesses](https://offerevo.com/#benefits): How OfferEvo helps local businesses.
+- [Who it is for](https://offerevo.com/#product): Customer and business owner experiences.
+- [Use your offer](https://offerevo.com/#redemption): QR or eight-character offer codes checked in store.
+- [Why OfferEvo exists](https://offerevo.com/#why): Helping people support local businesses by creating and sharing offers that give others a reason to visit.
+- [Frequently asked questions](https://offerevo.com/#faq): Getting started, accounts and pricing information.
+- [Public beta](https://offerevo.com/#get-started): Get started on phones and computers without an app download.
+
+## App
+
+- [OfferEvo app](https://app.offerevo.com/): Create an account to browse offers or submit your own. Business owners can add their business to the same account.
+
+## Policies and contact
+
+- [Privacy policy](https://offerevo.com/privacy.html): Information collection, use and privacy choices.
+- [Terms of use](https://offerevo.com/terms.html): Rules for using OfferEvo.
+- [Contact OfferEvo](mailto:hello@offerevo.com): Product questions and support.
+
+## Site navigation
+
+- [Website sitemap](https://offerevo.com/sitemap.html): All public website pages, homepage sections and the app entry point.
+- [XML sitemap](https://offerevo.com/sitemap.xml): Canonical public pages hosted on offerevo.com. The app is hosted separately.
