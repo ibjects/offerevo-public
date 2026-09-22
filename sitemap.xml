@@ -12,4 +12,15 @@
   <url>
     <loc>https://offerevo.com/sitemap.html</loc>
   </url>
+   <url><loc>https://offerevo.com/help/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://offerevo.com/help/getting-started.html</loc><priority>0.7</priority></url>
+  <url><loc>https://offerevo.com/help/creating-offers.html</loc><priority>0.7</priority></url>
+  <url><loc>https://offerevo.com/help/approval.html</loc><priority>0.7</priority></url>
+  <url><loc>https://offerevo.com/help/finding-offers.html</loc><priority>0.7</priority></url>
+  <url><loc>https://offerevo.com/help/redeeming.html</loc><priority>0.7</priority></url>
+  <url><loc>https://offerevo.com/help/sharing.html</loc><priority>0.7</priority></url>
+  <url><loc>https://offerevo.com/help/my-deals.html</loc><priority>0.7</priority></url>
+  <url><loc>https://offerevo.com/help/business-setup.html</loc><priority>0.7</priority></url>
+  <url><loc>https://offerevo.com/help/business-managing.html</loc><priority>0.7</priority></url>
+  <url><loc>https://offerevo.com/help/account.html</loc><priority>0.7</priority></url>
 </urlset>

@@ -4,13 +4,21 @@
 
 The public website is https://offerevo.com/. The web app is https://app.offerevo.com/ and works on phones and computers without an app download. OfferEvo is currently in public beta.
 
-The following product details come from the public homepage:
+The following product details come from the public homepage and help centre FAQs:
 
 - OfferEvo is free for customers and business owners.
+- Anyone can browse offers and public profiles without an account. Saving, creating and redeeming offers require sign-in. Google is currently the only sign-in method; the first sign-in creates the account.
+- OfferEvo runs in a browser and can optionally be installed to a phone’s home screen.
 - Customers can create offers for a business, but each offer must be approved by the business before it goes live.
+- The business must already be listed on OfferEvo. Offer headlines allow 42 characters and conditions allow 120. Businesses set redemption and duration limits, and may lock their brand colour.
+- Offer duration starts at approval. Submitted offers cannot be edited by the creator or business. Creators can permanently archive an offer; correcting or resubmitting one requires creating a new offer.
 - Customers can discover, save and share offers. They can use offers without creating one themselves or knowing the creator, following the offer’s terms.
 - To use an offer, check its terms, visit the business and show its QR code or eight-character code. The owner or a staff member checks the code to confirm the offer.
+- Each person can redeem a given offer once. Codes work only at the offer’s business, and expired or sold-out offers cannot be redeemed.
 - One account is all you need. Business owners add their business to the same account to manage their business profile and offers, review customer ideas, approve offers and check offer codes.
+- An account can manage multiple businesses. Business tools include customer records and analytics. Archiving a business hides it and its offers; restoring it keeps the original offer expiry dates.
+- My Deals tracks created offers by status and keeps a separate redemption history. Saving an offer is separate from creating or redeeming one.
+- Offers can be shared as links or images in Square, Story and Wide formats. Sharing options depend on the device and browser. Sharing another person’s offer is not tracked as creator credit.
 - OfferEvo serves local businesses such as cafés, restaurants, salons, barbers, gyms, local shops and local services.
 
 ## Website
@@ -26,13 +34,29 @@ The following product details come from the public homepage:
 
 ## App
 
-- [OfferEvo app](https://app.offerevo.com/): Create an account to browse offers or submit your own. Business owners can add their business to the same account.
+- [OfferEvo app](https://app.offerevo.com/): Browse offers without signing in. Sign in with Google to save, create or redeem offers, or add a business.
+
+## Help centre
+
+- [Help centre](https://offerevo.com/help/): Search all FAQs or choose a topic.
+- [Getting started](https://offerevo.com/help/getting-started.html): Public browsing, Google sign-in, free access and optional home-screen installation.
+- [Creating offers](https://offerevo.com/help/creating-offers.html): Listed businesses, offer text, conditions, colours, limits and permanent offer archiving.
+- [Approval and rejection](https://offerevo.com/help/approval.html): Pending offers, business decisions, visibility and rejection reasons.
+- [Finding offers](https://offerevo.com/help/finding-offers.html): City-based browsing, search, category filters, saved offers and public profiles.
+- [Redeeming an offer](https://offerevo.com/help/redeeming.html): QR and eight-character codes, one redemption per person, expiry and troubleshooting.
+- [Sharing](https://offerevo.com/help/sharing.html): Public offer links, image formats and device-dependent sharing.
+- [My Deals](https://offerevo.com/help/my-deals.html): Created offer statuses, redemption history, and the difference between Archived and Unavailable.
+- [Setting up a business](https://offerevo.com/help/business-setup.html): Multiple businesses, profiles, categories, redemption caps, offer duration and brand colours.
+- [Running your business](https://offerevo.com/help/business-managing.html): Approval, scanning codes, customers, analytics, archiving and restoring a business.
+- [Your account](https://offerevo.com/help/account.html): Handles, public profiles, Google photos, city settings and support.
+- [FAQ data](https://offerevo.com/help/faqs.json): The complete questions and answers used to generate the help pages, in JSON format.
 
 ## Policies and contact
 
 - [Privacy policy](https://offerevo.com/privacy.html): Information collection, use and privacy choices.
 - [Terms of use](https://offerevo.com/terms.html): Rules for using OfferEvo.
 - [Contact OfferEvo](mailto:hello@offerevo.com): Product questions and support.
+- [Contact support](https://offerevo.com/help/#contact): Help centre contact information.
 
 ## Site navigation
 
