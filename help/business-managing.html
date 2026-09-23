@@ -22,22 +22,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./help.css">
   <link rel="stylesheet" href="../footer.css">
+  <link rel="stylesheet" href="../header.css">
+  <script src="../header.js" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I approve an offer?","acceptedAnswer":{"@type":"Answer","text":"Open Business. Offers waiting for you are listed there with Approve and Reject."}},{"@type":"Question","name":"How do I know an offer is waiting?","acceptedAnswer":{"@type":"Answer","text":"Business shows a count next to each of your businesses for offers awaiting approval."}},{"@type":"Question","name":"Can I give a reason when rejecting?","acceptedAnswer":{"@type":"Answer","text":"Yes, and the person who created the offer sees it in My Deals."}},{"@type":"Question","name":"When does an approved offer start?","acceptedAnswer":{"@type":"Answer","text":"Immediately. Its expiry is counted from the moment you approve it."}},{"@type":"Question","name":"How do I redeem a customer's code?","acceptedAnswer":{"@type":"Answer","text":"Open Business and use Scan. Point the camera at their QR code, or type the eight characters in."}},{"@type":"Question","name":"Can staff redeem codes without my account?","acceptedAnswer":{"@type":"Answer","text":"Anyone signed in to an account that owns the business can redeem for it."}},{"@type":"Question","name":"Where do I see who redeemed?","acceptedAnswer":{"@type":"Answer","text":"Customers lists everyone who posted an offer for you or redeemed one, with counts for each."}},{"@type":"Question","name":"Why does one person appear once when they have several offers?","acceptedAnswer":{"@type":"Answer","text":"Customers shows one row per person, with their totals, rather than one row per offer."}},{"@type":"Question","name":"What is in Analytics?","acceptedAnswer":{"@type":"Answer","text":"Redemptions over time, your busiest days and hours, top offers, who brings you the most customers, offer status, capacity used, and where your customers are."}},{"@type":"Question","name":"Can I see analytics per business?","acceptedAnswer":{"@type":"Answer","text":"Yes. Switch business at the top of the page, or view all of them together."}},{"@type":"Question","name":"What does capacity used mean?","acceptedAnswer":{"@type":"Answer","text":"How much of the total redemptions across your live offers has been used."}},{"@type":"Question","name":"What is an ambassador?","acceptedAnswer":{"@type":"Answer","text":"Someone who created an offer for your business."}},{"@type":"Question","name":"How do I archive my business?","acceptedAnswer":{"@type":"Answer","text":"Business settings, then Archive in the danger zone at the bottom."}},{"@type":"Question","name":"What happens when I archive my business?","acceptedAnswer":{"@type":"Answer","text":"Its offers stop showing everywhere, its public page stops working, and it cannot be found when someone creates a new offer."}},{"@type":"Question","name":"Is archiving my business permanent?","acceptedAnswer":{"@type":"Answer","text":"No. You can restore it at any time, and everything returns exactly as it was."}},{"@type":"Question","name":"If I restore my business, do offer expiry dates change?","acceptedAnswer":{"@type":"Answer","text":"No. Offers come back with the same dates they had, even if it was days later."}},{"@type":"Question","name":"Where do I restore an archived business?","acceptedAnswer":{"@type":"Answer","text":"It stays in your Business list, dimmed and marked Archived. Open its settings and restore it there."}},{"@type":"Question","name":"Can customers still see my archived business?","acceptedAnswer":{"@type":"Answer","text":"No. Only you can see it while it is archived."}},{"@type":"Question","name":"Does archiving delete anything?","acceptedAnswer":{"@type":"Answer","text":"No. Nothing is deleted, and your offers and history are intact when you restore."}}]}</script>
 </head>
 
 <body>
   <a class="skip" href="#main">Skip to main content</a>
 
-  <header class="header">
-    <a href="../index.html" aria-label="OfferEvo home"><img class="logo" src="../images/offer-evo.png" alt="OfferEvo"></a>
-    <nav class="nav">
-      <a href="./index.html">Help centre</a>
-      <a href="../index.html#faq">FAQ</a>
+  <header class="oe-header">
+    <a class="oe-header__home" href="../index.html" aria-label="OfferEvo home">
+      <img class="oe-header__logo" src="../images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+    </a>
+    <nav class="oe-header__nav" id="site-navigation" aria-label="Main navigation">
       <a href="../index.html#how">How it works</a>
+      <a href="../index.html#benefits">For businesses</a>
+      <a href="../index.html#product">Who it’s for</a>
+      <a href="../index.html#faq">FAQ</a>
+      <a href="../help/index.html">Help</a>
     </nav>
-    <div class="header-actions">
-      <a class="btn btn-primary btn-small" href="https://app.offerevo.com/">Open OfferEvo &#8599;</a>
+    <div class="oe-header__actions">
+      <a class="oe-header__login" href="https://app.offerevo.com/">Sign in</a>
+      <a class="oe-header__cta" href="https://app.offerevo.com/">Get started ↗</a>
     </div>
+    <button class="oe-header__toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
   </header>
 
   <main id="main" tabindex="-1">

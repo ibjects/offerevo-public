@@ -1313,27 +1313,36 @@
         transform: none
       }
     }
-
   </style>
   <link rel="stylesheet" href="./footer.css">
+  <link rel="stylesheet" href="./header.css">
+  <script src="./header.js" defer></script>
 </head>
 
 <body>
   <a class="skip" href="#main">Skip to main content</a>
-  <header class="header"><a href="#top" aria-label="OfferEvo home"><img class="logo" src="./images/offer-evo.png"
-        alt="OfferEvo"></a><button class="menu" type="button" aria-expanded="false" aria-controls="nav"
-      aria-label="Open navigation">☰</button>
-    <nav id="nav" class="nav">
-      <a href="#how">How it works</a>
-      <a href="#benefits">For businesses</a>
-      <a href="#product">Who it’s for</a>
-      <a href="#faq">FAQ</a>
-      <a href="/help/">Help</a>
+  <header class="oe-header">
+    <a class="oe-header__home" href="./index.html" aria-label="OfferEvo home">
+      <img class="oe-header__logo" src="./images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+    </a>
+    <nav class="oe-header__nav" id="site-navigation" aria-label="Main navigation">
+      <a href="./index.html#how">How it works</a>
+      <a href="./index.html#benefits">For businesses</a>
+      <a href="./index.html#product">Who it’s for</a>
+      <a href="./index.html#faq">FAQ</a>
+      <a href="./help/index.html">Help</a>
     </nav>
-    <div class="header-actions">
-      <a class="login" href="https://app.offerevo.com/">Sign in</a><a class="btn btn-primary btn-small"
-        href="https://app.offerevo.com/">Get Started ↗</a>
+    <div class="oe-header__actions">
+      <a class="oe-header__login" href="https://app.offerevo.com/">Sign in</a>
+      <a class="oe-header__cta" href="https://app.offerevo.com/">Get started ↗</a>
     </div>
+    <button class="oe-header__toggle" type="button" aria-expanded="false" aria-controls="site-navigation"
+      aria-label="Open navigation">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+        stroke-linecap="round" aria-hidden="true" focusable="false">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
   </header>
   <main id="main" tabindex="-1">
     <!-- HERO -->
@@ -1628,9 +1637,9 @@
       </div>
     </section> -->
 
-    <!-- Public Beta -->
+    <!-- Version -->
     <section id="get-started" class="beta reveal">
-      <div class="beta-inner"><span class="live"><i></i>Public Beta</span>
+      <div class="beta-inner"><span class="live"><i></i>1.0.3</span>
         <h2>Find a deal you love.<br>Help a business grow.</h2>
         <p>Join OfferEvo to discover local deals or create an offer for a business you love. Own a business? Add it and
           choose
@@ -1663,37 +1672,16 @@
       <p class="oe-footer__copyright">© <span id="year">2026</span> OfferEvo</p>
       <a class="oe-footer__social" href="https://www.instagram.com/offer.evo/" target="_blank" rel="noopener noreferrer"
         aria-label="OfferEvo on Instagram (opens in a new tab)" title="OfferEvo on Instagram">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
-          <rect x="3" y="3" width="18" height="18" rx="5"/>
-          <circle cx="12" cy="12" r="4"/>
-          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+          aria-hidden="true" focusable="false">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
         </svg>
       </a>
     </div>
   </footer>
   <script>
-    const menu = document.querySelector('.menu');
-    const nav = document.querySelector('.nav');
-    const closeMenu = () => {
-      nav?.classList.remove('open');
-      menu?.setAttribute('aria-expanded', 'false');
-      menu?.setAttribute('aria-label', 'Open navigation');
-    };
-
-    menu?.addEventListener('click', () => {
-      const willOpen = menu.getAttribute('aria-expanded') !== 'true';
-      menu.setAttribute('aria-expanded', String(willOpen));
-      menu.setAttribute('aria-label', willOpen ? 'Close navigation' : 'Open navigation');
-      nav?.classList.toggle('open', willOpen);
-    });
-    nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-    document.addEventListener('keydown', event => {
-      if (event.key === 'Escape' && menu?.getAttribute('aria-expanded') === 'true') {
-        closeMenu();
-        menu.focus();
-      }
-    });
-
     if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       document.documentElement.classList.add('reveal-ready');
       const observer = new IntersectionObserver(entries => entries.forEach(entry => {

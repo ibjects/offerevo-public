@@ -22,22 +22,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./help.css">
   <link rel="stylesheet" href="../footer.css">
+  <link rel="stylesheet" href="../header.css">
+  <script src="../header.js" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Who can create an offer?","acceptedAnswer":{"@type":"Answer","text":"Any signed-in user can create an offer for any business listed on OfferEvo."}},{"@type":"Question","name":"How do I create an offer?","acceptedAnswer":{"@type":"Answer","text":"Tap the plus button, search for the business, then write the offer and its conditions and submit it for approval."}},{"@type":"Question","name":"Can I create an offer for a business that is not on OfferEvo?","acceptedAnswer":{"@type":"Answer","text":"No. The business has to be on OfferEvo first, because it has to approve the offer before it goes live."}},{"@type":"Question","name":"How long can the offer headline be?","acceptedAnswer":{"@type":"Answer","text":"42 characters. The form shows a live counter."}},{"@type":"Question","name":"How long can the conditions be?","acceptedAnswer":{"@type":"Answer","text":"120 characters."}},{"@type":"Question","name":"Why is the headline so short?","acceptedAnswer":{"@type":"Answer","text":"Offers are shown as cards in a feed, and a short headline keeps every card readable at a glance. Use the conditions field for the detail."}},{"@type":"Question","name":"What should I put in the conditions?","acceptedAnswer":{"@type":"Answer","text":"Anything that limits the offer, such as which days it applies on, times, or what has to be bought. For example, on weekdays before 11am."}},{"@type":"Question","name":"Can I choose the offer's category?","acceptedAnswer":{"@type":"Answer","text":"No. The category comes from the business and cannot be changed on an individual offer."}},{"@type":"Question","name":"Can I choose the offer's colour?","acceptedAnswer":{"@type":"Answer","text":"Only if the business allows it. Some businesses lock their brand colour, and then every offer for them uses that colour."}},{"@type":"Question","name":"What colours can I pick?","acceptedAnswer":{"@type":"Answer","text":"Any colour. If a colour would be hard to read in light or dark mode, OfferEvo adjusts its brightness for that mode only and keeps your colour everywhere else."}},{"@type":"Question","name":"How many redemptions can I set?","acceptedAnswer":{"@type":"Answer","text":"Up to the maximum the business allows. Some businesses fix a single number, others let you choose from a range up to their cap."}},{"@type":"Question","name":"What does it mean when the redemption count is locked?","acceptedAnswer":{"@type":"Answer","text":"The business has chosen a fixed number, so every offer for them allows exactly that many redemptions."}},{"@type":"Question","name":"How long can an offer run?","acceptedAnswer":{"@type":"Answer","text":"Up to the maximum number of days the business allows. As with redemptions, some businesses fix it and others let you choose."}},{"@type":"Question","name":"When does the countdown start?","acceptedAnswer":{"@type":"Answer","text":"When the business approves the offer, not when you submit it. An offer waiting for approval is not using up its days."}},{"@type":"Question","name":"Can I edit an offer after submitting it?","acceptedAnswer":{"@type":"Answer","text":"No. Offers cannot be edited. If something is wrong, archive it and create a new one."}},{"@type":"Question","name":"Can I delete an offer I created?","acceptedAnswer":{"@type":"Answer","text":"You can archive it, which removes it from everywhere public. Archiving is permanent and cannot be undone."}},{"@type":"Question","name":"How many offers can I create?","acceptedAnswer":{"@type":"Answer","text":"There is no limit on how many you submit. Each one still needs the business to approve it."}},{"@type":"Question","name":"Can I create an offer for my own business?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can post for a business you own and approve it yourself."}},{"@type":"Question","name":"Can two people create the same offer for one business?","acceptedAnswer":{"@type":"Answer","text":"Yes. The business decides which ones to approve."}},{"@type":"Question","name":"Do I get anything for creating an offer?","acceptedAnswer":{"@type":"Answer","text":"Your name and handle appear on the offer card, and your public profile lists the offers you created."}},{"@type":"Question","name":"Can I make an offer that never expires?","acceptedAnswer":{"@type":"Answer","text":"No. Every offer has a set number of days and ends when that runs out."}}]}</script>
 </head>
 
 <body>
   <a class="skip" href="#main">Skip to main content</a>
 
-  <header class="header">
-    <a href="../index.html" aria-label="OfferEvo home"><img class="logo" src="../images/offer-evo.png" alt="OfferEvo"></a>
-    <nav class="nav">
-      <a href="./index.html">Help centre</a>
-      <a href="../index.html#faq">FAQ</a>
+  <header class="oe-header">
+    <a class="oe-header__home" href="../index.html" aria-label="OfferEvo home">
+      <img class="oe-header__logo" src="../images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+    </a>
+    <nav class="oe-header__nav" id="site-navigation" aria-label="Main navigation">
       <a href="../index.html#how">How it works</a>
+      <a href="../index.html#benefits">For businesses</a>
+      <a href="../index.html#product">Who it’s for</a>
+      <a href="../index.html#faq">FAQ</a>
+      <a href="../help/index.html">Help</a>
     </nav>
-    <div class="header-actions">
-      <a class="btn btn-primary btn-small" href="https://app.offerevo.com/">Open OfferEvo &#8599;</a>
+    <div class="oe-header__actions">
+      <a class="oe-header__login" href="https://app.offerevo.com/">Sign in</a>
+      <a class="oe-header__cta" href="https://app.offerevo.com/">Get started ↗</a>
     </div>
+    <button class="oe-header__toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
   </header>
 
   <main id="main" tabindex="-1">

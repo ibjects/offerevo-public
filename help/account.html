@@ -22,22 +22,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./help.css">
   <link rel="stylesheet" href="../footer.css">
+  <link rel="stylesheet" href="../header.css">
+  <script src="../header.js" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is my handle?","acceptedAnswer":{"@type":"Answer","text":"The @name on your public profile and on every offer card you create."}},{"@type":"Question","name":"Can I change my handle?","acceptedAnswer":{"@type":"Answer","text":"Yes, from your profile, as long as the one you want is not taken."}},{"@type":"Question","name":"Where did my handle come from?","acceptedAnswer":{"@type":"Answer","text":"It was generated from your name when your account was created."}},{"@type":"Question","name":"What is on my public profile?","acceptedAnswer":{"@type":"Answer","text":"Your name, photo, handle, when you joined, and the offers you created that are live or have ended."}},{"@type":"Question","name":"Who can see my public profile?","acceptedAnswer":{"@type":"Answer","text":"Anyone with the link, signed in or not."}},{"@type":"Question","name":"Are my pending offers on my public profile?","acceptedAnswer":{"@type":"Answer","text":"No. Only approved offers appear there."}},{"@type":"Question","name":"Is my email address public?","acceptedAnswer":{"@type":"Answer","text":"No. Your profile shows your name, handle and photo only."}},{"@type":"Question","name":"Where does my photo come from?","acceptedAnswer":{"@type":"Answer","text":"Your Google account."}},{"@type":"Question","name":"Why does OfferEvo ask for my city?","acceptedAnswer":{"@type":"Answer","text":"To show you offers near you. It is also used as a fallback when location access is off."}},{"@type":"Question","name":"Do I have to set my city?","acceptedAnswer":{"@type":"Answer","text":"No. Without it, OfferEvo estimates a city from your connection."}},{"@type":"Question","name":"How do I switch between light and dark mode?","acceptedAnswer":{"@type":"Answer","text":"OfferEvo follows your device setting by default and can be changed in the app."}},{"@type":"Question","name":"I am a business owner but I see My Offers instead of Business on my phone.","acceptedAnswer":{"@type":"Answer","text":"The Business tab appears once your account owns at least one business. Add one and reload."}},{"@type":"Question","name":"How do I contact support?","acceptedAnswer":{"@type":"Answer","text":"Use the contact form in the help centre. You do not need an account with any other service to open a ticket."}}]}</script>
 </head>
 
 <body>
   <a class="skip" href="#main">Skip to main content</a>
 
-  <header class="header">
-    <a href="../index.html" aria-label="OfferEvo home"><img class="logo" src="../images/offer-evo.png" alt="OfferEvo"></a>
-    <nav class="nav">
-      <a href="./index.html">Help centre</a>
-      <a href="../index.html#faq">FAQ</a>
+  <header class="oe-header">
+    <a class="oe-header__home" href="../index.html" aria-label="OfferEvo home">
+      <img class="oe-header__logo" src="../images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+    </a>
+    <nav class="oe-header__nav" id="site-navigation" aria-label="Main navigation">
       <a href="../index.html#how">How it works</a>
+      <a href="../index.html#benefits">For businesses</a>
+      <a href="../index.html#product">Who it’s for</a>
+      <a href="../index.html#faq">FAQ</a>
+      <a href="../help/index.html">Help</a>
     </nav>
-    <div class="header-actions">
-      <a class="btn btn-primary btn-small" href="https://app.offerevo.com/">Open OfferEvo &#8599;</a>
+    <div class="oe-header__actions">
+      <a class="oe-header__login" href="https://app.offerevo.com/">Sign in</a>
+      <a class="oe-header__cta" href="https://app.offerevo.com/">Get started ↗</a>
     </div>
+    <button class="oe-header__toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
   </header>
 
   <main id="main" tabindex="-1">

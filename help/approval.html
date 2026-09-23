@@ -22,22 +22,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./help.css">
   <link rel="stylesheet" href="../footer.css">
+  <link rel="stylesheet" href="../header.css">
+  <script src="../header.js" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What happens after I submit an offer?","acceptedAnswer":{"@type":"Answer","text":"It goes to the business as pending. It is not visible to anyone else until the business approves it."}},{"@type":"Question","name":"How long does approval take?","acceptedAnswer":{"@type":"Answer","text":"It depends entirely on the business. OfferEvo does not set a time limit on reviewing an offer."}},{"@type":"Question","name":"How do I know if my offer was approved?","acceptedAnswer":{"@type":"Answer","text":"Open My Deals. Approved offers move to the Approved tab and become visible in the feed."}},{"@type":"Question","name":"Why was my offer rejected?","acceptedAnswer":{"@type":"Answer","text":"The business decides. If they left a reason it is shown on the offer in the Rejected tab of My Deals."}},{"@type":"Question","name":"Can I appeal a rejection?","acceptedAnswer":{"@type":"Answer","text":"There is no appeal process in the app. You can create a different offer for the same business."}},{"@type":"Question","name":"Can a business change an offer instead of rejecting it?","acceptedAnswer":{"@type":"Answer","text":"No. A business can approve or reject an offer, not edit it."}},{"@type":"Question","name":"Can an offer go live without the business approving it?","acceptedAnswer":{"@type":"Answer","text":"No. Approval by the business is the only way an offer becomes visible."}},{"@type":"Question","name":"Can a business un-approve an offer that is live?","acceptedAnswer":{"@type":"Answer","text":"Not directly. A business can archive itself, which pauses all of its offers."}},{"@type":"Question","name":"Does a rejected offer stay in my account?","acceptedAnswer":{"@type":"Answer","text":"Yes, under the Rejected tab in My Deals, with the reason if one was given."}},{"@type":"Question","name":"Can I resubmit a rejected offer?","acceptedAnswer":{"@type":"Answer","text":"Not the same one. Create a new offer instead."}},{"@type":"Question","name":"Who sees my offer while it is pending?","acceptedAnswer":{"@type":"Answer","text":"You and the business owner. It does not appear in the feed, in search or on your public profile."}}]}</script>
 </head>
 
 <body>
   <a class="skip" href="#main">Skip to main content</a>
 
-  <header class="header">
-    <a href="../index.html" aria-label="OfferEvo home"><img class="logo" src="../images/offer-evo.png" alt="OfferEvo"></a>
-    <nav class="nav">
-      <a href="./index.html">Help centre</a>
-      <a href="../index.html#faq">FAQ</a>
+  <header class="oe-header">
+    <a class="oe-header__home" href="../index.html" aria-label="OfferEvo home">
+      <img class="oe-header__logo" src="../images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+    </a>
+    <nav class="oe-header__nav" id="site-navigation" aria-label="Main navigation">
       <a href="../index.html#how">How it works</a>
+      <a href="../index.html#benefits">For businesses</a>
+      <a href="../index.html#product">Who it’s for</a>
+      <a href="../index.html#faq">FAQ</a>
+      <a href="../help/index.html">Help</a>
     </nav>
-    <div class="header-actions">
-      <a class="btn btn-primary btn-small" href="https://app.offerevo.com/">Open OfferEvo &#8599;</a>
+    <div class="oe-header__actions">
+      <a class="oe-header__login" href="https://app.offerevo.com/">Sign in</a>
+      <a class="oe-header__cta" href="https://app.offerevo.com/">Get started ↗</a>
     </div>
+    <button class="oe-header__toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
   </header>
 
   <main id="main" tabindex="-1">

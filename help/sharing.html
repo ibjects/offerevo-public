@@ -22,22 +22,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./help.css">
   <link rel="stylesheet" href="../footer.css">
+  <link rel="stylesheet" href="../header.css">
+  <script src="../header.js" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I share an offer?","acceptedAnswer":{"@type":"Answer","text":"Tap the share button on any offer card or on the offer page. You can share a link or an image."}},{"@type":"Question","name":"What does the shared image look like?","acceptedAnswer":{"@type":"Answer","text":"It is a card with the offer, the business, and a short link, in the offer's colour."}},{"@type":"Question","name":"What sizes can I share?","acceptedAnswer":{"@type":"Answer","text":"Square for feed posts, Story for full-screen stories, and Wide for link previews and desktop chat. Square is the default."}},{"@type":"Question","name":"Can I post an offer straight to my Instagram story?","acceptedAnswer":{"@type":"Answer","text":"Yes, on a phone. Choose Story, tap Share, and pick Instagram from your phone's share sheet."}},{"@type":"Question","name":"Which apps can I share to?","acceptedAnswer":{"@type":"Answer","text":"Whatever is installed on your phone. OfferEvo hands the image to your phone's own share sheet, so the list is yours, not ours."}},{"@type":"Question","name":"Why can I not share directly to Instagram on my computer?","acceptedAnswer":{"@type":"Answer","text":"Desktop browsers do not support sharing files to other apps. The image downloads and the caption is copied instead."}},{"@type":"Question","name":"Does the shared image include my save and share buttons?","acceptedAnswer":{"@type":"Answer","text":"No. The image is a clean card with no buttons on it."}},{"@type":"Question","name":"What is in the caption?","acceptedAnswer":{"@type":"Answer","text":"The offer, the business name, and the link to the offer, with the link at the end so it stays tappable."}},{"@type":"Question","name":"Where does a shared link go?","acceptedAnswer":{"@type":"Answer","text":"To the offer's own page, which anyone can open without an account."}},{"@type":"Question","name":"Does a shared link open the app if I have it installed?","acceptedAnswer":{"@type":"Answer","text":"On Android, yes. On iPhone a link opens in Safari, which is a limitation of the platform."}},{"@type":"Question","name":"Can I share an expired offer?","acceptedAnswer":{"@type":"Answer","text":"The link still opens, and the page shows that the offer has ended."}},{"@type":"Question","name":"Do I get credit when someone uses an offer I shared?","acceptedAnswer":{"@type":"Answer","text":"Offers you created list you as their creator. Sharing an offer someone else created is not tracked."}}]}</script>
 </head>
 
 <body>
   <a class="skip" href="#main">Skip to main content</a>
 
-  <header class="header">
-    <a href="../index.html" aria-label="OfferEvo home"><img class="logo" src="../images/offer-evo.png" alt="OfferEvo"></a>
-    <nav class="nav">
-      <a href="./index.html">Help centre</a>
-      <a href="../index.html#faq">FAQ</a>
+  <header class="oe-header">
+    <a class="oe-header__home" href="../index.html" aria-label="OfferEvo home">
+      <img class="oe-header__logo" src="../images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+    </a>
+    <nav class="oe-header__nav" id="site-navigation" aria-label="Main navigation">
       <a href="../index.html#how">How it works</a>
+      <a href="../index.html#benefits">For businesses</a>
+      <a href="../index.html#product">Who it’s for</a>
+      <a href="../index.html#faq">FAQ</a>
+      <a href="../help/index.html">Help</a>
     </nav>
-    <div class="header-actions">
-      <a class="btn btn-primary btn-small" href="https://app.offerevo.com/">Open OfferEvo &#8599;</a>
+    <div class="oe-header__actions">
+      <a class="oe-header__login" href="https://app.offerevo.com/">Sign in</a>
+      <a class="oe-header__cta" href="https://app.offerevo.com/">Get started ↗</a>
     </div>
+    <button class="oe-header__toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
   </header>
 
   <main id="main" tabindex="-1">

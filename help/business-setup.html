@@ -22,22 +22,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./help.css">
   <link rel="stylesheet" href="../footer.css">
+  <link rel="stylesheet" href="../header.css">
+  <script src="../header.js" defer></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I add my business?","acceptedAnswer":{"@type":"Answer","text":"Sign in, open Business, and add your business. Your account gains the business tools immediately."}},{"@type":"Question","name":"Do I need a separate business account?","acceptedAnswer":{"@type":"Answer","text":"No. A business is added to the account you already have."}},{"@type":"Question","name":"Can I have more than one business?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can add several and switch between them."}},{"@type":"Question","name":"What details does a business need?","acceptedAnswer":{"@type":"Answer","text":"A name, a category, and an address with country, state and city. A logo is optional."}},{"@type":"Question","name":"Why does my business need a category?","acceptedAnswer":{"@type":"Answer","text":"The category is what people filter and search by, and every offer for your business inherits it."}},{"@type":"Question","name":"My category is not in the list. What do I do?","acceptedAnswer":{"@type":"Answer","text":"You can propose a new one. It is visible to you straight away and to everyone once approved."}},{"@type":"Question","name":"What is the redemption cap?","acceptedAnswer":{"@type":"Answer","text":"The most times any single offer for your business can be redeemed."}},{"@type":"Question","name":"What is the difference between fixed and distributed?","acceptedAnswer":{"@type":"Answer","text":"Fixed means every offer uses exactly your number. Distributed lets the person creating the offer choose from a range up to your cap."}},{"@type":"Question","name":"What range does distributed give?","acceptedAnswer":{"@type":"Answer","text":"Steps at roughly 10, 20, 40, 60 and 100 percent of your cap. A cap of 50 offers 5, 10, 20, 30 and 50."}},{"@type":"Question","name":"What is the maximum offer length?","acceptedAnswer":{"@type":"Answer","text":"The most days any offer for your business can run, with the same fixed or distributed choice as redemptions."}},{"@type":"Question","name":"If I lower my cap, does it shrink offers that are already live?","acceptedAnswer":{"@type":"Answer","text":"No. Each offer stores the numbers it was approved with, so live offers are never changed by a later settings change."}},{"@type":"Question","name":"What is the brand colour?","acceptedAnswer":{"@type":"Answer","text":"The colour used on your offer cards. You can lock it so every offer uses it."}},{"@type":"Question","name":"What happens if I lock my colour?","acceptedAnswer":{"@type":"Answer","text":"People creating offers for you cannot choose a colour, and every offer uses your brand colour."}},{"@type":"Question","name":"Can I use any colour as my brand colour?","acceptedAnswer":{"@type":"Answer","text":"Yes. Enter any hex value or use the colour picker. If a colour would be unreadable in light or dark mode, it is adjusted for that mode only."}},{"@type":"Question","name":"Why does the colour look different in dark mode?","acceptedAnswer":{"@type":"Answer","text":"So it stays readable. Your exact colour is kept in whichever mode it already works in, and only the other mode is adjusted."}},{"@type":"Question","name":"Does my business have a public page?","acceptedAnswer":{"@type":"Answer","text":"Yes, listing its active offers. Anyone can open it without an account."}},{"@type":"Question","name":"Where do I change my business details?","acceptedAnswer":{"@type":"Answer","text":"Business, then Settings on the business you want to change."}},{"@type":"Question","name":"If I rename my business, what happens to its offers?","acceptedAnswer":{"@type":"Answer","text":"They keep working and show the new name."}},{"@type":"Question","name":"If I change my category, what happens to live offers?","acceptedAnswer":{"@type":"Answer","text":"They move to the new category, because the category comes from the business rather than the offer."}}]}</script>
 </head>
 
 <body>
   <a class="skip" href="#main">Skip to main content</a>
 
-  <header class="header">
-    <a href="../index.html" aria-label="OfferEvo home"><img class="logo" src="../images/offer-evo.png" alt="OfferEvo"></a>
-    <nav class="nav">
-      <a href="./index.html">Help centre</a>
-      <a href="../index.html#faq">FAQ</a>
+  <header class="oe-header">
+    <a class="oe-header__home" href="../index.html" aria-label="OfferEvo home">
+      <img class="oe-header__logo" src="../images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+    </a>
+    <nav class="oe-header__nav" id="site-navigation" aria-label="Main navigation">
       <a href="../index.html#how">How it works</a>
+      <a href="../index.html#benefits">For businesses</a>
+      <a href="../index.html#product">Who it’s for</a>
+      <a href="../index.html#faq">FAQ</a>
+      <a href="../help/index.html">Help</a>
     </nav>
-    <div class="header-actions">
-      <a class="btn btn-primary btn-small" href="https://app.offerevo.com/">Open OfferEvo &#8599;</a>
+    <div class="oe-header__actions">
+      <a class="oe-header__login" href="https://app.offerevo.com/">Sign in</a>
+      <a class="oe-header__cta" href="https://app.offerevo.com/">Get started ↗</a>
     </div>
+    <button class="oe-header__toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
   </header>
 
   <main id="main" tabindex="-1">
