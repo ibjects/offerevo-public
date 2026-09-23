@@ -126,6 +126,8 @@
   }
 
   .oe-footer__nav {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
     justify-content: flex-start;
     gap: 0 24px;
   }
