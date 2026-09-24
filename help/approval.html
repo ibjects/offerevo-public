@@ -152,7 +152,7 @@
         </svg>
       </a>
     </div>
-  </footer>
+  </footer> 
 
   <script>
     document.querySelector('#year').textContent = new Date().getFullYear();
@@ -161,8 +161,25 @@
       if (answer && answer.tagName === 'DETAILS') answer.open = true;
     }
     openAnswer();
-    window.addEventListener('hashchange', openAnswer);
+        window.addEventListener('hashchange', openAnswer);
+  </script>
+
+  <!-- tawk.to EMBED widget. Renders inside #tawk-embed on the contact card,
+       which only exists on help/index.html. Help pages only - never the
+       marketing homepage. -->
+  <script>
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    Tawk_API.embedded = 'tawk-embed';
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6ab29e567883ea344035d42d/1k36u2nkp';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
   </script>
 </body>
+
 
 </html>
