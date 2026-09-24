@@ -495,6 +495,26 @@
       font-style: normal
     }
 
+    /* The items are links now. A target moving at speed is not clickable, so
+       stop the track whenever someone is actually aiming at it. */
+    .marquee:hover .marquee-track,
+    .marquee:focus-within .marquee-track {
+      animation-play-state: paused
+    }
+
+    .marquee a {
+      padding: 4px 2px;
+      border-bottom: 1px solid transparent;
+      transition: color .2s ease, border-color .2s ease
+    }
+
+    .marquee a:hover,
+    .marquee a:focus-visible {
+      color: var(--amber);
+      border-bottom-color: currentColor
+    }
+
+
     .section {
       padding: 140px 0 120px
     }
@@ -1378,24 +1398,26 @@
     <div class="marquee">
       <div class="marquee-track">
         <div class="marquee-group">
-          <span>Cafés</span><i aria-hidden="true">✦</i>
-          <span>Restaurants</span><i aria-hidden="true">✦</i>
-          <span>Salons</span><i aria-hidden="true">✦</i>
-          <span>Barbers</span><i aria-hidden="true">✦</i>
-          <span>Gyms</span><i aria-hidden="true">✦</i>
-          <span>Local shops</span><i aria-hidden="true">✦</i>
-          <span>Local services</span><i aria-hidden="true">✦</i>
+          <a href="https://app.offerevo.com/?category=Coffee">Coffee</a><i aria-hidden="true">✦</i>
+          <a href="https://app.offerevo.com/?category=Barber">Barber</a><i aria-hidden="true">✦</i>
+          <a href="https://app.offerevo.com/?category=Bakery">Bakery</a><i aria-hidden="true">✦</i>
+          <a href="https://app.offerevo.com/?category=Burger">Burger</a><i aria-hidden="true">✦</i>
+          <a href="https://app.offerevo.com/?category=Fitness">Fitness</a><i aria-hidden="true">✦</i>
+          <a href="https://app.offerevo.com/?category=Retail">Retail</a><i aria-hidden="true">✦</i>
         </div>
 
+        <!-- Visual duplicate for the seamless loop. aria-hidden keeps it from a
+                             screen reader; tabindex="-1" keeps it out of the tab order, which
+                             aria-hidden alone does NOT do. -->
         <div class="marquee-group" aria-hidden="true">
-          <span>Cafés</span><i>✦</i>
-          <span>Restaurants</span><i>✦</i>
-          <span>Salons</span><i>✦</i>
-          <span>Barbers</span><i>✦</i>
-          <span>Gyms</span><i>✦</i>
-          <span>Local shops</span><i>✦</i>
-          <span>Local services</span><i>✦</i>
+          <a href="https://app.offerevo.com/?category=Coffee" tabindex="-1">Coffee</a><i>✦</i>
+          <a href="https://app.offerevo.com/?category=Barber" tabindex="-1">Barber</a><i>✦</i>
+          <a href="https://app.offerevo.com/?category=Bakery" tabindex="-1">Bakery</a><i>✦</i>
+          <a href="https://app.offerevo.com/?category=Burger" tabindex="-1">Burger</a><i>✦</i>
+          <a href="https://app.offerevo.com/?category=Fitness" tabindex="-1">Fitness</a><i>✦</i>
+          <a href="https://app.offerevo.com/?category=Retail" tabindex="-1">Retail</a><i>✦</i>
         </div>
+
       </div>
     </div>
     <!-- How It Works -->
