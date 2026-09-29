@@ -49,7 +49,7 @@ function shell({ title, description, canonical, body, jsonLd }) {
   <meta property="og:url" content="${canonical}">
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
-  <meta property="og:image" content="${SITE}/images/OfferEvo-preview.jpg">
+  <meta property="og:image" content="${SITE}/images/offerevo-og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,7 +65,7 @@ ${jsonLd ? `  <script type="application/ld+json">${jsonLd}</script>\n` : ""}</he
 
   <header class="oe-header">
     <a class="oe-header__home" href="../index.html" aria-label="OfferEvo home">
-      <img class="oe-header__logo" src="../images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+      <img class="oe-header__logo" src="../images/offer-evo-logo.png" alt="OfferEvo" width="154" height="52">
     </a>
     <nav class="oe-header__nav" id="site-navigation" aria-label="Main navigation">
       <a href="../index.html#how">How it works</a>
@@ -93,7 +93,7 @@ ${body}
     <div class="oe-footer__top">
       <div class="oe-footer__brand">
         <a class="oe-footer__home" href="../index.html" aria-label="OfferEvo home">
-          <img class="oe-footer__logo" src="../images/offer-evo.png" alt="OfferEvo" width="154" height="52">
+          <img class="oe-footer__logo" src="../images/offer-evo-logo.png" alt="OfferEvo" width="154" height="52">
         </a>
         <p class="oe-footer__tagline">Local deals that help small businesses grow.</p>
       </div>

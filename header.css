@@ -86,13 +86,13 @@
   padding: 0 18px;
   border-radius: 99px;
   color: #fff;
-  background: #f55555;
-  box-shadow: 0 8px 20px rgba(245, 85, 85, .18);
+  background: #d43838;
+  box-shadow: 0 8px 20px rgba(212, 56, 56, .18);
   white-space: nowrap;
 }
 
 .oe-header .oe-header__cta:hover {
-  background: #db4040;
+  background: #b52e2e;
 }
 
 .oe-header__toggle {
