@@ -601,7 +601,46 @@
     .hero-visual {
       min-width: 0;
       width: 100%;
-      max-width: 1120px
+      max-width: 1120px;
+      position: relative
+    }
+
+    .video-play {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 0;
+      border: 0;
+      border-radius: 20px;
+      background: transparent;
+      color: #fff;
+      cursor: pointer
+    }
+
+    .video-play[hidden] {
+      display: none
+    }
+
+    .video-play__icon {
+      width: 76px;
+      height: 76px;
+      display: grid;
+      place-items: center;
+      padding-left: 4px;
+      border-radius: 50%;
+      background: var(--primary-strong);
+      box-shadow: 0 14px 34px rgba(212, 56, 56, .35);
+      transition: transform .2s ease
+    }
+
+    .video-play:hover .video-play__icon {
+      transform: scale(1.06)
+    }
+
+    .video-play:focus-visible {
+      outline: 3px solid var(--primary-strong);
+      outline-offset: 4px
     }
 
     .hero-video {
@@ -1414,7 +1453,8 @@
         gap: 18px
       }
 
-      .hero-video {
+      .hero-video,
+      .video-play {
         border-radius: 12px
       }
 
@@ -1766,12 +1806,23 @@
               aria-hidden="true">↓</span></a></div>
       </div>
       <div class="hero-visual">
-        <video class="hero-video" controls playsinline preload="none" width="1920" height="1080"
-          poster="./images/offerevo-intro-poster.webp" aria-label="OfferEvo introduction">
-          <source src="./images/offerevo-intro.mp4" type="video/mp4">
-          Your browser does not support embedded video. <a href="./images/offerevo-intro.mp4">Watch the OfferEvo
-            introduction</a>.
+        <!-- MP4 (H.264/AAC) first for Safari and iOS; WebM (VP9/Opus) for browsers without H.264,
+             such as some Linux builds of Firefox and Chromium. preload="metadata" only fetches the
+             header (moov is at the front of the file), so the first click starts playback quickly. -->
+        <video class="hero-video" controls playsinline preload="metadata" width="1920" height="1080"
+          poster="./images/offerevo-intro-poster.webp" aria-label="OfferEvo introduction video">
+          <source src="./images/offerevo-intro.mp4" type='video/mp4; codecs="avc1.640032, mp4a.40.2"'>
+          <source src="./images/offerevo-intro.webm" type='video/webm; codecs="vp9, opus"'>
+          <a href="./images/offerevo-intro.mp4">Watch the OfferEvo introduction video</a>
         </video>
+        <!-- One tap plays the video everywhere. Without it, the first tap on iOS only reveals the native
+             controls, which looks like a dead click. Shown by the script at the end of the page. -->
+        <button class="video-play" type="button" hidden aria-label="Play the OfferEvo introduction video">
+          <span class="video-play__icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24"
+              fill="currentColor" focusable="false">
+              <path d="M8 5.5v13a1 1 0 0 0 1.53.85l10.4-6.5a1 1 0 0 0 0-1.7L9.53 4.65A1 1 0 0 0 8 5.5Z" />
+            </svg></span>
+        </button>
       </div>
       <div class="micro"><span>Customers create</span><span>Businesses approve</span><span>Everyone can
           discover</span></div>
@@ -2101,6 +2152,23 @@
         }
       }), { threshold: .1 });
       document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+    }
+
+    const video = document.querySelector('.hero-video');
+    const playButton = document.querySelector('.video-play');
+    if (video && playButton) {
+      const reveal = () => {
+        playButton.hidden = true;
+        video.controls = true;
+      };
+      video.controls = false;
+      playButton.hidden = false;
+      playButton.addEventListener('click', () => {
+        reveal();
+        const playing = video.play();
+        if (playing) playing.catch(() => { });
+      });
+      video.addEventListener('play', reveal);
     }
 
     const year = document.querySelector('#year');
