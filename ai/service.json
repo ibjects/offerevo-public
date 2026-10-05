@@ -1,0 +1,50 @@
+{
+  "name": "OfferEvo",
+  "url": "https://app.offerevo.com/",
+  "description": "Customers create offers for local businesses. Businesses approve them before they go live, and people discover, share and use them in store with a QR or eight-character code.",
+  "dateModified": "2026-10-02",
+  "capabilities": [
+    {
+      "name": "Browse offers",
+      "description": "Browse public deals and profiles without signing in.",
+      "url": "https://app.offerevo.com/"
+    },
+    {
+      "name": "Suggest an offer",
+      "description": "Sign in with Google and submit an offer for a listed venue. Owner approval is required.",
+      "documentation": "https://offerevo.com/help/creating-offers.html"
+    },
+    {
+      "name": "Approve offers",
+      "description": "Owners review customer submissions and decide what becomes public.",
+      "documentation": "https://offerevo.com/help/approval.html"
+    },
+    {
+      "name": "Share an offer",
+      "description": "Share public links or Square, Story and Wide images. Options depend on the device and browser.",
+      "documentation": "https://offerevo.com/help/sharing.html"
+    },
+    {
+      "name": "Redeem in store",
+      "description": "Show a QR or eight-character code for staff validation at the named venue. One redemption per person per offer.",
+      "documentation": "https://offerevo.com/help/redeeming.html"
+    },
+    {
+      "name": "Manage a business",
+      "description": "Use the same account for venue profiles, approvals, customer records and analytics.",
+      "documentation": "https://offerevo.com/help/business-managing.html"
+    }
+  ],
+  "interface": {
+    "type": "web application",
+    "authentication": "Google sign-in",
+    "documentation": "https://offerevo.com/help/",
+    "publicApi": false
+  },
+  "limitations": [
+    "Submitted offers cannot be edited.",
+    "Archiving an offer is permanent.",
+    "Expired or sold-out offers cannot be redeemed.",
+    "Availability depends on participating venues near the customer."
+  ]
+}

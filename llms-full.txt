@@ -1,0 +1,738 @@
+# OfferEvo
+
+> OfferEvo is a web platform for local deals that help small businesses grow. Customers create offers for businesses they love; businesses approve offers before they go live for people to discover, share and use.
+
+The public website is https://offerevo.com/. The web app is https://app.offerevo.com/ and works on phones and computers without an app download. OfferEvo is currently in public beta.
+
+The following product details come from the public homepage and help centre FAQs:
+
+- OfferEvo is free for customers and business owners.
+- Anyone can browse offers and public profiles without an account. Saving, creating and redeeming offers require sign-in. Google is currently the only sign-in method; the first sign-in creates the account.
+- OfferEvo runs in a browser and can optionally be installed to a phone’s home screen.
+- Customers can create offers for a business, but each offer must be approved by the business before it goes live.
+- The business must already be listed on OfferEvo. Offer headlines allow 42 characters and conditions allow 120. Businesses set redemption and duration limits, and may lock their brand colour.
+- Offer duration starts at approval. Submitted offers cannot be edited by the creator or business. Creators can permanently archive an offer; correcting or resubmitting one requires creating a new offer.
+- Customers can discover, save and share offers. They can use offers without creating one themselves or knowing the creator, following the offer’s terms.
+- To use an offer, check its terms, visit the business and show its QR code or eight-character code. The owner or a staff member checks the code to confirm the offer.
+- Each person can redeem a given offer once. Codes work only at the offer’s business, and expired or sold-out offers cannot be redeemed.
+- One account is all you need. Business owners add their business to the same account to manage their business profile and offers, review customer ideas, approve offers and check offer codes.
+- An account can manage multiple businesses. Business tools include customer records and analytics. Archiving a business hides it and its offers; restoring it keeps the original offer expiry dates.
+- My Deals tracks created offers by status and keeps a separate redemption history. Saving an offer is separate from creating or redeeming one.
+- Offers can be shared as links or images in Square, Story and Wide formats. Sharing options depend on the device and browser. Sharing another person’s offer is not tracked as creator credit.
+- OfferEvo serves local businesses such as cafés, restaurants, salons, barbers, gyms, local shops and local services.
+
+## Website
+
+- [Home](https://offerevo.com/): Product overview and introduction to OfferEvo.
+- [How it works](https://offerevo.com/#how): How customers create offers and businesses approve them.
+- [For businesses](https://offerevo.com/#benefits): How OfferEvo helps local businesses.
+- [Who it is for](https://offerevo.com/#product): Customer and business owner experiences.
+- [Use your offer](https://offerevo.com/#redemption): QR or eight-character offer codes checked in store.
+- [Why OfferEvo exists](https://offerevo.com/#why): Helping people support local businesses by creating and sharing offers that give others a reason to visit.
+- [Frequently asked questions](https://offerevo.com/#faq): Getting started, accounts and pricing information.
+- [Public beta](https://offerevo.com/#get-started): Get started on phones and computers without an app download.
+
+## App
+
+- [OfferEvo app](https://app.offerevo.com/): Browse offers without signing in. Sign in with Google to save, create or redeem offers, or add a business.
+
+## Help centre
+
+- [Help centre](https://offerevo.com/help/): Search all FAQs or choose a topic.
+- [Getting started](https://offerevo.com/help/getting-started.html): Public browsing, Google sign-in, free access and optional home-screen installation.
+- [Creating offers](https://offerevo.com/help/creating-offers.html): Listed businesses, offer text, conditions, colours, limits and permanent offer archiving.
+- [Approval and rejection](https://offerevo.com/help/approval.html): Pending offers, business decisions, visibility and rejection reasons.
+- [Finding offers](https://offerevo.com/help/finding-offers.html): City-based browsing, search, category filters, saved offers and public profiles.
+- [Redeeming an offer](https://offerevo.com/help/redeeming.html): QR and eight-character codes, one redemption per person, expiry and troubleshooting.
+- [Sharing](https://offerevo.com/help/sharing.html): Public offer links, image formats and device-dependent sharing.
+- [My Deals](https://offerevo.com/help/my-deals.html): Created offer statuses, redemption history, and the difference between Archived and Unavailable.
+- [Setting up a business](https://offerevo.com/help/business-setup.html): Multiple businesses, profiles, categories, redemption caps, offer duration and brand colours.
+- [Running your business](https://offerevo.com/help/business-managing.html): Approval, scanning codes, customers, analytics, archiving and restoring a business.
+- [Your account](https://offerevo.com/help/account.html): Handles, public profiles, Google photos, city settings and support.
+- [FAQ data](https://offerevo.com/help/faqs.json): The complete questions and answers used to generate the help pages, in JSON format.
+
+## Policies and contact
+
+- [Privacy policy](https://offerevo.com/privacy.html): Information collection, use and privacy choices.
+- [Terms of use](https://offerevo.com/terms.html): Rules for using OfferEvo.
+- [Contact OfferEvo](mailto:hello@offerevo.com): Product questions and support.
+- [Contact support](https://offerevo.com/help/#contact): Help centre contact information.
+
+## Site navigation
+
+- [Website sitemap](https://offerevo.com/sitemap.html): All public website pages, homepage sections and the app entry point.
+- [XML sitemap](https://offerevo.com/sitemap.xml): Canonical public pages hosted on offerevo.com. The app is hosted separately.
+
+## About and product reference
+
+- [About OfferEvo](https://offerevo.com/about.html): Why we built the platform, who it serves and contact information in Kuala Lumpur, Malaysia.
+- [Offer creation and redemption guide](https://offerevo.com/#offer-guide): A practical walkthrough of approval, offer conditions and in-store redemption, updated 2 October 2026.
+- [Product updates](https://offerevo.com/feed.xml): RSS entries for published product documentation updates.
+- [Complete product reference](https://offerevo.com/llms-full.txt): The product overview and all current help centre questions and answers in one text document.
+- [Structured summary](https://offerevo.com/ai/summary.json): Identity, app URL, current availability, pricing and product facts.
+- [Structured FAQs](https://offerevo.com/ai/faq.json): Questions and answers generated from the help centre source.
+- [Service capabilities](https://offerevo.com/ai/service.json): Supported customer and owner workflows and their limits.
+
+## Offer lifecycle and practical limits
+
+An offer begins as a signed-in customer's suggestion for an already-listed venue. It is pending until the owner reviews it. Approval makes the offer public and starts its duration. Rejection does not publish it. Neither the creator nor the owner can edit submitted offer text; correcting wording requires a new submission. An offer headline supports 42 characters and its conditions support 120 characters. Owner-selected duration and redemption caps determine availability. The creator can archive an offer permanently. Business archiving is different: it hides the venue and its offers, and restoring the venue keeps the original expiry dates.
+
+Saving, sharing and redeeming are separate actions. A saved offer is a bookmark, not a reservation or redemption. Sharing an offer created by someone else does not transfer creator credit. A customer can use a deal without knowing its creator. Redemption requires sign-in, a visit to the named venue, and staff validation of a QR or eight-character code. Each person can redeem a given offer once. Expired or sold-out offers cannot be redeemed. Refer to the published help answers for troubleshooting and the current rules rather than assuming that every promotion is available in every city.
+
+## Complete help centre reference
+
+### Getting started
+
+Source: https://offerevo.com/help/getting-started.html
+
+#### What is OfferEvo?
+
+OfferEvo is a local deals platform where customers create offers for businesses they like. The business approves each offer before it goes live, and then anyone can find, share and use it.
+
+#### Do I need an account to browse offers?
+
+No. You can browse the feed, open any offer and view public profiles without signing in. You need an account to save, create or redeem an offer.
+
+#### How do I create an account?
+
+Open app.offerevo.com and sign in with Google. Your account is created the first time you sign in.
+
+#### Can I sign up with an email and password?
+
+Not currently. Google is the only sign-in method.
+
+#### Is OfferEvo free?
+
+Yes, for both customers and business owners.
+
+#### Do I need to download an app?
+
+No. OfferEvo runs in your browser. You can also install it to your home screen, which makes it behave like an app.
+
+#### How do I install OfferEvo on my phone?
+
+Open app.offerevo.com in your browser and choose Add to Home Screen. On Android an install prompt usually appears on its own.
+
+#### Does OfferEvo work on a computer?
+
+Yes. Everything works on desktop, though redeeming is designed for a phone since you show a code in store.
+
+#### Do I need one account for both customer and business use?
+
+One account is enough. Adding a business to your existing account gives you the business tools alongside everything else.
+
+#### Is there a separate business app?
+
+No. The business tools appear in the same app once you add a business.
+
+#### Which browsers are supported?
+
+Any current browser. Some features, such as sharing an image straight to another app, depend on what your browser supports.
+
+#### Why does sharing only offer to download the image on my computer?
+
+Desktop browsers do not accept image sharing, so OfferEvo saves the file and copies the caption instead. On a phone the normal share sheet opens.
+
+#### Is OfferEvo available in my country?
+
+OfferEvo is open to anyone. What you see depends on whether businesses near you have joined.
+
+#### What does it cost a business to join?
+
+Nothing. Adding a business and approving offers is free.
+
+### Creating offers
+
+Source: https://offerevo.com/help/creating-offers.html
+
+#### Who can create an offer?
+
+Any signed-in user can create an offer for any business listed on OfferEvo.
+
+#### How do I create an offer?
+
+Tap the plus button, search for the business, then write the offer and its conditions and submit it for approval.
+
+#### Can I create an offer for a business that is not on OfferEvo?
+
+No. The business has to be on OfferEvo first, because it has to approve the offer before it goes live.
+
+#### How long can the offer headline be?
+
+42 characters. The form shows a live counter.
+
+#### How long can the conditions be?
+
+120 characters.
+
+#### Why is the headline so short?
+
+Offers are shown as cards in a feed, and a short headline keeps every card readable at a glance. Use the conditions field for the detail.
+
+#### What should I put in the conditions?
+
+Anything that limits the offer, such as which days it applies on, times, or what has to be bought. For example, on weekdays before 11am.
+
+#### Can I choose the offer's category?
+
+No. The category comes from the business and cannot be changed on an individual offer.
+
+#### Can I choose the offer's colour?
+
+Only if the business allows it. Some businesses lock their brand colour, and then every offer for them uses that colour.
+
+#### What colours can I pick?
+
+Any colour. If a colour would be hard to read in light or dark mode, OfferEvo adjusts its brightness for that mode only and keeps your colour everywhere else.
+
+#### How many redemptions can I set?
+
+Up to the maximum the business allows. Some businesses fix a single number, others let you choose from a range up to their cap.
+
+#### What does it mean when the redemption count is locked?
+
+The business has chosen a fixed number, so every offer for them allows exactly that many redemptions.
+
+#### How long can an offer run?
+
+Up to the maximum number of days the business allows. As with redemptions, some businesses fix it and others let you choose.
+
+#### When does the countdown start?
+
+When the business approves the offer, not when you submit it. An offer waiting for approval is not using up its days.
+
+#### Can I edit an offer after submitting it?
+
+No. Offers cannot be edited. If something is wrong, archive it and create a new one.
+
+#### Can I delete an offer I created?
+
+You can archive it, which removes it from everywhere public. Archiving is permanent and cannot be undone.
+
+#### How many offers can I create?
+
+There is no limit on how many you submit. Each one still needs the business to approve it.
+
+#### Can I create an offer for my own business?
+
+Yes. You can post for a business you own and approve it yourself.
+
+#### Can two people create the same offer for one business?
+
+Yes. The business decides which ones to approve.
+
+#### Do I get anything for creating an offer?
+
+Your name and handle appear on the offer card, and your public profile lists the offers you created.
+
+#### Can I make an offer that never expires?
+
+No. Every offer has a set number of days and ends when that runs out.
+
+### Approval and rejection
+
+Source: https://offerevo.com/help/approval.html
+
+#### What happens after I submit an offer?
+
+It goes to the business as pending. It is not visible to anyone else until the business approves it.
+
+#### How long does approval take?
+
+It depends entirely on the business. OfferEvo does not set a time limit on reviewing an offer.
+
+#### How do I know if my offer was approved?
+
+Open My Deals. Approved offers move to the Approved tab and become visible in the feed.
+
+#### Why was my offer rejected?
+
+The business decides. If they left a reason it is shown on the offer in the Rejected tab of My Deals.
+
+#### Can I appeal a rejection?
+
+There is no appeal process in the app. You can create a different offer for the same business.
+
+#### Can a business change an offer instead of rejecting it?
+
+No. A business can approve or reject an offer, not edit it.
+
+#### Can an offer go live without the business approving it?
+
+No. Approval by the business is the only way an offer becomes visible.
+
+#### Can a business un-approve an offer that is live?
+
+Not directly. A business can archive itself, which pauses all of its offers.
+
+#### Does a rejected offer stay in my account?
+
+Yes, under the Rejected tab in My Deals, with the reason if one was given.
+
+#### Can I resubmit a rejected offer?
+
+Not the same one. Create a new offer instead.
+
+#### Who sees my offer while it is pending?
+
+You and the business owner. It does not appear in the feed, in search or on your public profile.
+
+### Finding offers
+
+Source: https://offerevo.com/help/finding-offers.html
+
+#### How do I find offers near me?
+
+The feed shows live offers for your city. Open OfferEvo and they are the first thing you see.
+
+#### How does OfferEvo know where I am?
+
+It uses your location if you have already allowed it, otherwise the city on your profile, otherwise an approximate city from your internet connection.
+
+#### Will OfferEvo ask for my location?
+
+Not on its own. The feed never triggers a location prompt unless you tap the location button yourself.
+
+#### The feed shows the wrong city. How do I fix it?
+
+Tap the location chip at the top of the feed to use your device location, or set your city on your profile.
+
+#### Can I see offers in another city?
+
+Yes. Clear the location filter to see offers from everywhere.
+
+#### How do I search?
+
+Use the search button on the feed. Search matches the offer text, the business name and the category.
+
+#### Why does the feed show different offers each time?
+
+The first page is shuffled so the same offers are not always on top.
+
+#### How do I filter by category?
+
+Use the category chips above the feed. Your choice is remembered for next time.
+
+#### What does the number on an offer card mean?
+
+It shows how many redemptions are left and how many days the offer still runs.
+
+#### How do I save an offer?
+
+Tap the bookmark on the card. Saved offers are under Saved.
+
+#### Do I need an account to save an offer?
+
+Yes. Tapping the bookmark while signed out takes you to sign in.
+
+#### Why has a saved offer disappeared?
+
+It was archived by the person who created it, or the business archived itself. Saved shows a note counting offers that are no longer available.
+
+#### Do expired offers stay in Saved?
+
+Yes, in a separate Expired section, so you can still see what you had saved.
+
+#### What does sold out mean on a card?
+
+The offer has been redeemed the maximum number of times it allowed.
+
+#### Can I see all offers from one business?
+
+Yes. Open the business's public page to see its active offers.
+
+#### Can I see all offers from one person?
+
+Yes. Tap their handle on any card to open their public profile.
+
+### Redeeming an offer
+
+Source: https://offerevo.com/help/redeeming.html
+
+#### How do I redeem an offer?
+
+Open the offer, tap Redeem, and show the QR code or the eight-character code to staff at the business.
+
+#### What is the eight-character code?
+
+It is four characters identifying the offer plus four identifying you, shown with a dash between them for readability.
+
+#### Do I need an account to redeem?
+
+Yes. The code includes a part that identifies you, so you have to be signed in.
+
+#### Does the code work if I have no signal in the shop?
+
+The business needs a connection to confirm the code, so redeeming requires one of you to be online.
+
+#### How does the business confirm my code?
+
+They scan your QR code with their camera, or type the eight characters in. Your screen turns green the moment it goes through.
+
+#### Can I redeem the same offer twice?
+
+No. Each person can redeem a given offer once.
+
+#### Can I redeem several different offers at the same business?
+
+Yes, as long as each one is a different offer.
+
+#### What does already redeemed mean?
+
+That offer has already been used on your account and cannot be used again.
+
+#### What does sold out mean when redeeming?
+
+The offer reached its maximum number of redemptions before you got there.
+
+#### What does that offer has ended mean?
+
+The offer passed its expiry date and can no longer be redeemed.
+
+#### What does that offer belongs to another business mean?
+
+The code was entered at a business that does not own this offer. Codes only work at the business the offer is for.
+
+#### The code did not match any offer. Why?
+
+The code was typed incorrectly, or the offer no longer exists. Check the characters and try again.
+
+#### Does my code change?
+
+No. Your half of the code is permanent, and each offer's half is fixed too.
+
+#### Is it safe if someone sees my code?
+
+Only the business the offer belongs to can accept it, and only once. It is not a payment method.
+
+#### Can I redeem on behalf of a friend?
+
+No. The code identifies your account, so each person redeems with their own.
+
+#### Do I have to buy something to redeem?
+
+That depends on the offer's conditions. Read them on the offer page before you go.
+
+#### Where do I see what I have redeemed?
+
+My Deals has a Redeemed tab listing every offer you have used and when.
+
+#### Can the business refuse my code?
+
+The conditions on the offer are what it is subject to. If something is unclear, ask the business before you order.
+
+### Sharing
+
+Source: https://offerevo.com/help/sharing.html
+
+#### How do I share an offer?
+
+Tap the share button on any offer card or on the offer page. You can share a link or an image.
+
+#### What does the shared image look like?
+
+It is a card with the offer, the business, and a short link, in the offer's colour.
+
+#### What sizes can I share?
+
+Square for feed posts, Story for full-screen stories, and Wide for link previews and desktop chat. Square is the default.
+
+#### Can I post an offer straight to my Instagram story?
+
+Yes, on a phone. Choose Story, tap Share, and pick Instagram from your phone's share sheet.
+
+#### Which apps can I share to?
+
+Whatever is installed on your phone. OfferEvo hands the image to your phone's own share sheet, so the list is yours, not ours.
+
+#### Why can I not share directly to Instagram on my computer?
+
+Desktop browsers do not support sharing files to other apps. The image downloads and the caption is copied instead.
+
+#### Does the shared image include my save and share buttons?
+
+No. The image is a clean card with no buttons on it.
+
+#### What is in the caption?
+
+The offer, the business name, and the link to the offer, with the link at the end so it stays tappable.
+
+#### Where does a shared link go?
+
+To the offer's own page, which anyone can open without an account.
+
+#### Does a shared link open the app if I have it installed?
+
+On Android, yes. On iPhone a link opens in Safari, which is a limitation of the platform.
+
+#### Can I share an expired offer?
+
+The link still opens, and the page shows that the offer has ended.
+
+#### Do I get credit when someone uses an offer I shared?
+
+Offers you created list you as their creator. Sharing an offer someone else created is not tracked.
+
+### My Deals
+
+Source: https://offerevo.com/help/my-deals.html
+
+#### What is My Deals?
+
+The page listing offers you created and offers you redeemed, in two tabs.
+
+#### What do the tabs under Created mean?
+
+Pending is waiting for the business, Approved is live, Expired has ended, Rejected was declined, Archived you withdrew, and Unavailable means the business archived itself.
+
+#### What does Unavailable mean?
+
+The business archived itself, so your offer is paused. It comes back unchanged, with the same expiry, if they restore the business.
+
+#### What is the difference between Archived and Unavailable?
+
+Archived is something you did and cannot be undone. Unavailable is something the business did and can be reversed by them.
+
+#### How do I archive an offer?
+
+Open My Deals, find the offer, and use Archive. You are asked to confirm because it cannot be undone.
+
+#### What happens when I archive an offer?
+
+It disappears from the feed, from search, from the business's page and from your public profile. People who saved it see that it is no longer available.
+
+#### Can I unarchive an offer?
+
+No. Archiving an offer is permanent.
+
+#### Can I archive an expired offer?
+
+There is nothing to withdraw once it has ended, so the option is not offered.
+
+#### Does the Redeemed tab show offers I created?
+
+Only if you also redeemed them. The two tabs are independent.
+
+#### Why does a redeemed offer show a dash instead of a business name?
+
+That business has archived itself and is no longer listed. Your redemption stays in your history.
+
+#### Are redemptions listed newest first?
+
+Yes.
+
+### Setting up a business
+
+Source: https://offerevo.com/help/business-setup.html
+
+#### How do I add my business?
+
+Sign in, open Business, and add your business. Your account gains the business tools immediately.
+
+#### Do I need a separate business account?
+
+No. A business is added to the account you already have.
+
+#### Can I have more than one business?
+
+Yes. You can add several and switch between them.
+
+#### What details does a business need?
+
+A name, a category, and an address with country, state and city. A logo is optional.
+
+#### Why does my business need a category?
+
+The category is what people filter and search by, and every offer for your business inherits it.
+
+#### My category is not in the list. What do I do?
+
+You can propose a new one. It is visible to you straight away and to everyone once approved.
+
+#### What is the redemption cap?
+
+The most times any single offer for your business can be redeemed.
+
+#### What is the difference between fixed and distributed?
+
+Fixed means every offer uses exactly your number. Distributed lets the person creating the offer choose from a range up to your cap.
+
+#### What range does distributed give?
+
+Steps at roughly 10, 20, 40, 60 and 100 percent of your cap. A cap of 50 offers 5, 10, 20, 30 and 50.
+
+#### What is the maximum offer length?
+
+The most days any offer for your business can run, with the same fixed or distributed choice as redemptions.
+
+#### If I lower my cap, does it shrink offers that are already live?
+
+No. Each offer stores the numbers it was approved with, so live offers are never changed by a later settings change.
+
+#### What is the brand colour?
+
+The colour used on your offer cards. You can lock it so every offer uses it.
+
+#### What happens if I lock my colour?
+
+People creating offers for you cannot choose a colour, and every offer uses your brand colour.
+
+#### Can I use any colour as my brand colour?
+
+Yes. Enter any hex value or use the colour picker. If a colour would be unreadable in light or dark mode, it is adjusted for that mode only.
+
+#### Why does the colour look different in dark mode?
+
+So it stays readable. Your exact colour is kept in whichever mode it already works in, and only the other mode is adjusted.
+
+#### Does my business have a public page?
+
+Yes, listing its active offers. Anyone can open it without an account.
+
+#### Where do I change my business details?
+
+Business, then Settings on the business you want to change.
+
+#### If I rename my business, what happens to its offers?
+
+They keep working and show the new name.
+
+#### If I change my category, what happens to live offers?
+
+They move to the new category, because the category comes from the business rather than the offer.
+
+### Running your business
+
+Source: https://offerevo.com/help/business-managing.html
+
+#### How do I approve an offer?
+
+Open Business. Offers waiting for you are listed there with Approve and Reject.
+
+#### How do I know an offer is waiting?
+
+Business shows a count next to each of your businesses for offers awaiting approval.
+
+#### Can I give a reason when rejecting?
+
+Yes, and the person who created the offer sees it in My Deals.
+
+#### When does an approved offer start?
+
+Immediately. Its expiry is counted from the moment you approve it.
+
+#### How do I redeem a customer's code?
+
+Open Business and use Scan. Point the camera at their QR code, or type the eight characters in.
+
+#### Can staff redeem codes without my account?
+
+Anyone signed in to an account that owns the business can redeem for it.
+
+#### Where do I see who redeemed?
+
+Customers lists everyone who posted an offer for you or redeemed one, with counts for each.
+
+#### Why does one person appear once when they have several offers?
+
+Customers shows one row per person, with their totals, rather than one row per offer.
+
+#### What is in Analytics?
+
+Redemptions over time, your busiest days and hours, top offers, who brings you the most customers, offer status, capacity used, and where your customers are.
+
+#### Can I see analytics per business?
+
+Yes. Switch business at the top of the page, or view all of them together.
+
+#### What does capacity used mean?
+
+How much of the total redemptions across your live offers has been used.
+
+#### What is an ambassador?
+
+Someone who created an offer for your business.
+
+#### How do I archive my business?
+
+Business settings, then Archive in the danger zone at the bottom.
+
+#### What happens when I archive my business?
+
+Its offers stop showing everywhere, its public page stops working, and it cannot be found when someone creates a new offer.
+
+#### Is archiving my business permanent?
+
+No. You can restore it at any time, and everything returns exactly as it was.
+
+#### If I restore my business, do offer expiry dates change?
+
+No. Offers come back with the same dates they had, even if it was days later.
+
+#### Where do I restore an archived business?
+
+It stays in your Business list, dimmed and marked Archived. Open its settings and restore it there.
+
+#### Can customers still see my archived business?
+
+No. Only you can see it while it is archived.
+
+#### Does archiving delete anything?
+
+No. Nothing is deleted, and your offers and history are intact when you restore.
+
+### Your account
+
+Source: https://offerevo.com/help/account.html
+
+#### What is my handle?
+
+The @name on your public profile and on every offer card you create.
+
+#### Can I change my handle?
+
+Yes, from your profile, as long as the one you want is not taken.
+
+#### Where did my handle come from?
+
+It was generated from your name when your account was created.
+
+#### What is on my public profile?
+
+Your name, photo, handle, when you joined, and the offers you created that are live or have ended.
+
+#### Who can see my public profile?
+
+Anyone with the link, signed in or not.
+
+#### Are my pending offers on my public profile?
+
+No. Only approved offers appear there.
+
+#### Is my email address public?
+
+No. Your profile shows your name, handle and photo only.
+
+#### Where does my photo come from?
+
+Your Google account.
+
+#### Why does OfferEvo ask for my city?
+
+To show you offers near you. It is also used as a fallback when location access is off.
+
+#### Do I have to set my city?
+
+No. Without it, OfferEvo estimates a city from your connection.
+
+#### How do I switch between light and dark mode?
+
+OfferEvo follows your device setting by default and can be changed in the app.
+
+#### I am a business owner but I see My Offers instead of Business on my phone.
+
+The Business tab appears once your account owns at least one business. Add one and reload.
+
+#### How do I contact support?
+
+Use the contact form in the help centre. You do not need an account with any other service to open a ticket.

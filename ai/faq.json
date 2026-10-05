@@ -1,0 +1,931 @@
+{
+  "name": "OfferEvo help centre FAQs",
+  "url": "https://offerevo.com/help/",
+  "dateModified": "2026-10-02",
+  "faqs": [
+    {
+      "question": "What is OfferEvo?",
+      "answer": "OfferEvo is a local deals platform where customers create offers for businesses they like. The business approves each offer before it goes live, and then anyone can find, share and use it.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#what-is-offerevo"
+    },
+    {
+      "question": "Do I need an account to browse offers?",
+      "answer": "No. You can browse the feed, open any offer and view public profiles without signing in. You need an account to save, create or redeem an offer.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#do-i-need-an-account-to-browse-offers"
+    },
+    {
+      "question": "How do I create an account?",
+      "answer": "Open app.offerevo.com and sign in with Google. Your account is created the first time you sign in.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#how-do-i-create-an-account"
+    },
+    {
+      "question": "Can I sign up with an email and password?",
+      "answer": "Not currently. Google is the only sign-in method.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#can-i-sign-up-with-an-email-and-password"
+    },
+    {
+      "question": "Is OfferEvo free?",
+      "answer": "Yes, for both customers and business owners.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#is-offerevo-free"
+    },
+    {
+      "question": "Do I need to download an app?",
+      "answer": "No. OfferEvo runs in your browser. You can also install it to your home screen, which makes it behave like an app.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#do-i-need-to-download-an-app"
+    },
+    {
+      "question": "How do I install OfferEvo on my phone?",
+      "answer": "Open app.offerevo.com in your browser and choose Add to Home Screen. On Android an install prompt usually appears on its own.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#how-do-i-install-offerevo-on-my-phone"
+    },
+    {
+      "question": "Does OfferEvo work on a computer?",
+      "answer": "Yes. Everything works on desktop, though redeeming is designed for a phone since you show a code in store.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#does-offerevo-work-on-a-computer"
+    },
+    {
+      "question": "Do I need one account for both customer and business use?",
+      "answer": "One account is enough. Adding a business to your existing account gives you the business tools alongside everything else.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#do-i-need-one-account-for-both-customer-and-business-use"
+    },
+    {
+      "question": "Is there a separate business app?",
+      "answer": "No. The business tools appear in the same app once you add a business.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#is-there-a-separate-business-app"
+    },
+    {
+      "question": "Which browsers are supported?",
+      "answer": "Any current browser. Some features, such as sharing an image straight to another app, depend on what your browser supports.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#which-browsers-are-supported"
+    },
+    {
+      "question": "Why does sharing only offer to download the image on my computer?",
+      "answer": "Desktop browsers do not accept image sharing, so OfferEvo saves the file and copies the caption instead. On a phone the normal share sheet opens.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#why-does-sharing-only-offer-to-download-the-image-on-my-computer"
+    },
+    {
+      "question": "Is OfferEvo available in my country?",
+      "answer": "OfferEvo is open to anyone. What you see depends on whether businesses near you have joined.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#is-offerevo-available-in-my-country"
+    },
+    {
+      "question": "What does it cost a business to join?",
+      "answer": "Nothing. Adding a business and approving offers is free.",
+      "category": "getting-started",
+      "url": "https://offerevo.com/help/getting-started.html#what-does-it-cost-a-business-to-join"
+    },
+    {
+      "question": "Who can create an offer?",
+      "answer": "Any signed-in user can create an offer for any business listed on OfferEvo.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#who-can-create-an-offer"
+    },
+    {
+      "question": "How do I create an offer?",
+      "answer": "Tap the plus button, search for the business, then write the offer and its conditions and submit it for approval.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#how-do-i-create-an-offer"
+    },
+    {
+      "question": "Can I create an offer for a business that is not on OfferEvo?",
+      "answer": "No. The business has to be on OfferEvo first, because it has to approve the offer before it goes live.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#can-i-create-an-offer-for-a-business-that-is-not-on-offerevo"
+    },
+    {
+      "question": "How long can the offer headline be?",
+      "answer": "42 characters. The form shows a live counter.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#how-long-can-the-offer-headline-be"
+    },
+    {
+      "question": "How long can the conditions be?",
+      "answer": "120 characters.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#how-long-can-the-conditions-be"
+    },
+    {
+      "question": "Why is the headline so short?",
+      "answer": "Offers are shown as cards in a feed, and a short headline keeps every card readable at a glance. Use the conditions field for the detail.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#why-is-the-headline-so-short"
+    },
+    {
+      "question": "What should I put in the conditions?",
+      "answer": "Anything that limits the offer, such as which days it applies on, times, or what has to be bought. For example, on weekdays before 11am.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#what-should-i-put-in-the-conditions"
+    },
+    {
+      "question": "Can I choose the offer's category?",
+      "answer": "No. The category comes from the business and cannot be changed on an individual offer.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#can-i-choose-the-offer-s-category"
+    },
+    {
+      "question": "Can I choose the offer's colour?",
+      "answer": "Only if the business allows it. Some businesses lock their brand colour, and then every offer for them uses that colour.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#can-i-choose-the-offer-s-colour"
+    },
+    {
+      "question": "What colours can I pick?",
+      "answer": "Any colour. If a colour would be hard to read in light or dark mode, OfferEvo adjusts its brightness for that mode only and keeps your colour everywhere else.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#what-colours-can-i-pick"
+    },
+    {
+      "question": "How many redemptions can I set?",
+      "answer": "Up to the maximum the business allows. Some businesses fix a single number, others let you choose from a range up to their cap.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#how-many-redemptions-can-i-set"
+    },
+    {
+      "question": "What does it mean when the redemption count is locked?",
+      "answer": "The business has chosen a fixed number, so every offer for them allows exactly that many redemptions.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#what-does-it-mean-when-the-redemption-count-is-locked"
+    },
+    {
+      "question": "How long can an offer run?",
+      "answer": "Up to the maximum number of days the business allows. As with redemptions, some businesses fix it and others let you choose.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#how-long-can-an-offer-run"
+    },
+    {
+      "question": "When does the countdown start?",
+      "answer": "When the business approves the offer, not when you submit it. An offer waiting for approval is not using up its days.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#when-does-the-countdown-start"
+    },
+    {
+      "question": "Can I edit an offer after submitting it?",
+      "answer": "No. Offers cannot be edited. If something is wrong, archive it and create a new one.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#can-i-edit-an-offer-after-submitting-it"
+    },
+    {
+      "question": "Can I delete an offer I created?",
+      "answer": "You can archive it, which removes it from everywhere public. Archiving is permanent and cannot be undone.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#can-i-delete-an-offer-i-created"
+    },
+    {
+      "question": "How many offers can I create?",
+      "answer": "There is no limit on how many you submit. Each one still needs the business to approve it.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#how-many-offers-can-i-create"
+    },
+    {
+      "question": "Can I create an offer for my own business?",
+      "answer": "Yes. You can post for a business you own and approve it yourself.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#can-i-create-an-offer-for-my-own-business"
+    },
+    {
+      "question": "Can two people create the same offer for one business?",
+      "answer": "Yes. The business decides which ones to approve.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#can-two-people-create-the-same-offer-for-one-business"
+    },
+    {
+      "question": "Do I get anything for creating an offer?",
+      "answer": "Your name and handle appear on the offer card, and your public profile lists the offers you created.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#do-i-get-anything-for-creating-an-offer"
+    },
+    {
+      "question": "Can I make an offer that never expires?",
+      "answer": "No. Every offer has a set number of days and ends when that runs out.",
+      "category": "creating-offers",
+      "url": "https://offerevo.com/help/creating-offers.html#can-i-make-an-offer-that-never-expires"
+    },
+    {
+      "question": "What happens after I submit an offer?",
+      "answer": "It goes to the business as pending. It is not visible to anyone else until the business approves it.",
+      "category": "approval",
+      "url": "https://offerevo.com/help/approval.html#what-happens-after-i-submit-an-offer"
+    },
+    {
+      "question": "How long does approval take?",
+      "answer": "It depends entirely on the business. OfferEvo does not set a time limit on reviewing an offer.",
+      "category": "approval",
+      "url": "https://offerevo.com/help/approval.html#how-long-does-approval-take"
+    },
+    {
+      "question": "How do I know if my offer was approved?",
+      "answer": "Open My Deals. Approved offers move to the Approved tab and become visible in the feed.",
+      "category": "approval",
+      "url": "https://offerevo.com/help/approval.html#how-do-i-know-if-my-offer-was-approved"
+    },
+    {
+      "question": "Why was my offer rejected?",
+      "answer": "The business decides. If they left a reason it is shown on the offer in the Rejected tab of My Deals.",
+      "category": "approval",
+      "url": "https://offerevo.com/help/approval.html#why-was-my-offer-rejected"
+    },
+    {
+      "question": "Can I appeal a rejection?",
+      "answer": "There is no appeal process in the app. You can create a different offer for the same business.",
+      "category": "approval",
+      "url": "https://offerevo.com/help/approval.html#can-i-appeal-a-rejection"
+    },
+    {
+      "question": "Can a business change an offer instead of rejecting it?",
+      "answer": "No. A business can approve or reject an offer, not edit it.",
+      "category": "approval",
+      "url": "https://offerevo.com/help/approval.html#can-a-business-change-an-offer-instead-of-rejecting-it"
+    },
+    {
+      "question": "Can an offer go live without the business approving it?",
+      "answer": "No. Approval by the business is the only way an offer becomes visible.",
+      "category": "approval",
+      "url": "https://offerevo.com/help/approval.html#can-an-offer-go-live-without-the-business-approving-it"
+    },
+    {
+      "question": "Can a business un-approve an offer that is live?",
+      "answer": "Not directly. A business can archive itself, which pauses all of its offers.",
+      "category": "approval",
+      "url": "https://offerevo.com/help/approval.html#can-a-business-un-approve-an-offer-that-is-live"
+    },
+    {
+      "question": "Does a rejected offer stay in my account?",
+      "answer": "Yes, under the Rejected tab in My Deals, with the reason if one was given.",
+      "category": "approval",
+      "url": "https://offerevo.com/help/approval.html#does-a-rejected-offer-stay-in-my-account"
+    },
+    {
+      "question": "Can I resubmit a rejected offer?",
+      "answer": "Not the same one. Create a new offer instead.",
+      "category": "approval",
+      "url": "https://offerevo.com/help/approval.html#can-i-resubmit-a-rejected-offer"
+    },
+    {
+      "question": "Who sees my offer while it is pending?",
+      "answer": "You and the business owner. It does not appear in the feed, in search or on your public profile.",
+      "category": "approval",
+      "url": "https://offerevo.com/help/approval.html#who-sees-my-offer-while-it-is-pending"
+    },
+    {
+      "question": "How do I find offers near me?",
+      "answer": "The feed shows live offers for your city. Open OfferEvo and they are the first thing you see.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#how-do-i-find-offers-near-me"
+    },
+    {
+      "question": "How does OfferEvo know where I am?",
+      "answer": "It uses your location if you have already allowed it, otherwise the city on your profile, otherwise an approximate city from your internet connection.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#how-does-offerevo-know-where-i-am"
+    },
+    {
+      "question": "Will OfferEvo ask for my location?",
+      "answer": "Not on its own. The feed never triggers a location prompt unless you tap the location button yourself.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#will-offerevo-ask-for-my-location"
+    },
+    {
+      "question": "The feed shows the wrong city. How do I fix it?",
+      "answer": "Tap the location chip at the top of the feed to use your device location, or set your city on your profile.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#the-feed-shows-the-wrong-city-how-do-i-fix-it"
+    },
+    {
+      "question": "Can I see offers in another city?",
+      "answer": "Yes. Clear the location filter to see offers from everywhere.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#can-i-see-offers-in-another-city"
+    },
+    {
+      "question": "How do I search?",
+      "answer": "Use the search button on the feed. Search matches the offer text, the business name and the category.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#how-do-i-search"
+    },
+    {
+      "question": "Why does the feed show different offers each time?",
+      "answer": "The first page is shuffled so the same offers are not always on top.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#why-does-the-feed-show-different-offers-each-time"
+    },
+    {
+      "question": "How do I filter by category?",
+      "answer": "Use the category chips above the feed. Your choice is remembered for next time.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#how-do-i-filter-by-category"
+    },
+    {
+      "question": "What does the number on an offer card mean?",
+      "answer": "It shows how many redemptions are left and how many days the offer still runs.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#what-does-the-number-on-an-offer-card-mean"
+    },
+    {
+      "question": "How do I save an offer?",
+      "answer": "Tap the bookmark on the card. Saved offers are under Saved.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#how-do-i-save-an-offer"
+    },
+    {
+      "question": "Do I need an account to save an offer?",
+      "answer": "Yes. Tapping the bookmark while signed out takes you to sign in.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#do-i-need-an-account-to-save-an-offer"
+    },
+    {
+      "question": "Why has a saved offer disappeared?",
+      "answer": "It was archived by the person who created it, or the business archived itself. Saved shows a note counting offers that are no longer available.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#why-has-a-saved-offer-disappeared"
+    },
+    {
+      "question": "Do expired offers stay in Saved?",
+      "answer": "Yes, in a separate Expired section, so you can still see what you had saved.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#do-expired-offers-stay-in-saved"
+    },
+    {
+      "question": "What does sold out mean on a card?",
+      "answer": "The offer has been redeemed the maximum number of times it allowed.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#what-does-sold-out-mean-on-a-card"
+    },
+    {
+      "question": "Can I see all offers from one business?",
+      "answer": "Yes. Open the business's public page to see its active offers.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#can-i-see-all-offers-from-one-business"
+    },
+    {
+      "question": "Can I see all offers from one person?",
+      "answer": "Yes. Tap their handle on any card to open their public profile.",
+      "category": "finding-offers",
+      "url": "https://offerevo.com/help/finding-offers.html#can-i-see-all-offers-from-one-person"
+    },
+    {
+      "question": "How do I redeem an offer?",
+      "answer": "Open the offer, tap Redeem, and show the QR code or the eight-character code to staff at the business.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#how-do-i-redeem-an-offer"
+    },
+    {
+      "question": "What is the eight-character code?",
+      "answer": "It is four characters identifying the offer plus four identifying you, shown with a dash between them for readability.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#what-is-the-eight-character-code"
+    },
+    {
+      "question": "Do I need an account to redeem?",
+      "answer": "Yes. The code includes a part that identifies you, so you have to be signed in.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#do-i-need-an-account-to-redeem"
+    },
+    {
+      "question": "Does the code work if I have no signal in the shop?",
+      "answer": "The business needs a connection to confirm the code, so redeeming requires one of you to be online.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#does-the-code-work-if-i-have-no-signal-in-the-shop"
+    },
+    {
+      "question": "How does the business confirm my code?",
+      "answer": "They scan your QR code with their camera, or type the eight characters in. Your screen turns green the moment it goes through.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#how-does-the-business-confirm-my-code"
+    },
+    {
+      "question": "Can I redeem the same offer twice?",
+      "answer": "No. Each person can redeem a given offer once.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#can-i-redeem-the-same-offer-twice"
+    },
+    {
+      "question": "Can I redeem several different offers at the same business?",
+      "answer": "Yes, as long as each one is a different offer.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#can-i-redeem-several-different-offers-at-the-same-business"
+    },
+    {
+      "question": "What does already redeemed mean?",
+      "answer": "That offer has already been used on your account and cannot be used again.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#what-does-already-redeemed-mean"
+    },
+    {
+      "question": "What does sold out mean when redeeming?",
+      "answer": "The offer reached its maximum number of redemptions before you got there.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#what-does-sold-out-mean-when-redeeming"
+    },
+    {
+      "question": "What does that offer has ended mean?",
+      "answer": "The offer passed its expiry date and can no longer be redeemed.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#what-does-that-offer-has-ended-mean"
+    },
+    {
+      "question": "What does that offer belongs to another business mean?",
+      "answer": "The code was entered at a business that does not own this offer. Codes only work at the business the offer is for.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#what-does-that-offer-belongs-to-another-business-mean"
+    },
+    {
+      "question": "The code did not match any offer. Why?",
+      "answer": "The code was typed incorrectly, or the offer no longer exists. Check the characters and try again.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#the-code-did-not-match-any-offer-why"
+    },
+    {
+      "question": "Does my code change?",
+      "answer": "No. Your half of the code is permanent, and each offer's half is fixed too.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#does-my-code-change"
+    },
+    {
+      "question": "Is it safe if someone sees my code?",
+      "answer": "Only the business the offer belongs to can accept it, and only once. It is not a payment method.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#is-it-safe-if-someone-sees-my-code"
+    },
+    {
+      "question": "Can I redeem on behalf of a friend?",
+      "answer": "No. The code identifies your account, so each person redeems with their own.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#can-i-redeem-on-behalf-of-a-friend"
+    },
+    {
+      "question": "Do I have to buy something to redeem?",
+      "answer": "That depends on the offer's conditions. Read them on the offer page before you go.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#do-i-have-to-buy-something-to-redeem"
+    },
+    {
+      "question": "Where do I see what I have redeemed?",
+      "answer": "My Deals has a Redeemed tab listing every offer you have used and when.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#where-do-i-see-what-i-have-redeemed"
+    },
+    {
+      "question": "Can the business refuse my code?",
+      "answer": "The conditions on the offer are what it is subject to. If something is unclear, ask the business before you order.",
+      "category": "redeeming",
+      "url": "https://offerevo.com/help/redeeming.html#can-the-business-refuse-my-code"
+    },
+    {
+      "question": "How do I share an offer?",
+      "answer": "Tap the share button on any offer card or on the offer page. You can share a link or an image.",
+      "category": "sharing",
+      "url": "https://offerevo.com/help/sharing.html#how-do-i-share-an-offer"
+    },
+    {
+      "question": "What does the shared image look like?",
+      "answer": "It is a card with the offer, the business, and a short link, in the offer's colour.",
+      "category": "sharing",
+      "url": "https://offerevo.com/help/sharing.html#what-does-the-shared-image-look-like"
+    },
+    {
+      "question": "What sizes can I share?",
+      "answer": "Square for feed posts, Story for full-screen stories, and Wide for link previews and desktop chat. Square is the default.",
+      "category": "sharing",
+      "url": "https://offerevo.com/help/sharing.html#what-sizes-can-i-share"
+    },
+    {
+      "question": "Can I post an offer straight to my Instagram story?",
+      "answer": "Yes, on a phone. Choose Story, tap Share, and pick Instagram from your phone's share sheet.",
+      "category": "sharing",
+      "url": "https://offerevo.com/help/sharing.html#can-i-post-an-offer-straight-to-my-instagram-story"
+    },
+    {
+      "question": "Which apps can I share to?",
+      "answer": "Whatever is installed on your phone. OfferEvo hands the image to your phone's own share sheet, so the list is yours, not ours.",
+      "category": "sharing",
+      "url": "https://offerevo.com/help/sharing.html#which-apps-can-i-share-to"
+    },
+    {
+      "question": "Why can I not share directly to Instagram on my computer?",
+      "answer": "Desktop browsers do not support sharing files to other apps. The image downloads and the caption is copied instead.",
+      "category": "sharing",
+      "url": "https://offerevo.com/help/sharing.html#why-can-i-not-share-directly-to-instagram-on-my-computer"
+    },
+    {
+      "question": "Does the shared image include my save and share buttons?",
+      "answer": "No. The image is a clean card with no buttons on it.",
+      "category": "sharing",
+      "url": "https://offerevo.com/help/sharing.html#does-the-shared-image-include-my-save-and-share-buttons"
+    },
+    {
+      "question": "What is in the caption?",
+      "answer": "The offer, the business name, and the link to the offer, with the link at the end so it stays tappable.",
+      "category": "sharing",
+      "url": "https://offerevo.com/help/sharing.html#what-is-in-the-caption"
+    },
+    {
+      "question": "Where does a shared link go?",
+      "answer": "To the offer's own page, which anyone can open without an account.",
+      "category": "sharing",
+      "url": "https://offerevo.com/help/sharing.html#where-does-a-shared-link-go"
+    },
+    {
+      "question": "Does a shared link open the app if I have it installed?",
+      "answer": "On Android, yes. On iPhone a link opens in Safari, which is a limitation of the platform.",
+      "category": "sharing",
+      "url": "https://offerevo.com/help/sharing.html#does-a-shared-link-open-the-app-if-i-have-it-installed"
+    },
+    {
+      "question": "Can I share an expired offer?",
+      "answer": "The link still opens, and the page shows that the offer has ended.",
+      "category": "sharing",
+      "url": "https://offerevo.com/help/sharing.html#can-i-share-an-expired-offer"
+    },
+    {
+      "question": "Do I get credit when someone uses an offer I shared?",
+      "answer": "Offers you created list you as their creator. Sharing an offer someone else created is not tracked.",
+      "category": "sharing",
+      "url": "https://offerevo.com/help/sharing.html#do-i-get-credit-when-someone-uses-an-offer-i-shared"
+    },
+    {
+      "question": "What is My Deals?",
+      "answer": "The page listing offers you created and offers you redeemed, in two tabs.",
+      "category": "my-deals",
+      "url": "https://offerevo.com/help/my-deals.html#what-is-my-deals"
+    },
+    {
+      "question": "What do the tabs under Created mean?",
+      "answer": "Pending is waiting for the business, Approved is live, Expired has ended, Rejected was declined, Archived you withdrew, and Unavailable means the business archived itself.",
+      "category": "my-deals",
+      "url": "https://offerevo.com/help/my-deals.html#what-do-the-tabs-under-created-mean"
+    },
+    {
+      "question": "What does Unavailable mean?",
+      "answer": "The business archived itself, so your offer is paused. It comes back unchanged, with the same expiry, if they restore the business.",
+      "category": "my-deals",
+      "url": "https://offerevo.com/help/my-deals.html#what-does-unavailable-mean"
+    },
+    {
+      "question": "What is the difference between Archived and Unavailable?",
+      "answer": "Archived is something you did and cannot be undone. Unavailable is something the business did and can be reversed by them.",
+      "category": "my-deals",
+      "url": "https://offerevo.com/help/my-deals.html#what-is-the-difference-between-archived-and-unavailable"
+    },
+    {
+      "question": "How do I archive an offer?",
+      "answer": "Open My Deals, find the offer, and use Archive. You are asked to confirm because it cannot be undone.",
+      "category": "my-deals",
+      "url": "https://offerevo.com/help/my-deals.html#how-do-i-archive-an-offer"
+    },
+    {
+      "question": "What happens when I archive an offer?",
+      "answer": "It disappears from the feed, from search, from the business's page and from your public profile. People who saved it see that it is no longer available.",
+      "category": "my-deals",
+      "url": "https://offerevo.com/help/my-deals.html#what-happens-when-i-archive-an-offer"
+    },
+    {
+      "question": "Can I unarchive an offer?",
+      "answer": "No. Archiving an offer is permanent.",
+      "category": "my-deals",
+      "url": "https://offerevo.com/help/my-deals.html#can-i-unarchive-an-offer"
+    },
+    {
+      "question": "Can I archive an expired offer?",
+      "answer": "There is nothing to withdraw once it has ended, so the option is not offered.",
+      "category": "my-deals",
+      "url": "https://offerevo.com/help/my-deals.html#can-i-archive-an-expired-offer"
+    },
+    {
+      "question": "Does the Redeemed tab show offers I created?",
+      "answer": "Only if you also redeemed them. The two tabs are independent.",
+      "category": "my-deals",
+      "url": "https://offerevo.com/help/my-deals.html#does-the-redeemed-tab-show-offers-i-created"
+    },
+    {
+      "question": "Why does a redeemed offer show a dash instead of a business name?",
+      "answer": "That business has archived itself and is no longer listed. Your redemption stays in your history.",
+      "category": "my-deals",
+      "url": "https://offerevo.com/help/my-deals.html#why-does-a-redeemed-offer-show-a-dash-instead-of-a-business-name"
+    },
+    {
+      "question": "Are redemptions listed newest first?",
+      "answer": "Yes.",
+      "category": "my-deals",
+      "url": "https://offerevo.com/help/my-deals.html#are-redemptions-listed-newest-first"
+    },
+    {
+      "question": "How do I add my business?",
+      "answer": "Sign in, open Business, and add your business. Your account gains the business tools immediately.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#how-do-i-add-my-business"
+    },
+    {
+      "question": "Do I need a separate business account?",
+      "answer": "No. A business is added to the account you already have.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#do-i-need-a-separate-business-account"
+    },
+    {
+      "question": "Can I have more than one business?",
+      "answer": "Yes. You can add several and switch between them.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#can-i-have-more-than-one-business"
+    },
+    {
+      "question": "What details does a business need?",
+      "answer": "A name, a category, and an address with country, state and city. A logo is optional.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#what-details-does-a-business-need"
+    },
+    {
+      "question": "Why does my business need a category?",
+      "answer": "The category is what people filter and search by, and every offer for your business inherits it.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#why-does-my-business-need-a-category"
+    },
+    {
+      "question": "My category is not in the list. What do I do?",
+      "answer": "You can propose a new one. It is visible to you straight away and to everyone once approved.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#my-category-is-not-in-the-list-what-do-i-do"
+    },
+    {
+      "question": "What is the redemption cap?",
+      "answer": "The most times any single offer for your business can be redeemed.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#what-is-the-redemption-cap"
+    },
+    {
+      "question": "What is the difference between fixed and distributed?",
+      "answer": "Fixed means every offer uses exactly your number. Distributed lets the person creating the offer choose from a range up to your cap.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#what-is-the-difference-between-fixed-and-distributed"
+    },
+    {
+      "question": "What range does distributed give?",
+      "answer": "Steps at roughly 10, 20, 40, 60 and 100 percent of your cap. A cap of 50 offers 5, 10, 20, 30 and 50.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#what-range-does-distributed-give"
+    },
+    {
+      "question": "What is the maximum offer length?",
+      "answer": "The most days any offer for your business can run, with the same fixed or distributed choice as redemptions.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#what-is-the-maximum-offer-length"
+    },
+    {
+      "question": "If I lower my cap, does it shrink offers that are already live?",
+      "answer": "No. Each offer stores the numbers it was approved with, so live offers are never changed by a later settings change.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#if-i-lower-my-cap-does-it-shrink-offers-that-are-already-live"
+    },
+    {
+      "question": "What is the brand colour?",
+      "answer": "The colour used on your offer cards. You can lock it so every offer uses it.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#what-is-the-brand-colour"
+    },
+    {
+      "question": "What happens if I lock my colour?",
+      "answer": "People creating offers for you cannot choose a colour, and every offer uses your brand colour.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#what-happens-if-i-lock-my-colour"
+    },
+    {
+      "question": "Can I use any colour as my brand colour?",
+      "answer": "Yes. Enter any hex value or use the colour picker. If a colour would be unreadable in light or dark mode, it is adjusted for that mode only.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#can-i-use-any-colour-as-my-brand-colour"
+    },
+    {
+      "question": "Why does the colour look different in dark mode?",
+      "answer": "So it stays readable. Your exact colour is kept in whichever mode it already works in, and only the other mode is adjusted.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#why-does-the-colour-look-different-in-dark-mode"
+    },
+    {
+      "question": "Does my business have a public page?",
+      "answer": "Yes, listing its active offers. Anyone can open it without an account.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#does-my-business-have-a-public-page"
+    },
+    {
+      "question": "Where do I change my business details?",
+      "answer": "Business, then Settings on the business you want to change.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#where-do-i-change-my-business-details"
+    },
+    {
+      "question": "If I rename my business, what happens to its offers?",
+      "answer": "They keep working and show the new name.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#if-i-rename-my-business-what-happens-to-its-offers"
+    },
+    {
+      "question": "If I change my category, what happens to live offers?",
+      "answer": "They move to the new category, because the category comes from the business rather than the offer.",
+      "category": "business-setup",
+      "url": "https://offerevo.com/help/business-setup.html#if-i-change-my-category-what-happens-to-live-offers"
+    },
+    {
+      "question": "How do I approve an offer?",
+      "answer": "Open Business. Offers waiting for you are listed there with Approve and Reject.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#how-do-i-approve-an-offer"
+    },
+    {
+      "question": "How do I know an offer is waiting?",
+      "answer": "Business shows a count next to each of your businesses for offers awaiting approval.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#how-do-i-know-an-offer-is-waiting"
+    },
+    {
+      "question": "Can I give a reason when rejecting?",
+      "answer": "Yes, and the person who created the offer sees it in My Deals.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#can-i-give-a-reason-when-rejecting"
+    },
+    {
+      "question": "When does an approved offer start?",
+      "answer": "Immediately. Its expiry is counted from the moment you approve it.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#when-does-an-approved-offer-start"
+    },
+    {
+      "question": "How do I redeem a customer's code?",
+      "answer": "Open Business and use Scan. Point the camera at their QR code, or type the eight characters in.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#how-do-i-redeem-a-customer-s-code"
+    },
+    {
+      "question": "Can staff redeem codes without my account?",
+      "answer": "Anyone signed in to an account that owns the business can redeem for it.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#can-staff-redeem-codes-without-my-account"
+    },
+    {
+      "question": "Where do I see who redeemed?",
+      "answer": "Customers lists everyone who posted an offer for you or redeemed one, with counts for each.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#where-do-i-see-who-redeemed"
+    },
+    {
+      "question": "Why does one person appear once when they have several offers?",
+      "answer": "Customers shows one row per person, with their totals, rather than one row per offer.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#why-does-one-person-appear-once-when-they-have-several-offers"
+    },
+    {
+      "question": "What is in Analytics?",
+      "answer": "Redemptions over time, your busiest days and hours, top offers, who brings you the most customers, offer status, capacity used, and where your customers are.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#what-is-in-analytics"
+    },
+    {
+      "question": "Can I see analytics per business?",
+      "answer": "Yes. Switch business at the top of the page, or view all of them together.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#can-i-see-analytics-per-business"
+    },
+    {
+      "question": "What does capacity used mean?",
+      "answer": "How much of the total redemptions across your live offers has been used.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#what-does-capacity-used-mean"
+    },
+    {
+      "question": "What is an ambassador?",
+      "answer": "Someone who created an offer for your business.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#what-is-an-ambassador"
+    },
+    {
+      "question": "How do I archive my business?",
+      "answer": "Business settings, then Archive in the danger zone at the bottom.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#how-do-i-archive-my-business"
+    },
+    {
+      "question": "What happens when I archive my business?",
+      "answer": "Its offers stop showing everywhere, its public page stops working, and it cannot be found when someone creates a new offer.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#what-happens-when-i-archive-my-business"
+    },
+    {
+      "question": "Is archiving my business permanent?",
+      "answer": "No. You can restore it at any time, and everything returns exactly as it was.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#is-archiving-my-business-permanent"
+    },
+    {
+      "question": "If I restore my business, do offer expiry dates change?",
+      "answer": "No. Offers come back with the same dates they had, even if it was days later.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#if-i-restore-my-business-do-offer-expiry-dates-change"
+    },
+    {
+      "question": "Where do I restore an archived business?",
+      "answer": "It stays in your Business list, dimmed and marked Archived. Open its settings and restore it there.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#where-do-i-restore-an-archived-business"
+    },
+    {
+      "question": "Can customers still see my archived business?",
+      "answer": "No. Only you can see it while it is archived.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#can-customers-still-see-my-archived-business"
+    },
+    {
+      "question": "Does archiving delete anything?",
+      "answer": "No. Nothing is deleted, and your offers and history are intact when you restore.",
+      "category": "business-managing",
+      "url": "https://offerevo.com/help/business-managing.html#does-archiving-delete-anything"
+    },
+    {
+      "question": "What is my handle?",
+      "answer": "The @name on your public profile and on every offer card you create.",
+      "category": "account",
+      "url": "https://offerevo.com/help/account.html#what-is-my-handle"
+    },
+    {
+      "question": "Can I change my handle?",
+      "answer": "Yes, from your profile, as long as the one you want is not taken.",
+      "category": "account",
+      "url": "https://offerevo.com/help/account.html#can-i-change-my-handle"
+    },
+    {
+      "question": "Where did my handle come from?",
+      "answer": "It was generated from your name when your account was created.",
+      "category": "account",
+      "url": "https://offerevo.com/help/account.html#where-did-my-handle-come-from"
+    },
+    {
+      "question": "What is on my public profile?",
+      "answer": "Your name, photo, handle, when you joined, and the offers you created that are live or have ended.",
+      "category": "account",
+      "url": "https://offerevo.com/help/account.html#what-is-on-my-public-profile"
+    },
+    {
+      "question": "Who can see my public profile?",
+      "answer": "Anyone with the link, signed in or not.",
+      "category": "account",
+      "url": "https://offerevo.com/help/account.html#who-can-see-my-public-profile"
+    },
+    {
+      "question": "Are my pending offers on my public profile?",
+      "answer": "No. Only approved offers appear there.",
+      "category": "account",
+      "url": "https://offerevo.com/help/account.html#are-my-pending-offers-on-my-public-profile"
+    },
+    {
+      "question": "Is my email address public?",
+      "answer": "No. Your profile shows your name, handle and photo only.",
+      "category": "account",
+      "url": "https://offerevo.com/help/account.html#is-my-email-address-public"
+    },
+    {
+      "question": "Where does my photo come from?",
+      "answer": "Your Google account.",
+      "category": "account",
+      "url": "https://offerevo.com/help/account.html#where-does-my-photo-come-from"
+    },
+    {
+      "question": "Why does OfferEvo ask for my city?",
+      "answer": "To show you offers near you. It is also used as a fallback when location access is off.",
+      "category": "account",
+      "url": "https://offerevo.com/help/account.html#why-does-offerevo-ask-for-my-city"
+    },
+    {
+      "question": "Do I have to set my city?",
+      "answer": "No. Without it, OfferEvo estimates a city from your connection.",
+      "category": "account",
+      "url": "https://offerevo.com/help/account.html#do-i-have-to-set-my-city"
+    },
+    {
+      "question": "How do I switch between light and dark mode?",
+      "answer": "OfferEvo follows your device setting by default and can be changed in the app.",
+      "category": "account",
+      "url": "https://offerevo.com/help/account.html#how-do-i-switch-between-light-and-dark-mode"
+    },
+    {
+      "question": "I am a business owner but I see My Offers instead of Business on my phone.",
+      "answer": "The Business tab appears once your account owns at least one business. Add one and reload.",
+      "category": "account",
+      "url": "https://offerevo.com/help/account.html#i-am-a-business-owner-but-i-see-my-offers-instead-of-business-on-my-ph"
+    },
+    {
+      "question": "How do I contact support?",
+      "answer": "Use the contact form in the help centre. You do not need an account with any other service to open a ticket.",
+      "category": "account",
+      "url": "https://offerevo.com/help/account.html#how-do-i-contact-support"
+    }
+  ]
+}

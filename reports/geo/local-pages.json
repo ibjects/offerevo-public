@@ -1,0 +1,258 @@
+[
+  {
+    "url": "https://offerevo.com/",
+    "score": 94,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 16,
+      "meta": 14,
+      "content": 12,
+      "signals": 6,
+      "ai_discovery": 6,
+      "brand_entity": 7,
+      "negative_penalty": -1
+    }
+  },
+  {
+    "url": "https://offerevo.com/privacy.html",
+    "score": 57,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 0,
+      "meta": 10,
+      "content": 7,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 0,
+      "negative_penalty": -3
+    }
+  },
+  {
+    "url": "https://offerevo.com/terms.html",
+    "score": 55,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 0,
+      "meta": 10,
+      "content": 5,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 0,
+      "negative_penalty": -3
+    }
+  },
+  {
+    "url": "https://offerevo.com/sitemap.html",
+    "score": 60,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 0,
+      "meta": 10,
+      "content": 7,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 3,
+      "negative_penalty": -3
+    }
+  },
+  {
+    "url": "https://offerevo.com/help/",
+    "score": 62,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 0,
+      "meta": 14,
+      "content": 7,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 3,
+      "negative_penalty": -5
+    }
+  },
+  {
+    "url": "https://offerevo.com/help/getting-started.html",
+    "score": 70,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 5,
+      "meta": 14,
+      "content": 7,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 4,
+      "negative_penalty": -3
+    }
+  },
+  {
+    "url": "https://offerevo.com/help/creating-offers.html",
+    "score": 70,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 5,
+      "meta": 14,
+      "content": 7,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 4,
+      "negative_penalty": -3
+    }
+  },
+  {
+    "url": "https://offerevo.com/help/approval.html",
+    "score": 70,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 5,
+      "meta": 14,
+      "content": 7,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 4,
+      "negative_penalty": -3
+    }
+  },
+  {
+    "url": "https://offerevo.com/help/finding-offers.html",
+    "score": 70,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 5,
+      "meta": 14,
+      "content": 7,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 4,
+      "negative_penalty": -3
+    }
+  },
+  {
+    "url": "https://offerevo.com/help/redeeming.html",
+    "score": 70,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 5,
+      "meta": 14,
+      "content": 7,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 4,
+      "negative_penalty": -3
+    }
+  },
+  {
+    "url": "https://offerevo.com/help/sharing.html",
+    "score": 70,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 5,
+      "meta": 14,
+      "content": 7,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 4,
+      "negative_penalty": -3
+    }
+  },
+  {
+    "url": "https://offerevo.com/help/my-deals.html",
+    "score": 70,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 5,
+      "meta": 14,
+      "content": 7,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 4,
+      "negative_penalty": -3
+    }
+  },
+  {
+    "url": "https://offerevo.com/help/business-setup.html",
+    "score": 70,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 5,
+      "meta": 14,
+      "content": 7,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 4,
+      "negative_penalty": -3
+    }
+  },
+  {
+    "url": "https://offerevo.com/help/business-managing.html",
+    "score": 70,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 5,
+      "meta": 14,
+      "content": 7,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 4,
+      "negative_penalty": -3
+    }
+  },
+  {
+    "url": "https://offerevo.com/help/account.html",
+    "score": 70,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 5,
+      "meta": 14,
+      "content": 7,
+      "signals": 3,
+      "ai_discovery": 6,
+      "brand_entity": 4,
+      "negative_penalty": -3
+    }
+  },
+  {
+    "url": "https://offerevo.com/about.html",
+    "score": 75,
+    "error": null,
+    "score_breakdown": {
+      "robots": 18,
+      "llms": 16,
+      "schema": 5,
+      "meta": 14,
+      "content": 9,
+      "signals": 6,
+      "ai_discovery": 6,
+      "brand_entity": 4,
+      "negative_penalty": -3
+    }
+  }
+]

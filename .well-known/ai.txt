@@ -1,0 +1,15 @@
+# OfferEvo AI discovery
+Name: OfferEvo
+Website: https://offerevo.com/
+App: https://app.offerevo.com/
+Summary: https://offerevo.com/ai/summary.json
+FAQ: https://offerevo.com/ai/faq.json
+Services: https://offerevo.com/ai/service.json
+Index: https://offerevo.com/llms.txt
+Full-Reference: https://offerevo.com/llms-full.txt
+Sitemap: https://offerevo.com/sitemap.xml
+Updates: https://offerevo.com/feed.xml
+Contact: hello@offerevo.com
+
+Public website crawling is permitted subject to https://offerevo.com/robots.txt.
+This supplementary discovery file does not replace robots.txt, grant access to private accounts, or configure the app subdomain.

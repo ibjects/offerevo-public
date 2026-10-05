@@ -1,0 +1,51 @@
+{
+  "name": "OfferEvo",
+  "url": "https://offerevo.com/",
+  "description": "Customers create offers for local businesses. Businesses approve them before they go live, and people discover, share and use them in store with a QR or eight-character code.",
+  "appUrl": "https://app.offerevo.com/",
+  "language": "en",
+  "status": "public beta",
+  "dateModified": "2026-10-02",
+  "location": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kuala Lumpur",
+    "addressCountry": "MY"
+  },
+  "contact": {
+    "email": "hello@offerevo.com",
+    "url": "https://offerevo.com/about.html#contact"
+  },
+  "pricing": {
+    "customer": "Free",
+    "businessOwner": "Free"
+  },
+  "features": [
+    "Customers create discounts and deals for local businesses",
+    "Businesses approve each offer before it goes live",
+    "Anyone can discover and share approved offers",
+    "Offers are redeemed in store with a QR code or eight-character code",
+    "One account for customers and business owners"
+  ],
+  "account": {
+    "publicBrowsing": true,
+    "signIn": "Google",
+    "requiredFor": [
+      "saving",
+      "creating",
+      "redeeming",
+      "managing a business"
+    ]
+  },
+  "limits": {
+    "headlineCharacters": 42,
+    "conditionCharacters": 120,
+    "redemptionsPerPersonPerOffer": 1,
+    "manualCodeCharacters": 8
+  },
+  "references": [
+    "https://offerevo.com/",
+    "https://offerevo.com/about.html",
+    "https://offerevo.com/help/",
+    "https://offerevo.com/llms-full.txt"
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "url": "https://offerevo.com",
+  "timestamp": "2026-10-02T07:35:09.903706+00:00",
+  "score": 94,
+  "band": "excellent",
+  "error": null,
+  "checks": {
+    "robots_txt": {
+      "score": 18,
+      "max": 18,
+      "passed": true,
+      "details": {
+        "found": true,
+        "bots_allowed": [
+          "GPTBot",
+          "OAI-SearchBot",
+          "ChatGPT-User",
+          "ClaudeBot",
+          "Claude-SearchBot",
+          "Claude-User",
+          "PerplexityBot",
+          "Perplexity-User",
+          "Googlebot",
+          "Google-Extended",
+          "Google-CloudVertexBot",
+          "Bingbot",
+          "Applebot-Extended",
+          "cohere-ai",
+          "DuckAssistBot",
+          "Bytespider",
+          "meta-externalagent",
+          "Meta-ExternalFetcher",
+          "facebookexternalhit",
+          "Amazonbot",
+          "AI2Bot",
+          "AI2Bot-Dolma",
+          "xAI-Bot",
+          "Applebot",
+          "PetalBot",
+          "YouBot",
+          "CCBot"
+        ],
+        "bots_missing": [],
+        "bots_blocked": [],
+        "bots_partial": [],
+        "citation_bots_ok": true,
+        "crawl_delay": null,
+        "citation_bots_explicit": true
+      }
+    },
+    "llms_txt": {
+      "score": 16,
+      "max": 18,
+      "passed": true,
+      "details": {
+        "found": true,
+        "has_h1": true,
+        "has_description": true,
+        "has_sections": true,
+        "has_links": true,
+        "word_count": 1086,
+        "has_full": true,
+        "sections_count": 7,
+        "links_count": 34,
+        "has_blockquote": true,
+        "has_optional_section": false,
+        "companion_files_hint": false,
+        "validation_warnings": [],
+        "blocked_by_cdn": false
+      }
+    },
+    "schema_jsonld": {
+      "score": 16,
+      "max": 16,
+      "passed": true,
+      "details": {
+        "has_website": true,
+        "has_webapp": true,
+        "has_faq": true,
+        "found_types": [
+          "Organization",
+          "WebSite",
+          "WebPage",
+          "WebApplication",
+          "VideoObject",
+          "FAQPage",
+          "Article"
+        ]
+      }
+    },
+    "meta_tags": {
+      "score": 14,
+      "max": 14,
+      "passed": true,
+      "details": {
+        "has_title": true,
+        "has_description": true,
+        "has_canonical": true,
+        "has_og_title": true,
+        "has_og_description": true,
+        "has_og_image": true,
+        "title_text": "OfferEvo | Local Deals That Help Small Businesses Grow",
+        "description_text": "Create deals for local businesses you love. Businesses approve each offer before it goes live for people to discover, share and use.",
+        "description_length": 132,
+        "title_length": 54,
+        "canonical_url": "https://offerevo.com/",
+        "x_robots_noindex": false,
+        "x_robots_tag": "",
+        "has_noai": false,
+        "noai_value": ""
+      }
+    },
+    "content": {
+      "score": 12,
+      "max": 12,
+      "passed": true,
+      "details": {
+        "has_h1": true,
+        "heading_count": 21,
+        "has_numbers": true,
+        "has_links": true,
+        "word_count": 1167,
+        "h1_text": "Customers create deals. Small businesses grow.",
+        "numbers_count": 4,
+        "external_links_count": 1,
+        "has_heading_hierarchy": true,
+        "has_lists_or_tables": true,
+        "has_front_loading": true
+      }
+    },
+    "signals": {
+      "score": 6,
+      "max": 6,
+      "passed": true,
+      "details": {
+        "has_lang": true,
+        "lang_value": "en",
+        "has_rss": true,
+        "rss_url": "./feed.xml",
+        "has_freshness": true,
+        "freshness_date": "2026-10-02"
+      }
+    },
+    "ai_discovery": {
+      "score": 6,
+      "max": 6,
+      "passed": true,
+      "details": {
+        "has_well_known_ai": true,
+        "has_summary": true,
+        "has_faq": true,
+        "has_service": true,
+        "summary_valid": true,
+        "faq_count": 152,
+        "endpoints_found": 4,
+        "has_webmcp_declaration": false,
+        "webmcp_declared_tool_count": 0
+      }
+    },
+    "brand_entity": {
+      "score": 7,
+      "max": 10,
+      "passed": true,
+      "details": {
+        "brand_name_consistent": true,
+        "names_found": [
+          "Customers create deals.Small businesses grow.",
+          "OfferEvo",
+          "Customers create deals. Small businesses grow.",
+          "OfferEvo",
+          "OfferEvo",
+          "OfferEvo"
+        ],
+        "primary_name": "OfferEvo",
+        "schema_desc_matches_meta": true,
+        "kg_pillar_count": 0,
+        "kg_pillar_urls": [],
+        "has_wikipedia": false,
+        "has_wikidata": false,
+        "has_linkedin": false,
+        "has_crunchbase": false,
+        "has_about_link": true,
+        "has_contact_info": true,
+        "has_geo_schema": true,
+        "has_hreflang": false,
+        "hreflang_count": 0,
+        "faq_depth": 7,
+        "has_recent_articles": true
+      }
+    }
+  },
+  "score_breakdown": {
+    "robots": 18,
+    "llms": 16,
+    "schema": 16,
+    "meta": 14,
+    "content": 12,
+    "signals": 6,
+    "ai_discovery": 6,
+    "brand_entity": 7,
+    "negative_penalty": -1
+  },
+  "recommendations": [
+    "Add sameAs links in Organization schema to Wikipedia, Wikidata, LinkedIn, or Crunchbase for Knowledge Graph disambiguation",
+    "Keyword stuffing detected: 'offer' at 3.8% density \u2014 diversify vocabulary",
+    "Add potentialAction (SearchAction) to WebSite schema for AI agent discoverability",
+    "Add descriptive labels to forms (label, aria-label) to make them usable by AI agents",
+    "Consider adding WebMCP toolname/tooldescription attributes to interactive elements for Chrome AI agent support",
+    "Video without captions or transcript \u2014 add <track kind=\"captions\"> or a text transcript: AI engines index the transcript, not the pixels"
+  ],
+  "webmcp": {
+    "readiness_level": "none",
+    "agent_ready": false,
+    "has_register_tool": false,
+    "has_tool_attributes": false,
+    "tool_count": 0,
+    "has_potential_action": false,
+    "potential_actions": [],
+    "has_labeled_forms": false,
+    "labeled_forms_count": 0,
+    "has_openapi": false,
+    "has_webmcp_declaration": false,
+    "declared_tool_count": 0
+  },
+  "negative_signals": {
+    "severity": "low",
+    "signals_found": 1,
+    "cta_density_high": false,
+    "cta_count": 5,
+    "has_popup_signals": false,
+    "is_thin_content": false,
+    "broken_links_count": 0,
+    "has_keyword_stuffing": true,
+    "has_author_signal": true,
+    "boilerplate_ratio": 0.04,
+    "has_mixed_signals": false
+  },
+  "js_rendering": {
+    "checked": true,
+    "raw_word_count": 1158,
+    "raw_heading_count": 21,
+    "has_empty_root": false,
+    "has_noscript_content": false,
+    "framework_detected": "",
+    "js_dependent": false,
+    "details": "1158 words and 21 headings found in raw HTML. Content is accessible without JavaScript."
+  },
+  "multimodal": {
+    "checked": true,
+    "total_images": 3,
+    "images_with_alt": 3,
+    "alt_coverage": 1.0,
+    "caption_count": 0,
+    "has_video": true,
+    "video_count": 1,
+    "has_video_schema": true,
+    "has_video_captions": false,
+    "has_audio": false,
+    "has_audio_schema": false,
+    "has_transcript": false,
+    "readiness_level": "good"
+  },
+  "trust_stack": {
+    "checked": true,
+    "technical": {
+      "name": "technical",
+      "label": "Technical Trust",
+      "score": 2,
+      "max_score": 5,
+      "signals_found": [
+        "HTTPS"
+      ],
+      "signals_missing": [
+        "Strict-Transport-Security header missing",
+        "Content-Security-Policy header missing",
+        "X-Frame-Options header missing"
+      ],
+      "details": {}
+    },
+    "identity": {
+      "name": "identity",
+      "label": "Identity Trust",
+      "score": 5,
+      "max_score": 5,
+      "signals_found": [
+        "Brand name consistent",
+        "About page",
+        "Contact info",
+        "Organization schema",
+        "Author identified"
+      ],
+      "signals_missing": [],
+      "details": {}
+    },
+    "social": {
+      "name": "social",
+      "label": "Social Trust",
+      "score": 2,
+      "max_score": 5,
+      "signals_found": [
+        "sameAs links (1)",
+        "Social profiles (instagram.com)"
+      ],
+      "signals_missing": [
+        "No Knowledge Graph pillar links",
+        "No reviews or testimonials found"
+      ],
+      "details": {}
+    },
+    "academic": {
+      "name": "academic",
+      "label": "Academic Trust",
+      "score": 1,
+      "max_score": 5,
+      "signals_found": [
+        "Numbers cited (4)"
+      ],
+      "signals_missing": [
+        "Few external source links",
+        "No links to authoritative sources (DOI, PubMed, Scholar)",
+        "No References/Sources section",
+        "No original research data patterns"
+      ],
+      "details": {
+        "authoritative_domains": [],
+        "statistics_count": 0,
+        "numbers_count": 4
+      }
+    },
+    "consistency": {
+      "name": "consistency",
+      "label": "Consistency Trust",
+      "score": 5,
+      "max_score": 5,
+      "signals_found": [
+        "Brand name consistent across title/H1/schema",
+        "No mixed signals",
+        "Schema description matches meta",
+        "dateModified present"
+      ],
+      "signals_missing": [],
+      "details": {}
+    },
+    "composite_score": 15,
+    "grade": "C",
+    "trust_level": "medium"
+  },
+  "prompt_injection": {
+    "checked": true,
+    "hidden_text_found": false,
+    "hidden_text_count": 0,
+    "hidden_text_samples": [],
+    "invisible_unicode_found": false,
+    "invisible_unicode_count": 0,
+    "llm_instruction_found": false,
+    "llm_instruction_count": 0,
+    "llm_instruction_samples": [],
+    "html_comment_injection_found": false,
+    "html_comment_injection_count": 0,
+    "html_comment_samples": [],
+    "monochrome_text_found": false,
+    "monochrome_text_count": 0,
+    "microfont_found": false,
+    "microfont_count": 0,
+    "data_attr_injection_found": false,
+    "data_attr_injection_count": 0,
+    "data_attr_samples": [],
+    "aria_hidden_injection_found": false,
+    "aria_hidden_injection_count": 0,
+    "aria_hidden_samples": [],
+    "ugc_surface_found": false,
+    "ugc_surface_samples": [],
+    "ugc_injection_risk": false,
+    "patterns_found": 0,
+    "severity": "clean",
+    "risk_level": "none"
+  },
+  "rag_chunk": {
+    "checked": true,
+    "total_sections": 18,
+    "sections_in_range": 1,
+    "avg_section_words": 37.4,
+    "has_definition_opening": false,
+    "heading_as_boundary_ratio": 1.17,
+    "anchor_sentences": 71,
+    "chunk_readiness_score": 46
+  },
+  "embedding_proximity": {
+    "checked": true,
+    "skipped_reason": "sentence-transformers not installed (pip install geo-optimizer-skill[embedding])",
+    "model_name": "",
+    "query_scores": [],
+    "avg_similarity": 0.0,
+    "top_similarity": 0.0,
+    "retrievable_chunks": 0,
+    "total_chunks": 0
+  },
+  "content_decay": {
+    "checked": true,
+    "signals": [
+      {
+        "decay_type": "temporal",
+        "text": "OfferEvo \u00b7 Updated 2 October 2026 Start with an offer the owner",
+        "estimated_stale_days": 365,
+        "suggestion": "Use relative time or add dateModified schema for freshness signals"
+      },
+      {
+        "decay_type": "temporal",
+        "text": "About Privacy Terms Sitemap \u00a9 2026 OfferEvo | Built with \u2661 in Ku",
+        "estimated_stale_days": 365,
+        "suggestion": "Use relative time or add dateModified schema for freshness signals"
+      }
+    ],
+    "earliest_decay_days": 365,
+    "decay_risk": "medium",
+    "evergreen_score": 84
+  },
+  "platform_citation": {
+    "checked": true,
+    "platforms": [
+      {
+        "platform": "chatgpt",
+        "score": 83,
+        "strengths": [
+          "GPTBot allowed in robots.txt",
+          "llms.txt present",
+          "FAQ schema present",
+          "Well-structured content",
+          "Organization schema present",
+          "Article schema present"
+        ],
+        "recommendations": []
+      },
+      {
+        "platform": "perplexity",
+        "score": 65,
+        "strengths": [
+          "PerplexityBot allowed",
+          "llms.txt with links",
+          "Content freshness signals present",
+          "Substantial content depth",
+          "RSS feed available"
+        ],
+        "recommendations": [
+          "Add external links to authoritative sources"
+        ]
+      },
+      {
+        "platform": "google_ai",
+        "score": 80,
+        "strengths": [
+          "Google-Extended allowed",
+          "Complete meta tags",
+          "Open Graph tags present",
+          "Quality content structure",
+          "Content freshness signals present",
+          "Content available without JS (SSR-safe)",
+          "sameAs links for authority signals"
+        ],
+        "recommendations": [
+          "Add more schema types for richer structured data",
+          "Add descriptive alt text to images"
+        ]
+      }
+    ]
+  },
+  "context_window": {
+    "checked": true,
+    "total_words": 1158,
+    "total_tokens_estimate": 1505,
+    "front_loaded_ratio": 0.18,
+    "key_info_tokens": 214,
+    "filler_ratio": 0.0,
+    "optimal_for": [
+      "perplexity",
+      "chatgpt",
+      "claude"
+    ],
+    "truncation_risk": "low",
+    "context_efficiency_score": 55
+  },
+  "instruction_readiness": {
+    "checked": true,
+    "labeled_buttons": 5,
+    "unlabeled_buttons": 0,
+    "action_clarity_score": 100,
+    "total_inputs": 0,
+    "labeled_inputs": 0,
+    "typed_inputs": 0,
+    "form_readability_score": 100,
+    "nav_links": 44,
+    "stateful_urls": true,
+    "has_aria_live": false,
+    "has_error_roles": false,
+    "readiness_score": 75,
+    "readiness_level": "ready"
+  },
+  "http_status": 200,
+  "page_size": 65374,
+  "audit_duration_ms": 190,
+  "verification": {
+    "mode": "local-files",
+    "tool_version": "4.18.3",
+    "cdn_and_http_access": "not tested",
+    "scoring_changes": false
+  }
+}

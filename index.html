@@ -17,6 +17,7 @@
   <link rel="canonical" href="https://offerevo.com/">
   <link rel="sitemap" type="application/xml" href="./sitemap.xml">
   <link rel="describedby" type="text/plain" href="./llms.txt">
+  <link rel="alternate" type="application/rss+xml" title="OfferEvo product updates" href="./feed.xml">
   <link rel="icon" href="./favicon.ico" sizes="48x48">
   <link rel="icon" type="image/svg+xml" href="./images/offerevo-icon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
@@ -88,155 +89,231 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://offerevo.com/#organization",
-        "name": "OfferEvo",
-        "alternateName": "Offer Evo",
-        "url": "https://offerevo.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "@id": "https://offerevo.com/#logo",
-          "url": "https://offerevo.com/images/offerevo-icon-512.png",
-          "width": 512,
-          "height": 512,
-          "caption": "OfferEvo"
-        },
-        "image": { "@id": "https://offerevo.com/#logo" },
-        "description": "OfferEvo is a web platform for local deals that help small businesses grow. Customers create offers for businesses they love, and businesses approve each offer before it goes live.",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://offerevo.com/#organization",
+      "name": "OfferEvo",
+      "alternateName": "Offer Evo",
+      "url": "https://offerevo.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://offerevo.com/#logo",
+        "url": "https://offerevo.com/images/offerevo-icon-512.png",
+        "width": 512,
+        "height": 512,
+        "caption": "OfferEvo"
+      },
+      "image": {
+        "@id": "https://offerevo.com/#logo"
+      },
+      "description": "Create deals for local businesses you love. Businesses approve each offer before it goes live for people to discover, share and use.",
+      "email": "hello@offerevo.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kuala Lumpur",
+        "addressCountry": "MY"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
         "email": "hello@offerevo.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Kuala Lumpur",
-          "addressCountry": "MY"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "customer support",
-          "email": "hello@offerevo.com",
-          "url": "https://offerevo.com/help/#contact",
-          "availableLanguage": "English"
-        },
-        "sameAs": ["https://www.instagram.com/offer.evo/"]
+        "url": "https://offerevo.com/help/#contact",
+        "availableLanguage": "English"
       },
-      {
-        "@type": "WebSite",
-        "@id": "https://offerevo.com/#website",
-        "url": "https://offerevo.com/",
-        "name": "OfferEvo",
-        "alternateName": ["Offer Evo", "offerevo.com"],
-        "description": "Local deals that help small businesses grow.",
-        "publisher": { "@id": "https://offerevo.com/#organization" },
-        "inLanguage": "en"
+      "sameAs": [
+        "https://www.instagram.com/offer.evo/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://offerevo.com/#website",
+      "url": "https://offerevo.com/",
+      "name": "OfferEvo",
+      "alternateName": [
+        "Offer Evo",
+        "offerevo.com"
+      ],
+      "description": "Local deals that help small businesses grow.",
+      "publisher": {
+        "@id": "https://offerevo.com/#organization"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://offerevo.com/#webpage",
-        "url": "https://offerevo.com/",
-        "name": "OfferEvo | Local Deals That Help Small Businesses Grow",
-        "description": "Create deals for local businesses you love. Businesses approve each offer before it goes live for people to discover, share and use.",
-        "isPartOf": { "@id": "https://offerevo.com/#website" },
-        "about": { "@id": "https://offerevo.com/#app" },
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://offerevo.com/images/offerevo-og.jpg",
-          "width": 1200,
-          "height": 630
-        },
-        "video": { "@id": "https://offerevo.com/#intro-video" },
-        "inLanguage": "en"
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://offerevo.com/#webpage",
+      "url": "https://offerevo.com/",
+      "name": "OfferEvo | Local Deals That Help Small Businesses Grow",
+      "description": "Create deals for local businesses you love. Businesses approve each offer before it goes live for people to discover, share and use.",
+      "isPartOf": {
+        "@id": "https://offerevo.com/#website"
       },
-      {
-        "@type": "WebApplication",
-        "@id": "https://offerevo.com/#app",
-        "name": "OfferEvo",
-        "url": "https://app.offerevo.com/",
-        "applicationCategory": "BusinessApplication",
-        "applicationSubCategory": "Customer referral marketing and local deals",
-        "operatingSystem": "Any",
-        "browserRequirements": "Requires a modern web browser. Works on phones and computers without an app download.",
-        "softwareVersion": "1.0.3",
-        "description": "Customers create offers for local businesses. Businesses approve them before they go live, and people discover, share and use them in store with a QR or eight-character code.",
-        "featureList": [
-          "Customers create discounts and deals for local businesses",
-          "Businesses approve each offer before it goes live",
-          "Anyone can discover and share approved offers",
-          "Offers are redeemed in store with a QR code or eight-character code",
-          "One account for customers and business owners"
-        ],
-        "screenshot": "https://offerevo.com/images/offerevo-redemption-1200.webp",
-        "image": "https://offerevo.com/images/offerevo-og.jpg",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "description": "Free for customers and business owners"
-        },
-        "publisher": { "@id": "https://offerevo.com/#organization" },
-        "creator": { "@id": "https://offerevo.com/#organization" }
+      "about": {
+        "@id": "https://offerevo.com/#app"
       },
-      {
-        "@type": "VideoObject",
-        "@id": "https://offerevo.com/#intro-video",
-        "name": "OfferEvo introduction",
-        "description": "What if your customers wrote your deals? See how customers create offers for local businesses, businesses approve them, and people share and use them in store.",
-        "thumbnailUrl": "https://offerevo.com/images/offerevo-intro-poster.webp",
-        "contentUrl": "https://offerevo.com/images/offerevo-intro.mp4",
-        "uploadDate": "2026-09-29T18:11:16+08:00",
-        "duration": "PT21S",
-        "width": 1920,
-        "height": 1080,
-        "inLanguage": "en",
-        "publisher": { "@id": "https://offerevo.com/#organization" }
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://offerevo.com/images/offerevo-og.jpg",
+        "width": 1200,
+        "height": 630
       },
-      {
-        "@type": "FAQPage",
-        "@id": "https://offerevo.com/#faq",
-        "isPartOf": { "@id": "https://offerevo.com/#webpage" },
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What does OfferEvo do?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Customers create discounts and deals for local businesses. Businesses approve them before they go live. People can then discover, share and use those offers." }
-          },
-          {
-            "@type": "Question",
-            "name": "Can an offer go live without business approval?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No. Customers can create offers for your business, but each offer must be approved by the business before it goes live." }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I use an offer?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Check its terms, visit the business and show your QR code or eight-character code. Staff check the code to confirm the offer." }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I use an offer someone else created?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can find offers on OfferEvo or through someone sharing them. You do not need to know the creator. Just follow the offer’s terms." }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I get started?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Create an account at <a href=\"https://app.offerevo.com/\">app.offerevo.com</a>. You can browse offers or submit your own. If you own a business, add it to the same account. No app download is needed." }
-          },
-          {
-            "@type": "Question",
-            "name": "Is OfferEvo free?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. OfferEvo is free for customers and business owners." }
-          },
-          {
-            "@type": "Question",
-            "name": "Have more questions?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Our <a href=\"https://offerevo.com/help/\">help centre</a> has detailed answers on creating offers, approval, redeeming codes and running a business. You can also <a href=\"https://offerevo.com/help/#contact\">message us</a> or email <a href=\"mailto:hello@offerevo.com\">hello@offerevo.com</a>." }
-          }
-        ]
+      "video": {
+        "@id": "https://offerevo.com/#intro-video"
+      },
+      "inLanguage": "en",
+      "dateModified": "2026-10-02",
+      "hasPart": {
+        "@id": "https://offerevo.com/#offer-guide"
       }
-    ]
-  }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://offerevo.com/#app",
+      "name": "OfferEvo",
+      "url": "https://app.offerevo.com/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Customer referral marketing and local deals",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires a modern web browser. Works on phones and computers without an app download.",
+      "softwareVersion": "1.0.3",
+      "description": "Customers create offers for local businesses. Businesses approve them before they go live, and people discover, share and use them in store with a QR or eight-character code.",
+      "featureList": [
+        "Customers create discounts and deals for local businesses",
+        "Businesses approve each offer before it goes live",
+        "Anyone can discover and share approved offers",
+        "Offers are redeemed in store with a QR code or eight-character code",
+        "One account for customers and business owners"
+      ],
+      "screenshot": "https://offerevo.com/images/offerevo-redemption-1200.webp",
+      "image": "https://offerevo.com/images/offerevo-og.jpg",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free for customers and business owners"
+      },
+      "publisher": {
+        "@id": "https://offerevo.com/#organization"
+      },
+      "creator": {
+        "@id": "https://offerevo.com/#organization"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://offerevo.com/#intro-video",
+      "name": "OfferEvo introduction",
+      "description": "What if your customers wrote your deals? See how customers create offers for local businesses, businesses approve them, and people share and use them in store.",
+      "thumbnailUrl": "https://offerevo.com/images/offerevo-intro-poster.webp",
+      "contentUrl": "https://offerevo.com/images/offerevo-intro.mp4",
+      "uploadDate": "2026-09-29T18:11:16+08:00",
+      "duration": "PT21S",
+      "width": 1920,
+      "height": 1080,
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://offerevo.com/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://offerevo.com/#faq",
+      "isPartOf": {
+        "@id": "https://offerevo.com/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does OfferEvo do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Customers create discounts and deals for local businesses. Businesses approve them before they go live. People can then discover, share and use those offers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can an offer go live without business approval?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Customers can create offers for your business, but each offer must be approved by the business before it goes live."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I use an offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check its terms, visit the business and show your QR code or eight-character code. Staff check the code to confirm the offer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use an offer someone else created?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can find offers on OfferEvo or through someone sharing them. You do not need to know the creator. Just follow the offer\u2019s terms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Create an account at <a href=\"https://app.offerevo.com/\">app.offerevo.com</a>. You can browse offers or submit your own. If you own a business, add it to the same account. No app download is needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is OfferEvo free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. OfferEvo is free for customers and business owners."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Have more questions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our <a href=\"https://offerevo.com/help/\">help centre</a> has detailed answers on creating offers, approval, redeeming codes and running a business. You can also <a href=\"https://offerevo.com/help/#contact\">message us</a> or email <a href=\"mailto:hello@offerevo.com\">hello@offerevo.com</a>."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://offerevo.com/#offer-guide",
+      "headline": "How to create and redeem a local deal on OfferEvo",
+      "description": "A practical guide to proposing an offer, business approval, conditions and in-store code redemption.",
+      "author": {
+        "@id": "https://offerevo.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://offerevo.com/#organization"
+      },
+      "datePublished": "2026-10-02",
+      "dateModified": "2026-10-02",
+      "inLanguage": "en",
+      "image": "https://offerevo.com/images/offerevo-og.jpg",
+      "isPartOf": {
+        "@id": "https://offerevo.com/#webpage"
+      },
+      "mainEntityOfPage": "https://offerevo.com/#offer-guide"
+    }
+  ]
+}
   </script>
   <style>
+    .offer-guide { padding-block: 64px; }
+    .offer-guide article { max-width: 780px; margin-inline: auto; }
+    .offer-guide h2 { font-size: clamp(28px, 4vw, 42px); line-height: 1.15; margin: 14px 0; }
+    .offer-guide h3 { margin: 28px 0 12px; font-size: 22px; }
+    .offer-guide p, .offer-guide ul { line-height: 1.75; margin-block: 16px; }
+    .offer-guide ul { padding-left: 24px; }
+    .offer-guide a { text-decoration: underline; text-underline-offset: 3px; }
+    .offer-guide .guide-date { font-size: 13px; color: #716862; }
     @font-face {
       font-family: "Inter";
       font-style: normal;
@@ -1797,10 +1874,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Local deals. Small businesses.</p>
         <h1>Customers create deals. <em>Small businesses grow.</em></h1>
-        <p>Create a discount or deal for a business you love. The business approves it before it goes live. Then
-          anyone
-          can
-          discover, share and use it, following the offer’s terms.</p>
+        <p>OfferEvo is a free local deals platform where customers create offers for places they love. Owners approve each offer before it goes live. Anyone can browse, share and use approved deals, following their terms.</p>
         <div class="hero-actions"><a class="btn btn-primary" href="https://app.offerevo.com/">Get started <span
               aria-hidden="true">↗</span></a><a class="text-link" href="#how">See how it works <span
               aria-hidden="true">↓</span></a></div>
@@ -2021,6 +2095,24 @@
         businesses by
         creating and sharing offers that give others a reason to visit.</p>
     </section>
+    <section id="offer-guide" class="shell offer-guide">
+      <article aria-labelledby="offer-guide-title">
+        <div class="label">A practical guide</div>
+        <h2 id="offer-guide-title">How to create and redeem a local deal on OfferEvo</h2>
+        <p class="guide-date">By OfferEvo · Updated <time datetime="2026-10-02">2 October 2026</time></p>
+        <h3>Start with an offer the owner can approve</h3>
+        <p>OfferEvo lets a customer suggest a promotion for a place already listed in the app. Browse without an account, or sign in with Google to create a deal. Choose the venue, write a clear headline and add the conditions someone needs to know before visiting. A headline allows 42 characters; conditions allow 120 characters. The owner sets redemption caps and duration limits, then reviews the submission. A pending offer stays out of the public feed until approval. Its duration starts when approved. Submitted text cannot be edited by either party, so check the wording first. If you need to correct it, create a new offer. Archiving an offer is permanent. Read the <a href="./help/creating-offers.html">offer creation guide</a> and <a href="./help/approval.html">approval FAQ</a> before submitting.</p>
+        <h3>Check the terms before visiting</h3>
+        <p>OfferEvo deals can be found in the app or through a shared link. You do not need to know the creator or make an offer yourself. Check the venue, expiry and conditions before heading out. Sign in to redeem, then show the QR code or eight-character code at that location. The owner or a staff member validates it to confirm the deal. Each person can redeem a given offer once; saving it does not redeem it. A code works only at the named venue, and expired or sold-out offers cannot be used. If a code fails, check that you selected the correct offer and ask staff for help. The <a href="./help/redeeming.html">redemption FAQ</a> explains code problems, and <a href="mailto:hello@offerevo.com">OfferEvo support</a> can answer product questions.</p>
+        <ul>
+          <li>Free access for customers and owners; no app download required.</li>
+          <li>One account supports shopping and managing multiple venues.</li>
+          <li>Approval is required before any customer-created offer becomes public.</li>
+        </ul>
+        <p>Learn <a href="./about.html">why we built OfferEvo</a>, or browse the <a href="./help/">help centre</a> for sharing, profiles and owner tools.</p>
+      </article>
+    </section>
+
     <!-- FAQs -->
     <section id="faq" class="faq shell reveal">
       <div class="faq-grid">
@@ -2079,25 +2171,6 @@
       </div>
     </section>
 
-    <!-- <section class="tools shell reveal">
-      <div class="tools-grid">
-        <article class="tool"><span class="tag">Live product</span>
-          <h3>See real local deals in the beta.</h3>
-          <p>Explore the customer experience today: create an account, browse the feed, save an offer, or add your
-            business to unlock the owner experience.</p><a class="text-link" href="https://app.offerevo.com/">Open
-            app.offerevo.com ↗</a>
-        </article>
-        <article class="tool"><span class="tag">Free companion tool</span>
-          <h3>Brainstorm promotions inside Slack.</h3>
-          <p>OfferEvo Hub helps a team draft, polish and preview local promotion ideas without leaving the conversation.
-          </p>
-          <div class="slack"><strong>OfferEvo Hub</strong><br>“Create a Tuesday offer for first-time café
-            visitors.”<br><br>✦ Drafting an offer card…</div><a class="text-link"
-            href="https://offerevo-hub.onrender.com/slack/install">Add OfferEvo Hub to Slack ↗</a>
-        </article>
-      </div>
-    </section> -->
-
     <!-- Version -->
     <section id="get-started" class="beta reveal">
       <div class="beta-inner"><span class="live"><i></i>1.0.3</span>
@@ -2124,6 +2197,7 @@
       <nav class="oe-footer__nav" aria-label="Footer">
         <a href="https://app.offerevo.com/">Get started</a>
         <a href="/help/">Help centre</a>
+        <a href="./about.html">About</a>
         <a href="./privacy.html">Privacy</a>
         <a href="./terms.html">Terms</a>
         <a href="./sitemap.html">Sitemap</a>

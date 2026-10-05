@@ -100,6 +100,7 @@ ${body}
       <nav class="oe-footer__nav" aria-label="Footer">
         <a href="https://app.offerevo.com/">Get started</a>
         <a href="../help/index.html">Help centre</a>
+        <a href="../about.html">About</a>
         <a href="../privacy.html">Privacy</a>
         <a href="../terms.html">Terms</a>
         <a href="../sitemap.html">Sitemap</a>

@@ -1,5 +1,37 @@
 User-agent: *
 Disallow: /backup/
+Disallow: /backupde5ffg/
+Allow: /
+
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Google-CloudVertexBot
+User-agent: Bingbot
+User-agent: Applebot-Extended
+User-agent: cohere-ai
+User-agent: DuckAssistBot
+User-agent: Bytespider
+User-agent: meta-externalagent
+User-agent: Meta-ExternalFetcher
+User-agent: facebookexternalhit
+User-agent: Amazonbot
+User-agent: AI2Bot
+User-agent: AI2Bot-Dolma
+User-agent: xAI-Bot
+User-agent: Applebot
+User-agent: PetalBot
+User-agent: YouBot
+User-agent: CCBot
+User-agent: Googlebot
+Disallow: /backup/
+Disallow: /backupde5ffg/
 Allow: /
 
 Sitemap: https://offerevo.com/sitemap.xml

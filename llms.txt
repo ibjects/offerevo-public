@@ -62,3 +62,19 @@ The following product details come from the public homepage and help centre FAQs
 
 - [Website sitemap](https://offerevo.com/sitemap.html): All public website pages, homepage sections and the app entry point.
 - [XML sitemap](https://offerevo.com/sitemap.xml): Canonical public pages hosted on offerevo.com. The app is hosted separately.
+
+## About and product reference
+
+- [About OfferEvo](https://offerevo.com/about.html): Why we built the platform, who it serves and contact information in Kuala Lumpur, Malaysia.
+- [Offer creation and redemption guide](https://offerevo.com/#offer-guide): A practical walkthrough of approval, offer conditions and in-store redemption, updated 2 October 2026.
+- [Product updates](https://offerevo.com/feed.xml): RSS entries for published product documentation updates.
+- [Complete product reference](https://offerevo.com/llms-full.txt): The product overview and all current help centre questions and answers in one text document.
+- [Structured summary](https://offerevo.com/ai/summary.json): Identity, app URL, current availability, pricing and product facts.
+- [Structured FAQs](https://offerevo.com/ai/faq.json): Questions and answers generated from the help centre source.
+- [Service capabilities](https://offerevo.com/ai/service.json): Supported customer and owner workflows and their limits.
+
+## Offer lifecycle and practical limits
+
+An offer begins as a signed-in customer's suggestion for an already-listed venue. It is pending until the owner reviews it. Approval makes the offer public and starts its duration. Rejection does not publish it. Neither the creator nor the owner can edit submitted offer text; correcting wording requires a new submission. An offer headline supports 42 characters and its conditions support 120 characters. Owner-selected duration and redemption caps determine availability. The creator can archive an offer permanently. Business archiving is different: it hides the venue and its offers, and restoring the venue keeps the original expiry dates.
+
+Saving, sharing and redeeming are separate actions. A saved offer is a bookmark, not a reservation or redemption. Sharing an offer created by someone else does not transfer creator credit. A customer can use a deal without knowing its creator. Redemption requires sign-in, a visit to the named venue, and staff validation of a QR or eight-character code. Each person can redeem a given offer once. Expired or sold-out offers cannot be redeemed. Refer to the published help answers for troubleshooting and the current rules rather than assuming that every promotion is available in every city.
